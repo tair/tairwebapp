@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE project>
+<project name="tair" default="compile">
+
+	<property file="build.properties" />
+	<property file="default.properties" />
+
+	<!-- Default property settings; redefine in build.properties if necessary -->
+
+	<!-- if app.home is not defined in the build.properties or on commandline, 
+	     default to current directory -->
+	<property name="app.root" value="${basedir}" />
+
+	<!-- This property file imports all the standard properties from this instance
+	of TAIR. Targets can uses these properties to find specific data files, for example. 
+	 -->
+	<property file="${build}/org/tair/conf/webapp.properties" />
+
+	<!-- Default JBoss AS7 module locations -->
+	<property name="modules" value="${jboss.home}/modules" />
+	<property name="servlet-api" value="${modules}/javax/servlet/api/main" />
+	<property name="jsp-api" value="${modules}/javax/servlet/jsp/api/main" />
+	<property name="faces-api" value="${modules}/javax/faces/api/main" />
+	<property name="faces-impl" value="${modules}/com/sun/jsf-impl/main" />
+	<property name="mail-api" value="${modules}/javax/mail/api/main" />
+	<property name="logging" value="${modules}/org/jboss/logging/main" />
+	<property name="mysql" value="${modules}/com/mysql/main" />
+	<property name="oracle" value="${modules}/com/oracle/ojdbc6/main" />
+	<property name="ant" value="${modules}/org/apache/tools/ant/main" />
+
+	<!-- Define a task using a precompiled version of the PropertySubstituter in
+	     the bin directory -->
+	<taskdef name="propsubs" classname="org.tair.utilities.PropertySubstituter" classpath="bin/propsubs.jar" />
+
+	<!-- The classpath for Java compilation -->
+	<path id="project.classpath">
+		<fileset dir="${servlet-api}">
+			<include name="**/*.jar" />
+		</fileset>
+		<fileset dir="${jsp-api}">
+			<include name="**/*.jar" />
+		</fileset>
+		<fileset dir="${faces-api}">
+			<include name="**/*.jar" />
+		</fileset>
+		<fileset dir="${faces-impl}">
+			<include name="**/*.jar" />
+		</fileset>
+		<fileset dir="${mail-api}">
+			<include name="**/*.jar" />
+		</fileset>
+		<fileset dir="${logging}">
+			<include name="**/*.jar" />
+		</fileset>
+		<fileset dir="${mysql}">
+			<include name="**/*.jar" />
+		</fileset>
+		<fileset dir="${oracle}">
+			<include name="**/*.jar" />
+		</fileset>
+		<fileset dir="${ant}">
+			<include name="**/*.jar" />
+		</fileset>
+		<fileset dir="${lib}">
+			<include name="*.jar" />
+		</fileset>
+		<path path="${build}" />
+	</path>
+
+	<!-- ================================= 
+          target: catalog-pages-java Generates Java source code for catalog-page-
+                  generator classes from templates. Each class generates HTML
+                  catalog pages.              
+         ================================= -->
+	<target name="catalog-pages-java" description="Create java source and classes from catalog page templates.  Each class generates html catalog pages for a category. Input properties: category, catalog.templates.dir, catalog.java.output">
+		<fail unless="category" message="what category?" />
+		<property name="catalog.templates.dir" value="WebRoot/catalog" />
+		<property name="catalog.java.output" value="tmp/abrc-catalog/java" />
+		<property name="categories.properties" value="conf/Categories.properties" />
+		<mkdir dir="${catalog.java.output}" />
+		<java fork="true" classname="org.tair.abrc.catalog.PageGeneratorGenerator" failonerror="true">
+			<classpath refid="project.classpath" />
+			<arg value="${categories.properties}" />
+			<arg value="${catalog.templates.dir}" />
+			<arg value="${catalog.java.output}" />
+			<arg value="${category}" />
+		</java>
+		<javac source="1.5" target="1.5" deprecation="false" nowarn="on" debug="on" memoryMaximumSize="768m" fork="true" includeantruntime="false">
+			<classpath refid="project.classpath" />
+			<src path="${catalog.java.output}" />
+			<include name="*.java" />
+		</javac>
+	</target>
+
+	<!-- ================================= 
+          target: catalog-pages Creates HTML catalog pages from Java classes              
+         ================================= -->
+	<target name="catalog-pages" depends="catalog-pages-java" description="Create html catalog pages using classes created in catalog-pages-java. Input properties: category, catalog.html.output, catalog.java.output, catalog.templates.dir">
+		<fail unless="category" message="what category?" />
+		<property name="catalog.html.output" value="tmp/abrc-catalog/html" />
+		<mkdir dir="${catalog.html.output}" />
+		<java fork="true" classname="org.tair.abrc.catalog.PageGenerator" failonerror="true">
+			<jvmarg value="-Xmx768M" />
+			<jvmarg value="-Xms768M" />
+			<classpath>
+				<path refid="project.classpath" />
+				<pathelement location="${catalog.java.output}" />
+			</classpath>
+			<arg value="${categories.properties}" />
+			<arg value="${catalog.html.output}" />
+			<arg value="${category}" />
+		</java>
+	</target>
+
+	<!-- ================================= 
+          target: catalog-pages-xml Generates catalog pages in XML format and 
+                  applies a stylesheet to each to produce HTML catalog pages              
+         ================================= -->
+	<target name="catalog-pages-xml" description="Generates catalog pages in xml format and applies a stylesheet to each to produce html files.">
+		<fail unless="category.class" message="category.class must be specified" />
+		<fail unless="stylesheet" message="stylesheet must be specified" />
+		<property name="catalog.html.output" value="tmp/abrc-catalog/html" />
+		<property name="catalog.xml.output" value="tmp/abrc-catalog/xml" />
+		<basename property="category.name" file="${stylesheet}" suffix=".xsl" />
+		<mkdir dir="${catalog.html.output}" />
+		<mkdir dir="${catalog.xml.output}/${category.name}" />
+		<java fork="true" classname="org.tair.abrc.catalog.CatalogManager" failonerror="true">
+			<jvmarg value="-Xmx512M" />
+			<jvmarg value="-Xms512M" />
+			<classpath>
+				<path refid="project.classpath" />
+			</classpath>
+			<arg value="${catalog.xml.output}/${category.name}" />
+			<arg value="${category.class}" />
+		</java>
+		<xslt basedir="${catalog.xml.output}/${category.name}" destdir="${catalog.html.output}" extension=".html" style="${stylesheet}" />
+	</target>
+
+	<!-- ================================= 
+          target: catalog-xslt Creates HTML catalog pages from XML documents              
+         ================================= -->
+	<target name="catalog-xslt" description="Creates html catalog pages from xml documents.">
+		<fail unless="xml.output" message="xml.output must be specified" />
+		<fail unless="html.output" message="html.output must be specified" />
+		<fail unless="stylesheet" message="stylesheet must be specified" />
+		<xslt basedir="${xml.output}" destdir="${html.output}" extension=".html" style="${stylesheet}" />
+	</target>
+
+	<!-- Work table builders -->
+
+	<!-- ================================= 
+          target: build_work_tables Builds all the database work tables that are
+                  generated with Java rather than SQL scripts              
+         ================================= -->
+	<target name="build_work_tables" depends="build_goslim, build_germplasm_pedigree, build_shortest_path" />
+
+	<!-- ================================= 
+          target: build_goslim Builds the LociGoslim work table, which represents
+                  the GOSLIM keyword structure              
+         ================================= -->
+	<target name="build_goslim" description="Build the Java-generated LociGoslim_wrk table">
+		<java fork="true" classname="org.tair.search.goslim.LociGoslimBuild" failonerror="false">
+			<classpath>
+				<path refid="project.classpath" />
+			</classpath>
+		</java>
+	</target>
+
+	<!-- ================================= 
+          target: build_germplasm_pedigree Builds the GermplasmPedigree work
+                  table, which pre-joins germplasm-related data              
+         ================================= -->
+	<target name="build_germplasm_pedigree" description="Build the Java-generated GermplasmPedigree_wrk table">
+		<java fork="true" classname="org.tair.search.germplasm.GermplasmPedigreeBuilder" failonerror="false">
+			<jvmarg value="-Xmx768M" />
+			<jvmarg value="-Xms768M" />
+			<classpath>
+				<path refid="project.classpath" />
+			</classpath>
+		</java>
+	</target>
+
+	<!-- ================================= 
+          target: build_shortest_path Builds the ShortestPath work table, which
+                  expands the keyword tree into all possible parent-child pairs              
+         ================================= -->
+	<target name="build_shortest_path" description="Build the Java-generated ShortestPath work table">
+		<java fork="true" classname="org.tair.search.tree.ShortestPathBuilder" failonerror="false">
+			<jvmarg value="-Xmx768M" />
+			<jvmarg value="-Xms768M" />
+			<classpath>
+				<path refid="project.classpath" />
+			</classpath>
+		</java>
+	</target>
+
+	<!-- ================================= 
+          target: test_email Tests current email setup with Java class              
+         ================================= -->
+	<target name="test_email" description="Test the email setup">
+		<echo message="Sending test email to ${test_email}." />
+		<java fork="true" classname="org.tair.utilities.EMailTester" failonerror="false">
+			<classpath>
+				<path refid="project.classpath" />
+			</classpath>
+			<arg value="${test_email}" />
+		</java>
+	</target>
+
+	<!-- ================================= 
+          target: compile Compiles the Java classes and copies data files to classes hierarchy              
+         ================================= -->
+	<target name="compile" depends="setup_config" description="Compiles the Java classes and copies data files to classes hierarchy">
+		<javac source="1.6" target="1.6" destdir="${build}" deprecation="false" nowarn="on" debug="on" memoryMaximumSize="512m" fork="true" excludes="**/*.smap" includeantruntime="false">
+			<classpath refid="project.classpath" />
+			<src path="${src}" />
+			<include name="**/*.java" />
+			<exclude name="tags/**" />
+		</javac>
+
+		<copy todir="${build}/org/tair/conf" file="${src}/org/tair/conf/abrc_osu.p12" />
+		<copy todir="${build}/org/tair/conf" file="${src}/org/tair/conf/fastaMetaData" />
+
+		<!-- Copy the non-build-type-dependent properties files. -->
+		<copy todir="${build}/org/tair/conf">
+			<fileset dir="${src}/org/tair/conf">
+				<include name="*.properties" />
+			</fileset>
+		</copy>
+
+		<!-- Copy the data-access properties files. -->
+		<copy todir="${build}/org/tair/db">
+			<fileset dir="${src}/org/tair/db">
+				<include name="*.properties" />
+			</fileset>
+		</copy>
+
+		<!-- Copy the ABRC configuration files. -->
+		<copy todir="${build}/org/tair/abrc/conf">
+			<fileset dir="${src}/org/tair/abrc/conf">
+				<include name="*.properties" />
+			</fileset>
+		</copy>
+	</target>
+
+	<!-- ================================= 
+      target: war Build deployable web application archive file after compiling 
+      and coplies it into the deployment directory but does not effect the
+      deployment with the dodeploy file - see the deploy target for that.       
+     ================================= -->
+	<target name="war" depends="compile" description="Creates a deployable war file for the TAIR web application">
+		<war destfile="${deploy}/${war.file}" webxml="${webinf}/web.xml">
+			<classes dir="${build}" />
+			<webinf dir="${webinf}" excludes="**/web.xml,classes/**,lib/**" />
+			<fileset dir="${root}" excludes="WEB-INF/**" />
+			<lib dir="${lib}" includes="*.jar" />
+		</war>
+	</target>
+
+	<!-- ================================= 
+          target: agi_assignment_table Rebuild the work table AgiAssignment_wrk in the system database;
+                  this supports rebuilding the SeqViewer genome cache. Requires the DBO database user
+                  be defined in webapp.properties.
+         ================================= -->
+	<target name="agi_assignment_table">
+		<echo message="Building AgiAssignment_wrk table in database..." />
+		<echo message="Please allow 5-10 minutes to finish..." />
+		<java fork="true" classname="org.tair.seqviewer.server.AgiAssignment">
+			<jvmarg value="-Xmx512M" />
+			<jvmarg value="-Xms512M" />
+			<classpath>
+				<path refid="project.classpath" />
+				<path path="${build}" />
+			</classpath>
+		</java>
+	</target>
+
+	<!-- ================================= 
+          target: genome_cache Re-serialize the genome cache from the current in-memory cache after
+                  executing the agi_assignment_table rebuild; puts the file in /data/seqviewer as
+                  configured in the WebApp.java class.
+         ================================= -->
+	<target name="genome_cache" depends="setup_config, agi_assignment_table">
+		<echo message="Building SeqViewer genome cache to ${app.root}..." />
+		<echo message="Please allow 15-20 minutes to finish..." />
+		<java fork="true" classname="org.tair.seqviewer.server.DataServer">
+			<jvmarg value="-Xmx1536M" />
+			<jvmarg value="-Xms1536M" />
+			<classpath>
+				<path refid="project.classpath" />
+			</classpath>
+		</java>
+	</target>
+
+	<!-- ================================= 
+          target: clean Remove compiled classes, compiled JSPs, and the war archive file.       
+         ================================= -->
+	<target name="clean" description="Removes compiled classes, compiled JSPs, and war file">
+		<delete dir="${build}/org" />
+		<delete dir="${jsp.src}" />
+		<delete file="${webapp.conf.dst}" />
+		<delete file="${web.xml.dst}" />
+		<delete>
+			<fileset dir="${deploy}" includes="${war.file}" />
+		</delete>
+	</target>
+
+	<!-- ================================= 
+          target: deploy Tell JBoss to redeploy the web app using the
+                  JBoss AS7 marker file system approach; this will deploy the
+                  web app only if there is a war file in the deployment directory
+         ================================= -->
+	<target name="deploy" depends="war" description="Tells JBoss to redeploy the web app from the war file">
+		<echo message="touch ${deploy}/${war.file}.dodeploy" />
+		<touch file="${deploy}/${war.file}.dodeploy" />
+	</target>
+
+	<!-- ================================= 
+          target: listprops Print all the ant properties for debugging.       
+         ================================= -->
+	<target name="listprops" description="Outputs all ant properties">
+		<echoproperties />
+	</target>
+
+	<!-- ================================= 
+          target: setup_config Run the configuration generateor to build the 
+                  various config files.       
+         ================================= -->
+	<target name="setup_config" description="Prepares and deploys web app config files">
+		<propsubs input="${cybersource.conf.src}" output="${cybersource.conf.dst}" />
+		<propsubs input="${jboss.web.xml.src}" output="${jboss.web.xml.dst}" />
+		<propsubs input="${webapp.conf.src}" output="${webapp.conf.dst}" />
+		<propsubs input="${database.conf.src}" output="${database.conf.dst}" />
+		<propsubs input="${memcached.conf.src}" output="${memcached.conf.dst}" />
+		<propsubs input="${web.xml.src}" output="${web.xml.dst}" />
+	</target>
+
+	<!-- ================================= 
+          target: doperms Sets write permissions on important directories used for 
+                  dynamic content output.       
+         ================================= -->
+	<target name="doperms" description="Sets permissions on important directories used for dynamic content">
+		<chmod perm="a+w" dir="${app.root}" type="dir" includes="tmp/getgo,logs/blast,logs/wublast,tmp,tmp/patmatch,tmp/wublast,tmp/blast,tmp/file_uploads,tmp/fasta,WebRoot/i/d,WebRoot/gbrowse/tmp" />
+	</target>
+
+</project>

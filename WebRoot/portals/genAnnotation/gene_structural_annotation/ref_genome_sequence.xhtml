@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:a4j="http://richfaces.org/a4j"
+    xmlns:rich="http://richfaces.org/rich"
+    xml:lang="en">
+
+    <f:view>
+        <ui:composition template="/facelets/templates/sidebar_with_comments.xhtml">
+            <ui:define name="title">TAIR - Reference Genome Sequence</ui:define>
+            <ui:define name="css">
+                <!-- not needed yet
+                 link
+                    rel="stylesheet"
+                    type="text/css"
+                    href="/css/page/ref_genome_sequence.css" /> -->
+                <link
+                    rel="stylesheet"
+                    type="text/css"
+                    href="/css/template/comment.css" />
+                <link
+                    rel="stylesheet"
+                    type="text/css"
+                    href="/css/template/sidebar.css" />
+                <link
+                    rel="stylesheet"
+                    type="text/css"
+                    href="/css/page/pagelevels.css" />
+            </ui:define>
+            <ui:define name="breadcrumbs">
+                <h:outputText
+                    value="#{breadcrumbs.breadcrumb}"
+                    binding="#{breadcrumbs.output}"
+                    escape="false">
+                    <f:attribute
+                        name="pageId"
+                        value="#{comment.pageId}" />
+                </h:outputText>
+            </ui:define>
+            <ui:define name="sidebar">
+                <div id="leftcolumn">
+                    <ui:include src="/facelets/includes/genAnnotationSidebar.xhtml" />
+                </div>
+            </ui:define>
+            <ui:define name="content">
+                <div id="rightcolumn">
+                    <ui:include src="/portals/genAnnotation/gene_structural_annotation/ref_genome_sequence_content.xhtml"></ui:include>
+                </div>
+            </ui:define>
+            <ui:define name="login_link">
+                <h:outputLink
+                    value="/servlets/Community?action=login&amp;originalPage=/doc/portals/genAnnotation/gene_structural_annotation/ref_genome_sequence/11413"
+                    title="To add a comment, click here to Login/Register"
+                    rendered="#{!login.loggedIn}">
+                    <h:outputText value="To add a comment, click here to login or register." />
+                </h:outputLink>
+            </ui:define>
+        </ui:composition>
+    </f:view>
+</html>

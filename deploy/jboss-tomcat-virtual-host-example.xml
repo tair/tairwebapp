@@ -1,0 +1,19 @@
+<!-- Place this element in the <Service> element in the Tomcat server.xml file
+	in the jbossweb-tomcat55.sar directory. The name and alias and prefix should all 
+	be the name of the web application. You then need to add these two lines to the
+	web.xml file in the web application:
+	
+	<context-root>/</context-root>
+	<virtual-host>tairweb</virtual-host>
+	
+	This one-to-one mapping of virtual host to web app lets you deploy HTML and CGI
+	files under WebRoot as though they were at the HTTP server root.
+-->
+<Host name="tairweb" autoDeploy="false" deployOnStartup="false"
+	deployXML="false">
+	<Alias>tairweb</Alias>
+	<Valve className="org.apache.catalina.valves.AccessLogValve"
+		prefix="tairweb" suffix=".log" pattern="common"
+		directory="${jboss.server.hom.dir}/log" />
+	<DefaultContext cookies="true" crossContext="true" override="true" />
+</Host>

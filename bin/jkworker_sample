@@ -1,0 +1,5 @@
+#!/usr/bin/bash
+
+# Copy this file for each JBoss node and replace HOST and WORKER with appropriate values
+
+$(dirname $0)/jkctl "http://HOST/jkstatus" WORKER $1

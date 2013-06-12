@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich" xml:lang="en">
+
+	<ui:composition>
+		<span class="mainheader">Integrated Genome Browser</span>
+		<br />
+		<h2>
+			Launch Integrated Genome Browser
+		</h2>
+		<p>
+			The Integrated Genome Browser (IGB) is an interactive genome browser
+			tool that runs on your local computer rather than within a Web site
+			as with other genome browser tools.
+		</p>
+		<p>
+			IGB is different from other tools in that it lets you open, explore,
+			visualize, and analyze your RNA-Seq, ChIP-Seq, epigenetics, tiling
+			array, and other large-scale data sets, displaying your data
+			alongside publicly available data sets, including gene models and the
+			reference sequence itself.
+		</p>
+		<p>
+			Using IGB's QuickLoad system, you can also use IGB to share data with
+			collaborators and members of the community.
+		</p>
+		<p>
+			To download and launch IGB, click one of the buttons below. Choose a
+			button based on how much computer memory (RAM) you want IGB to use.
+		</p>
+		<h2>
+			Requirements: You must have Java 1.6 or better to use IGB and you
+			must have enough RAM to use the memory option you download.
+		</h2>
+		<p>
+			Once you launch IGB, choose species Arabidopsis thaliana and the
+			version of the genome you would like to view. TAIR annotated gene
+			models should load automatically. Right-click a gene model and choose
+			the link labeled arabidopsis.org to view he corresponding Web page at
+			TAIR.
+		</p>
+		<h:form>
+			<p>
+				<h:commandButton id="smallmemoption" name="smallmemoption"
+					value="Launch IGB (small memory)" title="Small Memory Option"
+					alt="Small Memory Option"
+					onclick="window.location='http://www.bioviz.org/igb/releases/current/igb.jnlp';return false" />
+			</p>
+			<p>
+				<h:commandButton id="mediumemoption" name="mediumemoption"
+					value="Launch IGB (2 gig memory)" title="Medium Memory Option"
+					alt="Medium Memory Option"
+					onclick="window.location='http://www.bioviz.org/igb/releases/current/igb-large.jnlp'; return false" />
+			</p>
+			<p>
+				<h:commandButton id="highmemoption" name="highmemoption"
+					value="Launch IGB (5 gig memory)" title="High Memory Option"
+					alt="High Memory Option"
+					onclick="window.location='http://www.bioviz.org/igb/releases/current/igb-5GB.jnlp';return false" />
+			</p>
+		</h:form>
+		<p>
+			Note: If you have trouble launching IGB, please consult the
+			<h:outputLink
+				value="http://wiki.transvar.org/confluence/display/igbman/Troubleshooting"
+				title="Troublshooting IGB">
+				<h:outputText value=" IGB User's Guide section " />
+			</h:outputLink>
+			on troubleshooting IGB.
+		</p>
+		<h2>
+			About IGB
+		</h2>
+		<p>
+			IGB receives support from National Science Foundation Award
+			<h:outputLink
+				value="http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=0820371"
+				title="NSF Grant Award">
+				<h:outputText value=" 0820371 " />
+			</h:outputLink>
+			from the Arabidopsis 2010 program. A community of open source
+			developers contribute to IGB, including researchers from diverse
+			areas, including plant genomics.
+		</p>
+		<p>
+			IGB was first developed at
+			<h:outputLink value="http://www.affymetrix.com" title="Affymetrix">
+				<h:outputText value=" Affymetrix, " />
+			</h:outputLink>
+			which released IGB as open source software in 2004. Starting in 2008,
+			the
+			<h:outputLink value="http://www.lorainelab.org" title="Loraine Lab">
+				<h:outputText value=" Loraine lab " />
+			</h:outputLink>
+			in the
+			<h:outputLink value="http://bioinformatics.uncc.edu"
+				title="Department of Bioinformatics and Genomics">
+				<h:outputText value=" Department of	Bioinformatics and Genomics " />
+			</h:outputLink>
+			at
+			<h:outputLink value="http://www.uncc.edu" title="UNC Charlotte">
+				<h:outputText value=" UNC Charlotte " />
+			</h:outputLink>
+			has led development of IGB, with contributions from scientists and
+			developers all over the world.
+		</p>
+		<p>
+			Other contributors have included IGB founder Gregg Helt, now of
+			<h:outputLink value="http://www.lbl.gov"
+				title="Lawrence Berkeley National Labs">
+				<h:outputText value=" Lawrence Berkeley National Labs, " />
+			</h:outputLink>
+			Ed Erwin of Affymetrix, David Nix and Toni DiSera of
+			<h:outputLink value="http://www.huntsmancancer.org"
+				title="the Huntsman Cancer Institute">
+				<h:outputText value=" the Huntsman Cancer Institute " />
+			</h:outputLink>
+			at the
+			<h:outputLink value="http://www.utah.edu" title="University of Utah">
+				<h:outputText value=" University of Utah, " />
+			</h:outputLink>
+			Michael Lawrence and Lance Frohman of
+			<h:outputLink value="http://www.gene.com" title="Genentech">
+				<h:outputText value=" Genentech " />
+			</h:outputLink>
+			Research and Early Development, and Ido Tamir of the
+			<h:outputLink value="http://www.imp.ac.at"
+				title="Research Institute for Molecular Pathology">
+				<h:outputText value=" Research Institute for Molecular Pathology " />
+			</h:outputLink>
+			in Vienna, Austria.
+		</p>
+		<h2>
+			Learn More About IGB
+		</h2>
+		<p>
+			For tutorials, documentation, and videos demonstrating IGB, visit the
+			<h:outputLink
+				value="http://wiki.transvar.org/confluence/display/igbman/Home"
+				title="IGB User's Guide">
+				<h:outputText value=" IGB Users' Guide. " />
+			</h:outputLink>
+			For sample RNA-Seq data files you can use to get familiar with IGB
+			functionality, visit
+			<h:outputLink value="http://www.igbquickload.org/quickload"
+				title="IGB QuickLoad Site">
+				<h:outputText value=" the IGB QuickLoad site." />
+			</h:outputLink>
+		</p>
+		<p>
+			To view the source code for IGB, visit the
+			<h:outputLink value="https://sourceforge.net/projects/genoviz/"
+				title="Genoviz Project">
+				<h:outputText value=" Genoviz project " />
+			</h:outputLink>
+			hosted at Sourceforge.net.
+		</p>
+		<h2>
+			Citing IGB
+		</h2>
+		<p>
+			If you use IGB in your research, please cite
+			<h:outputLink
+				value="http://bioinformatics.oxfordjournals.org/content/25/20/2730.abstract"
+				title="IGB Bioinformatics Applications Note">
+				<h:outputText value=" the IGB Bioinformatics Applications Note " />
+			</h:outputLink>
+			when you publish.
+		</p>
+		<div style="height: 50px"></div>
+	</ui:composition>
+</html>

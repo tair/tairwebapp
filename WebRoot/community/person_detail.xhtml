@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xml:lang="en">
+
+	<f:view>
+		<ui:composition template="/facelets/templates/detail.xhtml">
+			<ui:define name="title">TAIR - Community Detail</ui:define>
+			<ui:define name="css">
+				<link rel="stylesheet" type="text/css"
+					href="/css/page/person_detail.css" />
+				<link rel="stylesheet" type="text/css"
+					href="/css/template/detail.css" />
+			</ui:define>
+			<ui:define name="content">
+				<h:form>
+					<f:param name="id" value="#{f_person.id}"></f:param>
+					<div id="pageTitleDiv">
+						<span class="pageTitle">TAIR Community Detail</span>
+						<span class="pageTitleHelp">[<a
+							href="/help/helppages/commdet.jsp">Help</a>]</span>
+					</div>
+					<rich:messages globalOnly="true" layout="table" errorClass="pageErrorMessage" />
+					<a4j:outputPanel rendered="#{f_person.queried}">
+						<div id="personDetail">
+							<h:panelGrid columns="2" columnClasses="pdCol1,pdCol2"
+								rowClasses="pdRow1,pdRow2">
+								<h:outputLabel value="Name" title="the person's name" for="name" />
+								<h:outputText id="name" value="#{f_person.name}" />
+								<h:outputLabel value="Author Names"
+									title="author names for the person"
+									rendered="#{f_person.authorNames != null}" for="authorNames" />
+								<h:outputText id="authorNames"
+									rendered="#{f_person.authorNames != null}"
+									value="#{f_person.authorNames}" />
+								<h:outputLabel value="Other Names"
+									title="aliases and other names for the person"
+									rendered="#{f_person.otherNames != null}" for="otherNames" />
+								<h:outputText id="otherNames"
+									rendered="#{f_person.otherNames != null}"
+									value="#{f_person.otherNames}" />
+								<h:outputLabel value="TAIR Accession"
+									title="unique identifier for the TAIR community member; an integer"
+									for="accession" />
+								<h:outputText id="accession" value="#{f_person.tairAccession}" />
+								<h:outputLabel value="Organisms"
+									title="organisms of interest to the TAIR community member"
+									rendered="#{f_person.organisms != null}" for="organisms" />
+								<h:outputText id="organisms"
+									rendered="#{f_person.organisms != null}"
+									value="#{f_person.organisms}" />
+								<h:outputLabel value="Primary Job Title"
+									title="primary job title (e.g., Professor, Graduate Student)"
+									for="jobTitle" />
+								<h:outputText id="jobTitle" value="#{f_person.primaryJobTitle}" />
+								<h:outputLabel value="Research Interest"
+									title="a statement of the research interests of the TAIR community member"
+									rendered="#{f_person.researchInterest != null}"
+									for="researchInterest" />
+								<h:outputText id="researchInterest"
+									rendered="#{f_person.researchInterest != null}"
+									value="#{f_person.researchInterest}" />
+								<h:outputLabel value="Keywords"
+									title="keywords applying to the TAIR community member"
+									rendered="#{f_person.keywords != null}" for="keywords" />
+								<h:outputText id="keywords"
+									rendered="#{f_person.keywords != null}"
+									value="#{f_person.keywords}" />
+								<h:outputLabel value="Address"
+									title="the main street address to use to contact the person"
+									for="address" />
+								<h:dataTable id="address" value="#{f_person.fullAddress}"
+									var="line" rowClasses="addressRow"
+									columnClasses="addressColumn">
+									<h:column>
+										<h:outputText value="#{line}" />
+									</h:column>
+								</h:dataTable>
+								<h:outputLabel value="E-mail"
+									title="the email address for the person; clicking on this link will open up a mail client with this address"
+									for="email" />
+								<h:outputLink id="email" value="mailto:#{f_person.email}">
+									<h:outputText value="#{f_person.email}" />
+								</h:outputLink>
+								<h:outputLabel value="Websites"
+									title="web sites for the person, such as a personal home page; clicking on the link will take you to that site"
+									rendered="#{f_person.webSiteCount > 0}" for="websites" />
+								<h:dataTable id="websites" value="#{f_person.webSites}"
+									rendered="#{f_person.webSiteCount > 0}" var="site">
+									<h:column>
+										<h:outputLink value="#{site}">
+											<h:outputText value="#{site}" />
+										</h:outputLink>
+									</h:column>
+								</h:dataTable>
+								<h:outputLabel value="Office Phone"
+									title="area code and phone number for the person's office phone"
+									rendered="#{f_person.officePhone != null}" for="office" />
+								<h:outputText id="office"
+									rendered="#{f_person.officePhone != null}"
+									value="#{f_person.officePhone}" />
+								<h:outputLabel value="Lab Phone"
+									title="area code and phone number for the person's lab phone"
+									rendered="#{f_person.labPhone != null}" for="lab" />
+								<h:outputText id="lab" rendered="#{f_person.labPhone != null}"
+									value="#{f_person.labPhone}" />
+								<h:outputLabel value="Mobile Phone"
+									title="area code and phone number for the person's mobile phone"
+									rendered="#{f_person.mobilePhone != null}" for="mobile" />
+								<h:outputText id="mobile"
+									rendered="#{f_person.mobilePhone != null}"
+									value="#{f_person.mobilePhone}" />
+								<h:outputLabel value="Fax"
+									title="area code and number for sending facsimiles (faxes) to the person"
+									rendered="#{f_person.fax != null}" for="fax" />
+								<h:outputText id="fax" rendered="#{f_person.fax != null}"
+									value="#{f_person.fax}" />
+								<h:outputLabel value="Affiliations"
+									title="the affiliations of this person to an organization; clicking on the name will take you to the affiliated organization"
+									for="affiliations" />
+								<h:panelGroup>
+									<h:dataTable id="affiliations" value="#{f_person.affiliations}"
+										var="affiliation">
+										<h:column>
+											<f:facet name="header">
+												<h:outputText value="Organization" />
+											</f:facet>
+											<h:outputLink
+												value="/servlets/Community?type=organization&amp;action=view&amp;communityID=#{affiliation.organization.communityId}">
+												<h:outputText value="#{affiliation.piIndicator}#{affiliation.organization.name}" />
+											</h:outputLink>
+										</h:column>
+										<h:column>
+											<f:facet name="header">
+												<h:outputText value="Job Title" />
+											</f:facet>
+											<h:outputText value="#{affiliation.jobTitle}" />
+										</h:column>
+									</h:dataTable>
+									<h:outputText
+										value="* denotes Primary Investigator for this organization" />
+								</h:panelGroup>
+								<h:outputLabel value="Publications"
+									title="publications associated with the person (i.e., as author or editor)"
+									rendered="#{f_person.publicationCount > 0}" for="publications" />
+								<h:dataTable id="publications" value="#{f_person.publications}"
+									rendered="#{f_person.publicationCount > 0}" var="publication">
+									<h:column id="title">
+										<f:facet name="header">
+											<h:outputText value="Title" />
+										</f:facet>
+										<h:outputLink
+											value="/servlets/TairObject?type=publication&amp;id=#{publication.referenceId}">
+											<h:outputText value="#{publication.title}" />
+										</h:outputLink>
+									</h:column>
+									<h:column id="source">
+										<f:facet name="header">
+											<h:outputText value="Source" />
+										</f:facet>
+										<h:outputText value="#{publication.source}" />
+									</h:column>
+									<h:column id="date">
+										<f:facet name="header">
+											<h:outputText value="Date" />
+										</f:facet>
+										<h:outputText value="#{publication.publicationYear}" />
+									</h:column>
+								</h:dataTable>
+								<h:outputLabel value="Record last updated"
+									title="the date on which the person's information was last changed"
+									for="lastUpdated" />
+								<h:outputText id="lastUpdated" value="#{f_person.lastUpdated}">
+									<f:convertDateTime pattern="MM/dd/yyyy" />
+								</h:outputText>
+								<h:outputLabel value="Community Id"
+									title="the TAIR community id" rendered="#{login.tairCurator}"
+									for="communityId" />
+								<h:outputText id="communityId" value="#{f_person.communityId}"
+									rendered="#{login.tairCurator}">
+								</h:outputText>
+								<h:outputLabel value="Person Id" title="the TAIR person id"
+									rendered="#{login.tairCurator}" for="personId" />
+								<h:outputText id="personId" value="#{f_person.personId}"
+									rendered="#{login.tairCurator}">
+								</h:outputText>
+							</h:panelGrid>
+							<div class="detailText">
+								<p>
+									<h:outputText
+										value="If you find this information to be inaccurate, or if you wish to add other information, please "
+										styleClass="detailText" />
+									<h:outputLink
+										value="/servlets/Community?action=edit&amp;type=person&amp;communityID=#{f_person.id}"
+										styleClass="importantLink">UPDATE YOUR RECORD HERE.</h:outputLink>
+								</p>
+								<p>
+									<h:outputText
+										value="If you've forgotten your username or password "
+										styleClass="detailText" />
+									<h:outputLink
+										value="/servlets/Community?action=remind&amp;communityID=#{f_person.id}"
+										styleClass="importantLink">REQUEST YOUR LOGIN INFORMATION HERE.</h:outputLink>
+								</p>
+							</div>
+						</div>
+					</a4j:outputPanel>
+				</h:form>
+			</ui:define>
+		</ui:composition>
+	</f:view>
+</html>

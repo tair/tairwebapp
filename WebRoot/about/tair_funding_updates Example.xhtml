@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich" xml:lang="en">
+
+	<ui:composition>
+		<span class="mainheader">TAIR Funding Updates and Discussion
+			Forum</span>
+		<br />
+		<a href="#comment_anchor">Jump to Comments</a>
+		<h2>
+			TAIR launches new corporate sponsorship program (7/23/2010)
+		</h2>
+		<h:form>
+			<a4j:outputPanel id="sponsorshipPanel">
+				<h:panelGroup id="sponsorshipPanel1"
+					rendered="#{!funding.sponsorshipPanel}">
+					<p>
+						Dear TAIR user community,
+					</p>
+					<p>
+						To help us through the current funding crisis we recently
+						established a new TAIR corporate sponsorship program. We feel that
+						this approach is preferable to implementing a subscription
+						requirement for the private sector because it will allow us to
+						keep TAIR open and free of login requirements, facilitating the
+						free exploration of data by all scientists. More information can
+						be found on our
+						<a href="/doc/about/tair_sponsorship/412">sponsorship page.</a>
+						<!-- This code implements the "More..." functionality but isn't used in this one.
+						<br />
+						<a4j:commandLink action="#{funding.displaySponsorshipPanel}"
+							reRender="sponsorshipPanel">
+							<h:outputText value="More..." />
+						</a4j:commandLink>
+						 -->
+					</p>
+				    <hr	style="border: 0; height: 2px; color: #D6D6D6; background-color: #D6D6D6;" />
+				    </h:panelGroup>
+				<!-- This component implements the extended text for the above text but isn't used in this one.
+				<h:panelGroup id="sponsorshipPanel2"
+					rendered="#{funding.sponsorshipPanel}">
+					<p>
+						text text text text text text text text text text text text text
+						text text text text text text text text text text text text text
+						text text text text text text text text text text text text text
+						text text text text text text text text text text text text text
+						text text text text text text text text text text text text text
+						text text text text text text text text text text text text text
+						text text text text text text text text text text text text text
+						text text text text text
+					</p>
+					<p>
+						text text text text text text text text text text text text text
+						text text text text text text text text text text text text text
+						text text text text text text text text text text text text text
+						text text text text text text text text text text text text text
+						text text text text text text text text text text text text text
+						text text text text text text text text text text text text text
+						text text text text text text text text text text text text text
+						text text text text text
+					</p>
+					<p>
+
+						text text text text text text text text text text text text text
+						text text text text text text text text text text text text text
+						text text text text text text text text text text text text text
+						text text text text text text text text text text text text text
+						text text text text text text text text text text text text text
+						text text text text text text text text text text text text text
+						text text text text text text text text text text text text text
+						text text text text text
+					</p>
+				</h:panelGroup>
+				 -->
+			</a4j:outputPanel>
+		</h:form>
+	</ui:composition>
+</html>

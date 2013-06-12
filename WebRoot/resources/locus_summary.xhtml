@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core" xml:lang="en" lang="en">
+<ui:composition>
+    <h:head>
+        <title>#{locusSummary.name} Locus Summary</title>
+        <meta http-equiv="keywords" content="TAIR,locus,gene" />
+        <meta http-equiv="description"
+            content="A summary of the TAIR gene #{locusSummary.name}" />
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+        <link rel="stylesheet" type="text/css"
+            href="/css/page/locus_summary.css" />
+    </h:head>
+    <h:body>
+        <h:messages globalOnly="true" layout="list" errorClass="error" />
+        <h:panelGrid columns="3" columnClasses="graphicLabel,large,small">
+            <h:outputLink target="_blank" value="/">
+                <h:graphicImage id="tairlogo" value="/images/tairlogo.png"
+                    width="37" height="27" alt="TAIR Model Organism Database"
+                    styleClass="graphicLabel" />
+            </h:outputLink>
+            <h:outputLink target="_blank"
+                value="/servlets/TairObject?type=locus&amp;name=#{locusSummary.name}">
+                <h:outputText value="#{locusSummary.name}" />
+            </h:outputLink>
+            <h:panelGroup>
+                <h:outputText value="#{locusSummary.description}" />
+                <h:outputText value="This locus is obsolete."
+                    rendered="#{locusSummary.obsolete}" styleClass="error">
+                    <br />
+                </h:outputText>
+            </h:panelGroup>
+        </h:panelGrid>
+        <h:panelGrid columns="1" rendered="#{!locusSummary.obsolete}">
+            <h:outputLink target="_blank"
+                value="/cgi-bin/gbrowse/arabidopsis/?name=#{locusSummary.name}">
+                <div id="locus_map_image_div">
+                    <h:graphicImage id="locus_map_image"
+                        alt="map image detail for locus #{locusSummary.name}"
+                        width="650"
+                        value="/cgi-bin/gb2/gbrowse_img/arabidopsis?name=Chr#{locusSummary.chromosome}:#{locusSummary.start}..#{locusSummary.end};type=#{locusSummary.geneType};width=650" />
+                </div>
+            </h:outputLink>
+            <h:panelGrid columns="2" columnClasses="label,small"
+                rendered="#{!locusSummary.obsolete}">
+                <h:outputText value="Other names" />
+                <h:outputText value="#{locusSummary.otherNames}" />
+                <h:outputLink target="_blank"
+                    value="/servlets/Search?action=search&amp;type=annotation&amp;tair_object_id=#{locusSummary.tairObjectId}&amp;locus_name=#{locusSummary.name}">
+                    <h:outputText value="Annotations" />
+                </h:outputLink>
+                <h:dataTable value="#{locusSummary.annotationGroups}"
+                    columnClasses="small,small,small" var="group">
+                    <h:column>
+                        <h:outputText value="#{group.category}" />
+                    </h:column>
+                    <h:column>
+                        <h:outputText value="#{group.relationshipType}" />
+                    </h:column>
+                    <h:column>
+                        <h:outputText value="#{group.keywords}" />
+                    </h:column>
+                </h:dataTable>
+            </h:panelGrid>
+        </h:panelGrid>
+    </h:body>
+</ui:composition>
+</html>

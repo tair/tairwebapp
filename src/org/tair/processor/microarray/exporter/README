@@ -1,0 +1,15 @@
+This package was created by Jessie Zhang at Carnegie for work on exporting microarray data in the MAGE-ML format. Work was not completed, but source files were added to the repository for archive.  They have been removed as they are no longer active and conflicting with building the TAIR app. If for some reason you want to resurrect the source files they were/are:
+
+ArrayDesignHandler.java
+ArrayHandler.java
+AuditAndSecurityHandler.java
+BioAssayDataHandler.java
+BioAssayHandler.java
+BioMaterialHandler.java
+ConvertSpecialCharacter.java
+CreateParser.java
+ExperimentHandler.java
+MAGEDOMExporter.java
+MAGEMLExporter.java
+ProtocolHandler.java
+QuantitationTypeHandler.java

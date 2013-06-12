@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core" xml:lang="en"
+    xmlns:a4j="http://richfaces.org/a4j" xmlns:rich="http://richfaces.org/rich">
+<ui:composition>
+    <h:form>
+        <rich:panelMenu>
+            <rich:panelMenuGroup name="genome_snapshot_group"
+                label="Genome Snapshot" expanded="true"
+                iconExpanded="triangleDown" iconCollapsed="triangle">
+                <rich:panelMenuItem name="genome_snapshot"
+                    label="Genome Snapshot" alt="Genome Snapshot" icon="none"
+                    onclick="document.location.href='/portals/genAnnotation/genome_snapshot.jsp'" />
+            </rich:panelMenuGroup>
+            <rich:panelMenuGroup name="gene_structural_annotation_group"
+                label="Gene Structural Annotation" expanded="true"
+                iconExpanded="triangleDown" iconCollapsed="triangle">
+                <rich:panelMenuItem name="gene_structural_annotation"
+                    label="Gene Structural Annotation"
+                    alt="Gene Structural Annotation" icon="none"
+                    onclick="document.location.href='/portals/genAnnotation/gene_structural_annotation/index.jsp'" />
+                <rich:panelMenuItem name="genome_assembly"
+                    label="Genome Assembly" alt="Genome Assembly" icon="none"
+                    onclick="document.location.href='/portals/genAnnotation/gene_structural_annotation/agicomplete.jsp'" />
+                <rich:panelMenuItem name="genome_annotation"
+                    label="Genome Annotation" alt="Genome Annotation"
+                    icon="none"
+                    onclick="document.location.href='/portals/genAnnotation/gene_structural_annotation/genome_annotation.jsp'" />
+                <rich:panelMenuItem name="genome_release"
+                    label="Genome Publications and Documents"
+                    alt="Genome Publications and Documents" icon="none"
+                    onclick="document.location.href='/portals/genAnnotation/gene_structural_annotation/genome_release.jsp'" />
+                <rich:panelMenuItem name="structural_annotation_submission"
+                    label="Structural Annotation to TAIR"
+                    alt="Structural Annotation to TAIR" icon="none"
+                    onclick="document.location.href='//gene_annotation.submission.jsp'" />
+                <rich:panelMenuItem name="11413"
+                    label="Reference Genome Sequence"
+                    alt="Reference Genome Sequence" icon="none"
+                    onclick="document.location.href='/doc/portals/genAnnotation/gene_structural_annotation/ref_genome_sequence/11413'" />
+            </rich:panelMenuGroup>
+            <rich:panelMenuGroup name="gene_functional_annotation_group"
+                label="Gene Functional Annotation" expanded="true"
+                iconExpanded="triangleDown" iconCollapsed="triangle">
+                <rich:panelMenuItem name="gene_functional_annotation"
+                    label="Gene Functional Annotation"
+                    alt="Gene Functional Annotation" icon="none"
+                    onclick="document.location.href='/portals/genAnnotation/functional_annotation/index.jsp'" />
+                <rich:panelMenuItem name="ontologies" label="Ontologies"
+                    alt="Ontologies" icon="none"
+                    onclick="document.location.href='/portals/genAnnotation/functional_annotation/ontologies.jsp'" />
+                <rich:panelMenuItem name="gene_search" label="TAIR Gene Search"
+                    alt="TAIR Gene Search" icon="none"
+                    onclick="document.location.href='/servlets/Search?action=new_search&amp;type=gene'" />
+                <rich:panelMenuItem name="keyword_search"
+                    label="Search/Browse TAIR Keywords"
+                    alt="Search/Browse TAIR Keywords" icon="none"
+                    onclick="document.location.href='/servlets/Search?action=new_search&amp;type=keyword'" />
+                <rich:panelMenuItem name="go_download"
+                    label="TAIR GO Annotation Download"
+                    alt="TAIR GO Annotation Download" icon="none"
+                    onclick="document.location.href='/tools/bulk/go/'" />
+                <rich:panelMenuItem name="go_database"
+                    label="Search/Browse Gene Ontology Database"
+                    alt="Search/Browse Gene Ontology Database" icon="none"
+                    onclick="document.location.href='http://www.geneontology.org';javascript:urchinTracker('/outgoing/geneontology_org');" />
+                <rich:panelMenuItem name="po_database"
+                    label="Search/Browse Plant Ontology Database"
+                    alt="Search/Browse Plant Ontology Database" icon="none"
+                    onclick="document.location.href='http://plantontology.org';javascript:urchinTracker('/outgoing/plantontology_org');" />
+                <rich:panelMenuItem name="functional_annotation_submission"
+                    label="Functional Annotation to TAIR"
+                    alt="Functional Annotation to TAIR" icon="none"
+                    onclick="document.location.href='/doc//functional_annotation/123'" />
+                <rich:panelMenuItem name="ftp_downloads" label="FTP Downloads"
+                    alt="FTP Downloads" icon="none"
+                    onclick="document.location.href='ftp://ftp.arabidopsis.org/home/tair/Ontologies/';javascript:urchinTracker('/outgoing/ftp/home/tair/Ontologies/');" />
+            </rich:panelMenuGroup>
+            <rich:panelMenuGroup name="genome_annotation_tools_group"
+                label="Genome Annotation Tools" expanded="true"
+                iconExpanded="triangleDown" iconCollapsed="triangle">
+                <rich:panelMenuItem name="genome_annotation_tools"
+                    label="Genome Annotation Tools"
+                    alt="Genome Annotation Tools" icon="none"
+                    onclick="document.location.href='/portals/genAnnotation/genome_annotation_tools/index.jsp'" />
+                <rich:panelMenuItem name="gene_structural_annotation_tools"
+                    label="Gene Structural Annotation Tools"
+                    alt="Gene Structural Annotation Tools" icon="none"
+                    onclick="document.location.href='/portals/genAnnotation/genome_annotation_tools/gene_id.jsp'" />
+                <rich:panelMenuItem name="software_downloads"
+                    label="Software Downloads" alt="Software Downloads"
+                    icon="none"
+                    onclick="document.location.href='/portals/genAnnotation/genome_annotation_tools/bioinformatics.jsp'" />
+                <rich:panelMenuItem name="sequence_alignment_tools"
+                    label="Multiple Sequence Alignment Tools"
+                    alt="Multiple Sequence Alignment Tools" icon="none"
+                    onclick="document.location.href='/portals/genAnnotation/genome_annotation_tools/seq_align.jsp'" />
+                <rich:panelMenuItem name="sequence_analysis_resources"
+                    label="Comprehensive Sequence Analysis Resources"
+                    alt="Comprehensive Sequence Analysis Resources" icon="none"
+                    onclick="document.location.href='/portals/genAnnotation/genome_annotation_tools/seq_resources.jsp'" />
+                <rich:panelMenuItem name="comparative_resources"
+                    label="Comparative Resources" alt="Comparative Resources"
+                    icon="none"
+                    onclick="document.location.href='/portals/genAnnotation/genome_annotation_tools/comparative_tools.jsp'" />
+                <rich:panelMenuItem name="cis_element"
+                    label="Plant Promoter and Regulatory Element Resources"
+                    alt="Plant Promoter and Regulatory Element Resources"
+                    icon="none"
+                    onclick="document.location.href='/portals/genAnnotation/genome_annotation_tools/cis_element.jsp'" />
+                <rich:panelMenuItem name="proteome_resources"
+                    label="Proteome Resources" alt="Proteome Resources"
+                    icon="none"
+                    onclick="document.location.href='/portals/proteome/index.jsp'" />
+                <rich:panelMenuItem name="database_searches"
+                    label="Database Searches" alt="Database Searches"
+                    icon="none"
+                    onclick="document.location.href='/portals/genAnnotation/genome_annotation_tools/dbsearches.jsp'" />
+            </rich:panelMenuGroup>
+            <rich:panelMenuGroup name="other_genomes_group"
+                label="Other Genomes" expanded="true"
+                iconExpanded="triangleDown" iconCollapsed="triangle">
+                <rich:panelMenuItem name="other_genomes" label="Other Genomes"
+                    alt="Other Genomes" icon="none"
+                    onclick="document.location.href='/portals/genAnnotation/other_genomes/index.jsp'" />
+                <rich:panelMenuItem name="plant_mods" label="Plant MODs"
+                    alt="Plant MODs" icon="none"
+                    onclick="document.location.href='/portals/genAnnotation/other_genomes/index.jsp#plants'" />
+                <rich:panelMenuItem name="non_plant_mods" label="Non-plant MODs"
+                    alt="Non-plant MODs" icon="none"
+                    onclick="document.location.href='/portals/genAnnotation/other_genomes/index.jsp#non_plant'" />
+                <rich:panelMenuItem name="sequencing_projects"
+                    label="Plant Genome Sequencing Projects"
+                    alt="Plant Genome Sequencing Projects" icon="none"
+                    onclick="document.location.href='/portals/genAnnotation/other_genomes/index.jsp#sequence'" />
+            </rich:panelMenuGroup>
+        </rich:panelMenu>
+    </h:form>
+</ui:composition>
+</html>

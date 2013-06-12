@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:a4j="http://richfaces.org/a4j"
+    xmlns:rich="http://richfaces.org/rich"
+    xml:lang="en">
+
+    <f:view>
+        <ui:composition template="/facelets/templates/detail.xhtml">
+            <ui:define name="title">TAIR - Locus Detail</ui:define>
+            <ui:define name="css">
+                <link
+                    rel="stylesheet"
+                    type="text/css"
+                    href="/css/page/locus_detail.css" />
+                <link
+                    rel="stylesheet"
+                    type="text/css"
+                    href="/css/template/detail.css" />
+            </ui:define>
+            <ui:define name="content">
+                <h:form>
+                    <f:param
+                        name="id"
+                        value="#{locus.id}"></f:param>
+                    <rich:tabPanel selectedTab="LocusDetailGene">
+                        <rich:tab
+                            name="LocusDetailGene"
+                            label="Gene"
+                            styleClass="detailTab">
+                            <h:panelGrid
+                                width="100%"
+                                columns="3"
+                                styleClass="detailHeader">
+                                <h:outputText
+                                    value="AT1G09570"
+                                    styleClass="detailHeaderObject" />
+                                <h:outputText
+                                    value="PHYA (PHYTOCHROME A)"
+                                    styleClass="detailHeaderDesc" />
+                                <h:outputText value="#{locus.id}" />
+                            </h:panelGrid>
+                            <h:panelGrid
+                                id="headerButtons"
+                                columns="3"
+                                width="100%">
+                                <h:panelGrid columns="4">
+                                    <rich:comboBox
+                                        value="#{locus.customizedView}"
+                                        defaultLabel="Customize my view...">
+                                        <f:selectItems value="#{locus.customizedViewSuggestions}" />
+                                    </rich:comboBox>
+                                    <h:outputLink styleClass="detailCharIcon">&nbsp;&nbsp;+&nbsp;</h:outputLink>
+                                    <h:outputLink styleClass="detailCharIcon">&nbsp;-&nbsp;</h:outputLink>
+                                    <h:outputLink styleClass="detailCharIcon">&nbsp;?&nbsp;&nbsp;</h:outputLink>
+                                </h:panelGrid>
+                                <rich:comboBox
+                                    value="#{locus.jumpTarget}"
+                                    defaultLabel="Jump to...">
+                                    <f:selectItems value="#{locus.jump}" />
+                                </rich:comboBox>
+                                <h:panelGroup>
+                                    <div id="detailTabPanelOpenCloseButtons">
+                                        <h:commandButton
+                                            action="#{locus.openAll}"
+                                            value="Open All">
+                                        </h:commandButton>
+                                        <h:commandButton
+                                            action="#{locus.closeAll}"
+                                            value="Close All">
+                                        </h:commandButton>
+                                    </div>
+                                </h:panelGroup>
+                            </h:panelGrid>
+                            <div
+                                id="gene_tab"
+                                class="detailTabPanel">
+                                <rich:panelMenu selectedChild="GeneralInformation">
+                                    <rich:panelMenuGroup
+                                        name="GeneralInformation"
+                                        label="General Information"
+                                        alt="General Information"
+                                        expanded="#{locus.expanded.GeneralInformation}"
+                                        iconExpanded="triangleDown"
+                                        iconCollapsed="triangle">
+                                        <rich:panelMenuItem>General Information here</rich:panelMenuItem>
+                                    </rich:panelMenuGroup>
+                                    <rich:panelMenuGroup
+                                        name="SpliceForms"
+                                        label="Splice Forms"
+                                        alt="Splice Forms"
+                                        expanded="#{locus.expanded.SpliceForms}"
+                                        iconExpanded="triangleDown"
+                                        iconCollapsed="triangle">
+                                        <rich:panelMenuItem icon="none">Splice form data here</rich:panelMenuItem>
+                                        <rich:panelMenuGroup
+                                            name="SpliceFormDescriptions"
+                                            label="Descriptions -- Splice Form Specific"
+                                            alt="Descriptions -- Splice Form Specific"
+                                            expanded="#{locus.expanded.SpliceFormDescriptions}"
+                                            iconExpanded="triangleDown"
+                                            iconCollapsed="triangle">
+                                            <rich:panelMenuItem icon="none">Description data here.</rich:panelMenuItem>
+                                        </rich:panelMenuGroup>
+                                    </rich:panelMenuGroup>
+                                    <rich:panelMenuGroup
+                                        name="MapCoordinates"
+                                        label="Map Coordinates"
+                                        alt="Map Coordinates"
+                                        expanded="#{locus.expanded.MapCoordinates}"
+                                        iconExpanded="triangleDown"
+                                        iconCollapsed="triangle">
+                                        <h:panelGrid
+                                            columns="5"
+                                            width="100%">
+                                            <h:outputText value="Physical map coordinates (#{locus.counts.mapCoordinates})" />
+                                            <h:outputLink
+                                                value="/cgi-bin/gbrowse/arabidopsis?name=AT1G09570"
+                                                title="Genome Browser for locus">
+                                            GBrowse
+                                            </h:outputLink>
+                                            <h:outputLink
+                                                value="http://tairvm09.tacc.utexas.edu/servlets/sv?action=accession&amp;type=gene&amp;id=2012299&amp;chr=1"
+                                                title="Sequence Viewer for locus">
+                                            Seqviewer
+                                            </h:outputLink>
+                                            <h:outputLink
+                                                value="/servlets/mapper?value=AT1G09570&amp;action=search"
+                                                title="Map Viewer for locus">
+                                            Mapviewer
+                                            </h:outputLink>
+                                            <h:outputText value="Exon/intron coordinates" />
+                                        </h:panelGrid>
+                                        <rich:panelMenuItem>Map coordinate data here</rich:panelMenuItem>
+                                        <rich:panelMenuItem>Map coordinate data here</rich:panelMenuItem>
+                                        <rich:panelMenuItem>Map coordinate data here</rich:panelMenuItem>
+                                        <rich:panelMenuItem>Map coordinate data here</rich:panelMenuItem>
+                                        <rich:panelMenuItem>Map coordinate data here</rich:panelMenuItem>
+                                        <rich:panelMenuItem>Map coordinate data here</rich:panelMenuItem>
+                                        <rich:panelMenuItem>Map coordinate data here</rich:panelMenuItem>
+                                        <rich:panelMenuItem>Map coordinate data here</rich:panelMenuItem>
+                                        <rich:panelMenuItem>Map coordinate data here</rich:panelMenuItem>
+                                        <rich:panelMenuItem>Map coordinate data here</rich:panelMenuItem>
+                                        <rich:panelMenuItem>Map coordinate data here</rich:panelMenuItem>
+                                        <rich:panelMenuItem>Map coordinate data here</rich:panelMenuItem>
+                                        <rich:panelMenuItem>Map coordinate data here</rich:panelMenuItem>
+                                        <rich:panelMenuItem>Map coordinate data here</rich:panelMenuItem>
+                                        <rich:panelMenuItem>Map coordinate data here</rich:panelMenuItem>
+                                        <rich:panelMenuItem>Map coordinate data here</rich:panelMenuItem>
+                                        <rich:panelMenuItem>Map coordinate data here</rich:panelMenuItem>
+                                        <rich:panelMenuItem>Map coordinate data here</rich:panelMenuItem>
+                                    </rich:panelMenuGroup>
+                                    <rich:panelMenuGroup
+                                        name="BiologicalRole"
+                                        label="Biological Role"
+                                        alt="Biological Role"
+                                        expanded="#{locus.expanded.BiologicalRole}"
+                                        iconExpanded="triangleDown"
+                                        iconCollapsed="triangle">
+                                        <h:panelGrid
+                                            columns="4"
+                                            width="100%">
+                                            <h:outputText value="Functional annotations (#{locus.counts.functionalAnnotations})" />
+                                            <h:outputText value="Sub-cellular location (#{locus.counts.subcellularLocation})" />
+                                            <h:outputText value="Interactions" />
+                                            <h:outputText value="Metabolic pathways" />
+                                        </h:panelGrid>
+                                        <rich:panelMenuItem>Biological role data here</rich:panelMenuItem>
+                                        <rich:panelMenuItem>Biological role data here</rich:panelMenuItem>
+                                        <rich:panelMenuItem>Biological role data here</rich:panelMenuItem>
+                                        <rich:panelMenuItem>Biological role data here</rich:panelMenuItem>
+                                        <rich:panelMenuItem>Biological role data here</rich:panelMenuItem>
+                                        <rich:panelMenuItem>Biological role data here</rich:panelMenuItem>
+                                        <rich:panelMenuItem>Biological role data here</rich:panelMenuItem>
+                                        <rich:panelMenuItem>Biological role data here</rich:panelMenuItem>
+                                        <rich:panelMenuItem>Biological role data here</rich:panelMenuItem>
+                                        <rich:panelMenuItem>Biological role data here</rich:panelMenuItem>
+                                        <rich:panelMenuItem>Biological role data here</rich:panelMenuItem>
+                                        <rich:panelMenuItem>Biological role data here</rich:panelMenuItem>
+                                        <rich:panelMenuItem>Biological role data here</rich:panelMenuItem>
+                                        <rich:panelMenuItem>Biological role data here</rich:panelMenuItem>
+                                        <rich:panelMenuItem>Biological role data here</rich:panelMenuItem>
+                                        <rich:panelMenuItem>Biological role data here</rich:panelMenuItem>
+                                        <rich:panelMenuItem>Biological role data here</rich:panelMenuItem>
+                                        <rich:panelMenuItem>Biological role data here</rich:panelMenuItem>
+                                        <rich:panelMenuItem>Biological role data here</rich:panelMenuItem>
+                                        <rich:panelMenuItem>Biological role data here</rich:panelMenuItem>
+                                    </rich:panelMenuGroup>
+                                    <rich:panelMenuGroup
+                                        name="ExpressionData"
+                                        label="Expression Data"
+                                        alt="Expression Data"
+                                        expanded="#{locus.expanded.ExpressionData}"
+                                        iconExpanded="triangleDown"
+                                        iconCollapsed="triangle">
+                                        <h:panelGrid
+                                            columns="2"
+                                            width="100%">
+                                            <h:outputText value="Expression annotations (#{locus.counts.expressionAnnotations})" />
+                                            <h:outputText value="Links" />
+                                        </h:panelGrid>
+                                    </rich:panelMenuGroup>
+                                    <rich:panelMenuGroup
+                                        name="Sequences"
+                                        label="cDNAs, ESTs, and BACs"
+                                        alt="cDNAs, ESTs, and BACs"
+                                        expanded="#{locus.expanded.Sequences}"
+                                        iconExpanded="triangleDown"
+                                        iconCollapsed="triangle">
+                                        <h:panelGrid
+                                            columns="5"
+                                            width="100%">
+                                            <h:outputText value="Link to GBrowse graphic" />
+                                            <h:outputText value="List of cDNAs (#{locus.counts.cDNAs})" />
+                                            <h:outputText value="List of ESTs (#{locus.counts.ESTs})" />
+                                            <h:outputText value="List of BACs (#{locus.counts.BACs})" />
+                                            <h:outputText value="Order clones from ABRC" />
+                                        </h:panelGrid>
+                                    </rich:panelMenuGroup>
+                                    <rich:panelMenuGroup
+                                        name="Proteins"
+                                        label="Proteins"
+                                        alt="Proteins"
+                                        expanded="#{locus.expanded.Proteins}"
+                                        iconExpanded="triangleDown"
+                                        iconCollapsed="triangle">
+                                        <h:panelGrid
+                                            columns="3"
+                                            width="100%">
+                                            <h:outputText value="General information" />
+                                            <h:outputText value="Domains (#{locus.counts.domains})" />
+                                            <h:outputText value="Modifications" />
+                                        </h:panelGrid>
+                                    </rich:panelMenuGroup>
+                                    <rich:panelMenuGroup
+                                        name="Stocks"
+                                        label="Phenotypes, Polymorphisms, and Seed Stocks"
+                                        alt="Phenotypes, Polymorphisms, and Seed Stocks"
+                                        expanded="#{locus.expanded.Stocks}"
+                                        iconExpanded="triangleDown"
+                                        iconCollapsed="triangle">
+                                        <h:panelGrid
+                                            columns="4"
+                                            width="100%">
+                                            <h:outputText value="GBrowse graphic" />
+                                            <h:outputText
+                                                value="Polymorphisms with phenotypes (#{locus.counts.polymorphismsWithPhenotypes})" />
+                                            <h:outputText value="Other polymorphisms (#{locus.counts.otherPolymorphisms})" />
+                                            <h:outputText value="Order seeds from ABRC" />
+                                        </h:panelGrid>
+                                    </rich:panelMenuGroup>
+                                    <rich:panelMenuGroup
+                                        name="GeneFamilies"
+                                        label="Gene Families and Orthologs"
+                                        alt="Gene Families and Orthologs"
+                                        expanded="#{locus.expanded.GeneFamilies}"
+                                        iconExpanded="triangleDown"
+                                        iconCollapsed="triangle">
+                                        <h:panelGrid
+                                            columns="2"
+                                            width="100%">
+                                            <h:outputText value="Arabidopsis gene families" />
+                                            <h:outputText value="Cross-species comparisons" />
+                                        </h:panelGrid>
+                                    </rich:panelMenuGroup>
+                                    <rich:panelMenuGroup
+                                        name="Publications"
+                                        label="Publications"
+                                        alt="Publications"
+                                        expanded="#{locus.expanded.Publications}"
+                                        iconExpanded="triangleDown"
+                                        iconCollapsed="triangle">
+                                        <h:panelGrid
+                                            columns="3"
+                                            width="100%">
+                                            <h:outputText value="Journal articles (#{locus.counts.articles})" />
+                                            <h:outputText value="Conference abstracts (#{locus.counts.abstracts})" />
+                                            <h:outputText value="Useful links" />
+                                        </h:panelGrid>
+                                    </rich:panelMenuGroup>
+                                </rich:panelMenu>
+                            </div>
+                        </rich:tab>
+                        <rich:tab
+                            name="LocusDetailSequence"
+                            label="Sequence">sequence data</rich:tab>
+                    </rich:tabPanel>
+                </h:form>
+            </ui:define>
+        </ui:composition>
+    </f:view>
+</html>

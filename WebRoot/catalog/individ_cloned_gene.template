@@ -1,0 +1,231 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+  Copyright (c) 2003 NCGR.  All rights 
+  reserved.
+-->
+
+<%@ page 
+errorPage="/jsp/common/gen_error.jsp" 
+import="java.util.*, org.tair.utilities.*, org.tair.abrc.catalog.*, org.tair.querytools.*, org.tair.search.*, org.tair.community.*, org.tair.tfc.*"
+%>
+
+<% 
+//SearchResultsCollection pageObj = (SearchResultsCollection) request.getAttribute( "pageObj" );
+CatalogStock[] stocks = (CatalogStock[]) pageObj.getResults();
+
+int resultSize = pageObj.getResultSize();
+int floor = pageObj.getFloor();
+int ceiling = pageObj.getCeiling();
+String scrollLinks = pageObj.getScrollLinks();
+%>
+
+<html>
+        <head>
+          <title>Individually Cloned Genes and Constructs</title>
+          <link rel="stylesheet" type="text/css" href="/css/main.css">
+          <link rel="stylesheet" type="text/css" href="/css/search.css">
+        </head>
+
+        <body bgcolor="#F5F9FF">
+
+          <center>
+            <img src="/images/abrc_med.gif">
+            <br>
+
+            <h2>Individually Cloned Genes and Constructs</h2>
+
+             Sorted by clone name
+             <br><br>
+
+             Displaying <%= floor %> - <%= ceiling %> of <%= resultSize %> in category
+             <br>
+             <br>
+         </center>
+
+         <form action="/servlets/Order/current" method="POST">
+             <input type="hidden" name="state" value="addStock">
+            
+          <table center cellpadding="1" align="center">
+
+
+          <tr>
+             <td class="sm">&nbsp;</td>
+             <td class="sm" colspan="7">
+                <table width="100%">
+                   <tr>
+                       <td class="sm" nowrap>
+                          <input type="submit" value="Order Stocks">
+                           &nbsp;&nbsp;
+                          <input type="reset" value="Reset">
+                      </td>
+                      <td class="sm">
+                         If you have checked any stocks to order, please click on "Order Stocks"
+                         before leaving this page.  You can return to this page by using the 
+                        "Back" button on your browser.
+                      </td>
+                    </tr>
+                 </table>
+              </td>
+            </tr>
+
+            <!-- write hyperlinks to scroll through catalog pages -->
+            <% if ( scrollLinks != null ) { %>
+            <tr>
+               <td class="sm" colspan="8" align="center"><%= scrollLinks %></td>
+            </tr>
+
+            <tr>
+               <td class="sm" colspan="8">&nbsp;</td>
+            </tr>
+
+            <% } %>
+
+            <tr valign="bottom">
+              <th class="sm">Order</th>
+              <th class="sm">Stock #</th>
+              <th class="sm">Clone name</th>
+              <th class="sm">Aliases</th>
+              <th class="sm">Insert type</th>
+              <th class="sm">GenBank<br>Accession</th>
+              <th class="sm">Donor(s)</th>
+              <th class="sm">Description</th>
+            </tr>
+
+      <% for ( int i = 0; i < stocks.length; i++ ) { %>
+
+           <tr valign="top">
+              <!-- all stocks should be available so show checkbox no matter what -->
+              <td class="sm" align="center"><input type="checkbox" name="stock_number" value="<%= stocks[ i ].get_name() %>"></td>
+
+              <td class="sm" align="center" nowrap>
+                 <a href="/servlets/TairObject?type=stock&id=<%= stocks[ i ].get_stock_id() %>" target=_blank><%= stocks[ i ].get_name() %></a>
+              </td>
+
+
+             <% Clone clone = stocks[ i ].getClone(); // should never be null %>
+              <td class="sm" align="center"><a href="/servlets/TairObject?type=clone&id=<%= clone.get_clone_id() %>" target=_blank><%= clone.get_original_name() %></a></td>
+
+              <td class="sm" align="center">
+               <% if ( stocks[ i ].hasAliases() ) {
+                      Iterator aliasIter = stocks[ i ].getAliases(); 
+                      TfcAlias alias = null;
+                      boolean firstAlias = true;
+                      while ( aliasIter.hasNext() ) {
+                          alias = (TfcAlias) aliasIter.next();
+                          if ( !firstAlias ) {
+                              out.write( ", " );
+                          }
+                          firstAlias = false;
+                          out.write( alias.get_original_alias() );
+                      }
+                  } else {
+                    out.write( "&nbsp;" );
+                  }
+                %>
+             </td>
+
+             <td class="sm"><%= EmptyTextConverter.convert( clone.get_insert_type() ) %></td>
+         
+             <td class="sm">
+               <% if ( clone.hasNTSequences() ) {
+                      Iterator seqIter = clone.get_sequences(); 
+                      TfcNucleotideSequence seq = null;
+                      boolean firstSequence = true;
+                      while ( seqIter.hasNext() ) {
+                          seq = (TfcNucleotideSequence) seqIter.next();
+                          if ( !firstSequence ) {
+                              out.write( "<br>" );
+                          }
+                          firstSequence = false;
+                %>
+
+                      <a href="http://www.ncbi.nlm.nih.gov/entrez/viewer.cgi?db=nucleotide&val=<%= seq.get_ic_accession() %>" target=_blank><%= seq.get_ic_accession() %></a>
+                   <% } %>
+    
+                <% } else { %>
+                    &nbsp;
+                <% } %>
+ 
+            </td>
+
+
+
+             <td class="sm" align="center" nowrap>
+               <% if ( stocks[ i ].hasDonors() ) {
+                      Iterator donorIter = stocks[ i ].getDonors(); 
+                      ListCommunity donor = null;
+                      boolean firstDonor = true;
+                      while ( donorIter.hasNext() ) {
+                          donor = (ListCommunity) donorIter.next();
+                          if ( !firstDonor ) {
+                              out.write( "<br>" );
+                          }
+                          firstDonor = false;
+                %>
+                          <a href="/servlets/TairObject?type=<%= donor.getCommunityType() %>&id=<%= donor.getCommunityID() %>" target=_blank><%= donor.getDisplayName() %></a>
+
+                    <% } %>
+                <% } else { %>
+                    &nbsp;
+                <% } %>
+             </td>
+
+              <td class="sm"><%= EmptyTextConverter.convert( stocks[ i ].get_description() ) %>&nbsp;</td>
+         </tr>
+  
+         <tr>
+             <td class="sm" colspan="8"><hr></td>
+         </tr>
+
+       <% } // end main stock loop %>
+
+
+       <!-- write hyperlinks to scroll through catalog pages -->
+       <% if ( scrollLinks != null ) { %>
+        <tr>
+              <td class="sm" colspan="8" align="center"><%= scrollLinks %></td>
+        </tr>
+       <% } %>
+
+        <tr>
+             <td class="sm">&nbsp;</td>
+             <td class="sm" colspan="7">
+                <table width="100%">
+                   <tr>
+                       <td class="sm" nowrap>
+                          <input type="submit" value="Order Stocks">
+                           &nbsp;&nbsp;
+                          <input type="reset" value="Reset">
+                      </td>
+                      <td class="sm">
+                         If you have checked any stocks to order, please click on "Order Stocks"
+                         before leaving this page.  You can return to this page by using the 
+                        "Back" button on your browser.
+                      </td>
+                   </tr>
+                </table>
+             </td>
+        </tr>
+
+      </table>
+     </form>
+
+     
+<table width="602" align="center">
+      <tr>
+        <td align="center"><img src="/images/abrc.gif"></td>
+      </tr>
+
+      <tr>
+        <td align="center" class="sm">
+          If you have comments or questions concerning seed stocks, 
+          DNA stocks, stock orders, or fee structure/invoice/payment information,
+          please email ABRC at <a href="mailto:abrc@osu.edu">abrc@osu.edu</a>
+        </td>
+      </tr>
+</table>
+
+
+  </body>
+</html>

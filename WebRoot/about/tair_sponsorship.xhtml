@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:a4j="http://richfaces.org/a4j"
+    xmlns:rich="http://richfaces.org/rich"
+    xml:lang="en">
+
+    <f:view>
+        <ui:composition template="/facelets/templates/sidebar.xhtml">
+            <ui:define name="title">TAIR Corporate Sponsorship Program</ui:define>
+            <ui:define name="css">
+                 <link
+                    rel="stylesheet"
+                    type="text/css"
+                    href="/css/page/tair_sponsorship.css" />
+                <link
+                    rel="stylesheet"
+                    type="text/css"
+                    href="/css/template/comment.css" />
+                <link
+                    rel="stylesheet"
+                    type="text/css"
+                    href="/css/template/sidebar.css" />
+                <link
+                    rel="stylesheet"
+                    type="text/css"
+                    href="/css/page/pagelevels.css" />
+            </ui:define>
+            <ui:define name="breadcrumbs">
+                <h:outputText
+                    value="#{breadcrumbs.breadcrumb}"
+                    binding="#{breadcrumbs.output}"
+                    escape="false">
+                    <f:attribute
+                        name="pageId"
+                        value="#{page.pageId}" />
+                </h:outputText>
+            </ui:define>
+            <ui:define name="sidebar">
+                <div id="leftcolumn">
+                    <ui:include src="/facelets/includes/aboutSidebar.xhtml" />
+                </div>
+            </ui:define>
+            <ui:define name="content">
+                <div id="rightcolumn">
+                    <ui:include src="/about/tair_sponsorship_content.xhtml"></ui:include>
+                </div>
+            </ui:define>
+        </ui:composition>
+    </f:view>
+</html>

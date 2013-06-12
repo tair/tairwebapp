@@ -1,0 +1,20 @@
+This package was created by Jessie Zhang at Carnegie for work on importing micro
+array data in the MAGE-ML format. Work was not completed, but source files were
+added to the repository for archive.  They have been removed as they are no long
+er active and conflicting with building the TAIR app. If for some reason you wan
+t to resurrect the source files they were/are:
+
+ArrayDesign.xml
+ArrayDesign_package.xml
+AuditAndSecurity.xml
+BioAssay.xml
+BioAssayData_package.xml
+BioAssay_package.xml
+BioMaterial.xml
+BioMaterial_package.xml
+Experiment.xml
+Experiment_package.xml
+Protocol.xml
+Protocol_package.xml
+QuantitationType.xml
+dbinfo.xml

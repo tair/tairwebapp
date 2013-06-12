@@ -1,0 +1,233 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+  Copyright (c) 2003 NCGR.  All rights 
+  reserved.
+-->
+
+<%@ page 
+errorPage="/jsp/common/gen_error.jsp" 
+import="java.util.*, org.tair.utilities.*, org.tair.abrc.catalog.*, org.tair.querytools.*, org.tair.search.*, org.tair.community.*, org.tair.tfc.*"
+%>
+
+<% 
+//SearchResultsCollection pageObj = (SearchResultsCollection) request.getAttribute( "pageObj" );
+CatalogStock[] stocks = (CatalogStock[]) pageObj.getResults();
+
+int resultSize = pageObj.getResultSize();
+int floor = pageObj.getFloor();
+int ceiling = pageObj.getCeiling();
+String scrollLinks = pageObj.getScrollLinks();
+%>
+
+<html>
+        <head>
+          <title>Genomic Libraries</title>
+          <link rel="stylesheet" type="text/css" href="/css/main.css">
+          <link rel="stylesheet" type="text/css" href="/css/search.css">
+        </head>
+
+        <body bgcolor="#F5F9FF">
+        
+          <%=org.tair.abrc.catalog.CatalogPageHelper.getAnalytics()%>
+
+          <center>
+            <img src="/images/abrc_med.gif">
+            <br>
+
+            <h2>Genomic Libraries</h2>
+
+             Sorted by stock number
+             <br><br>
+
+             Displaying <%= floor %> - <%= ceiling %> of <%= resultSize %> in category
+             <br>
+             <br>
+         </center>
+
+         <form action="/servlets/Order/current" method="POST">
+             <input type="hidden" name="state" value="addStock">
+            
+          <table center cellpadding="1" align="center">
+
+
+          <tr>
+             <td class="sm">&nbsp;</td>
+             <td class="sm" colspan="8">
+                <table width="100%">
+                   <tr>
+                       <td class="sm" nowrap>
+                          <input type="submit" value="Order Stocks">
+                           &nbsp;&nbsp;
+                          <input type="reset" value="Reset">
+                      </td>
+                      <td class="sm">
+                         If you have checked any stocks to order, please click on "Order Stocks"
+                         before leaving this page.  You can return to this page by using the 
+                        "Back" button on your browser.
+                      </td>
+                    </tr>
+                 </table>
+              </td>
+            </tr>
+
+            <!-- write hyperlinks to scroll through catalog pages -->
+            <% if ( scrollLinks != null ) { %>
+            <tr>
+               <td class="sm" colspan="9" align="center"><%= scrollLinks %></td>
+            </tr>
+
+            <tr>
+               <td class="sm" colspan="9">&nbsp;</td>
+            </tr>
+
+            <% } %>
+
+            <tr valign="bottom">
+              <th class="sm">Order</th>
+              <th class="sm">Stock #</th>
+              <th class="sm">Library name</th>
+              <th class="sm">Vector</th>
+              <th class="sm">Germplasm<br>source</th>
+              <th class="sm">Donor(s)</th>
+              <th class="sm">Format<br>shipped</th>
+              <th class="sm">Kit contents</th>
+              <th class="sm">Price ($)<br>Academic/Commercial</th>
+            </tr>
+
+      <% for ( int i = 0; i < stocks.length; i++ ) { %>
+
+           <tr valign="top">
+              <!-- all stocks should be available so show checkbox no matter what -->
+              <td class="sm" align="center"><input type="checkbox" name="stock_number" value="<%= stocks[ i ].get_name() %>"></td>
+
+              <td class="sm" align="center" nowrap>
+                 <a href="/servlets/TairObject?type=stock&id=<%= stocks[ i ].get_stock_id() %>" target=_blank><%= stocks[ i ].get_name() %></a>
+              </td>
+
+
+             <% TfcLibrary library = stocks[ i ].getLibrary(); // should never be null %>
+              <td class="sm" align="center"><a href="/servlets/TairObject?type=library&id=<%= library.get_library_id() %>" target=_blank><%= library.get_original_name() %></a></td>
+
+              <td class="sm" align="center">
+                 <% if ( stocks[ i ].hasVector() ) { 
+                       TfcVector vector = stocks[ i ].getVector(); 
+                 %>
+                       <a href="/servlets/TairObject?type=vector&id=<%= vector.get_vector_id() %>" target=_blank><%= vector.get_original_name() %></a>
+                <% } %>
+                &nbsp;
+              </td>
+
+              <td class="sm" align="center">
+                 <% if ( stocks[ i ].hasSpeciesVariant() ) { 
+                       TfcSpeciesVariant variant = stocks[ i ].getSpeciesVariant(); 
+                 %>
+                       <a href="/servlets/TairObject?type=species_variant&id=<%= variant.get_species_variant_id() %>" target=_blank><%= variant.get_abbrev_name() %></a>
+                <% } %>
+                &nbsp;
+              </td>
+
+
+             <td class="sm" align="center" nowrap>
+               <% if ( stocks[ i ].hasDonors() ) {
+                      Iterator donorIter = stocks[ i ].getDonors(); 
+                      ListCommunity donor = null;
+                      boolean firstDonor = true;
+                      while ( donorIter.hasNext() ) {
+                          donor = (ListCommunity) donorIter.next();
+                          if ( !firstDonor ) {
+                              out.write( "<br>" );
+                          }
+                          firstDonor = false;
+                %>
+                          <a href="/servlets/TairObject?type=<%= donor.getCommunityType() %>&id=<%= donor.getCommunityID() %>" target=_blank><%= donor.getDisplayName() %></a>
+
+                    <% } %>
+                <% } else { %>
+                    &nbsp;
+                <% } %>
+             </td>
+
+              <td class="sm"><%= EmptyTextConverter.convert( stocks[ i ].get_format_shipped() ) %></td>
+              <td class="sm"><%= EmptyTextConverter.convert( stocks[ i ].get_kit_contents() ) %></td>
+              <td class="sm" align="center">
+                <% if ( stocks[ i ].get_base_price() != null ) { 
+                       out.print( stocks[ i ].get_format_base_price( false ) + "/" + stocks[ i ].get_format_commercial_price( false ) );
+                   } 
+                %>
+                &nbsp;
+              </td>
+         </tr>
+  
+
+         <!-- if stock type is filter show stock description, else show library description -->
+         <!-- per Emma at ABRC -->
+         <% if ( (stocks[ i ].get_stock_type().equals( "filter" ) && stocks[ i ].get_description() != null ) ||
+                 (!stocks[ i ].get_stock_type().equals( "filter" ) && library.get_description() != null ) ) { %>
+         <tr>
+              <td class="sm">&nbsp;</td>
+              <td class="sm" colspan="8">
+                 <% if ( stocks[ i ].get_stock_type().equals( "filter" ) ) { %>
+                      <b>Description:</b> <%= stocks[ i ].get_description() %>
+                 <% } else { %>
+                      <b>Description:</b> <%= library.get_description() %>
+                 <% } %>
+              </td>
+         </tr>
+         <% } %>
+ 
+         <tr>
+             <td class="sm" colspan="9"><hr></td>
+         </tr>
+
+       <% } // end main stock loop %>
+
+
+       <!-- write hyperlinks to scroll through catalog pages -->
+       <% if ( scrollLinks != null ) { %>
+        <tr>
+              <td class="sm" colspan="9" align="center"><%= scrollLinks %></td>
+        </tr>
+       <% } %>
+
+        <tr>
+             <td class="sm">&nbsp;</td>
+             <td class="sm" colspan="8">
+                <table width="100%">
+                   <tr>
+                       <td class="sm" nowrap>
+                          <input type="submit" value="Order Stocks">
+                           &nbsp;&nbsp;
+                          <input type="reset" value="Reset">
+                      </td>
+                      <td class="sm">
+                         If you have checked any stocks to order, please click on "Order Stocks"
+                         before leaving this page.  You can return to this page by using the 
+                        "Back" button on your browser.
+                      </td>
+                   </tr>
+                </table>
+             </td>
+        </tr>
+
+      </table>
+     </form>
+
+     
+<table width="602" align="center">
+      <tr>
+        <td align="center"><img src="/images/abrc.gif"></td>
+      </tr>
+
+      <tr>
+        <td align="center" class="sm">
+          If you have comments or questions concerning seed stocks, 
+          DNA stocks, stock orders, or fee structure/invoice/payment information,
+          please email ABRC at <a href="mailto:abrc@osu.edu">abrc@osu.edu</a>
+        </td>
+      </tr>
+</table>
+
+
+  </body>
+</html>

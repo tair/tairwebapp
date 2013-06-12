@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:c="http://java.sun.com/jstl/core" xml:lang="en"
+>
+<ui:composition>
+    <h:form>
+
+        <c:if test="#{! empty webapp.headerMessage}">
+            <p class="header-message">
+                <h:outputText value="#{webapp.headerMessage}" escape="false" />
+            </p>
+            <div style="clear:both"></div>
+        </c:if>
+
+        <div id="nav" class="faces_nav">
+            <ul id="search_cont">
+                <li id="search">
+
+                    <div id="form_box">
+                        <h:inputText id="searchfield"
+                            value="#{quick_search.name}" size="10"
+                            styleClass="quickSearchField"
+                        ></h:inputText>
+                        <h:selectOneMenu id="sub_type"
+                            value="#{quick_search.subType}"
+                        >
+                            <f:selectItem itemValue="google"
+                                itemLabel="Google TAIR website"
+                            />
+                            <f:selectItem itemValue="aracyc"
+                                itemLabel="Metabolic Pathways"
+                            />
+                            <f:selectItem itemValue="textpresso"
+                                itemLabel="Textpresso full text"
+                            />
+                            <f:selectItem itemValue="any"
+                                itemLabel="Exact name search"
+                            />
+                            <f:selectItem itemValue="clone_end"
+                                itemLabel="EST or BAC end"
+                            />
+                            <f:selectItem itemValue="clone" itemLabel="Clone" />
+                            <f:selectItem itemValue="community"
+                                itemLabel="Person or lab"
+                            />
+                            <f:selectItem itemValue="ecotype"
+                                itemLabel="Ecotype"
+                            />
+                            <f:selectItem itemValue="gene" itemLabel="Gene" />
+                            <f:selectItem itemValue="germplasm"
+                                itemLabel="Germplasm"
+                            />
+                            <f:selectItem itemValue="keyword"
+                                itemLabel="Keyword"
+                            />
+                            <f:selectItem itemValue="library"
+                                itemLabel="Library"
+                            />
+                            <f:selectItem itemValue="marker" itemLabel="Marker" />
+                            <f:selectItem itemValue="polyallele"
+                                itemLabel="Polymorphisms"
+                            />
+                            <f:selectItem itemValue="protein"
+                                itemLabel="Protein"
+                            />
+                            <f:selectItem itemValue="seed"
+                                itemLabel="Seed stock"
+                            />
+                            <f:selectItem itemValue="stock"
+                                itemLabel="DNA stock"
+                            />
+                            <f:selectItem itemValue="vector" itemLabel="Vector" />
+                        </h:selectOneMenu>
+                        <h:commandButton id="searchbutton" alt="search"
+                            type="submit" action="#{quick_search.search}"
+                            styleClass="quickSearchButton" value="Search"
+                        />
+                    </div></li>
+            </ul>
+            <div id="logo">
+                <a href="/index.jsp"><img src="/i/logo2.gif" width="87"
+                    height="61" alt="tair"
+                /> </a>
+            </div>
+            <ui:insert name="special"></ui:insert>
+            <ui:include src="/facelets/includes/topnav.xhtml" />
+            <ui:include src="/jsp/includes/secondnav.html" />
+        </div>
+    </h:form>
+    <ui:include src="/jsp/includes/analytics.html" />
+    <script type="text/javascript">is_logged_in(#{login.loggedIn})</script>
+</ui:composition>
+</html>

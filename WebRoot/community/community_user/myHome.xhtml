@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core" xml:lang="en" lang="en">
+
+	<f:view>
+		<ui:composition template="/facelets/templates/standard.xhtml">
+			<ui:define name="title">TAIR - My Home Page</ui:define>
+			<ui:define name="css">
+				<link rel="stylesheet" type="text/css" href="/css/page/my_home.css" />
+			</ui:define>
+			<ui:define name="content">
+				<h:form>
+					<table border="0" cellpadding="3" align="center" width="100%">
+						<tr>
+							<td colspan="2" align="center">
+								<font class="header">Welcome, <%= userStr %></font>
+							</td>
+
+						</tr>
+						<% if (person != null ) { %>
+						<tr>
+							<td colspan="2" align="center">
+								<% if (person.get_hasUnpaidInvoices() ) { %>
+								<font color="darkred">You have unpaid ABRC invoices.</font>
+								<a href="/servlets/Search?type=invoice&mode=user&search_action=do_search&person_id=<%=person.get_person_id()%>&user_invoice_status=unpaid">
+									Click here to view.</a>
+								<br>
+									<% } %> <% Iterator iter = person.get_unpaid_parent_orgs(); while ( iter != null && iter.hasNext() ) {
+									CompositeAffiliation affiliation = (CompositeAffiliation) iter.next(); //only display if PI or contact person of the lab
+									if ( affiliation.get_is_pi() == true || affiliation.get_is_contact_person() == true) { %> 
+								<br>
+								<font color="darkred">Your lab, <%=affiliation.get_organization_name()%>, has unpaid ABRC invoices.</font>
+								<a
+									href="/servlets/Search?type=invoice&mode=user&search_action=do_search&is_lab_search=true&user_invoice_status=unpaid&lab_id=<%=affiliation.get_organization_id()%>">
+									Click here to view.</a> <% } } %>
+								<br>
+								<br>
+							</td>
+						</tr>
+						<% } %>
+						<tr valign="top">
+
+							<td class="sm">
+								<font class="header">Personal Data</font>
+								<br>
+
+									<!-- SHOW PERSONAL INFORMATION -->
+									<% if (person != null){%> <%=person.get_name()%><%= EmptyTextConverter.convert( person.get_suffix() ) %>
+								<br>
+									<%= EmptyTextConverter.convert( TextConverter.dbToHTML( person.get_address() ) ) %>
+								<br>
+									<%= EmptyTextConverter.convert( person.get_city() ) %> <% if ( person.get_region() != null ) { %>, <%=
+									person.get_region() %><% } %> &nbsp; <%= EmptyTextConverter.convert( person.get_postal_code() ) %>
+								<br>
+									<%= EmptyTextConverter.convert( person.get_country() ) %>
+								<br>
+									<% } %> 
+								<a href="/servlets/Community?action=edit&type=person&communityID=<%=communityID%>">Update</a> my personal profile &
+								affiliations
+								<br>
+								<a href="/servlets/Community?action=edit&type=org&new=true">Add New Organization</a>
+								<br>
+								<a href="/servlets/Community?action=edit&type=org&lab=true&new=true">Add New Lab</a>
+								<br>
+								<a href="/servlets/Community?action=edit&type=person&communityID=<%= communityID %>#publication">Add Publications to
+									My Profile</a>
+								<br>
+								<a href="/servlets/TairObject?type=person&id=<%=communityID%>">View</a> my personal profile page
+								<br>
+								<br>
+
+									<% if ( affiliates ) { %> 
+								<table border="0" cellspacing="0" cellpadding="1">
+
+									<tr>
+										<td class="sm" colspan="2">
+											<font class="formheader">Affiliated Organizations</font> ( update if PI or contact person )
+										</td>
+									</tr>
+
+									<% Iterator iter = parentOrgs.values().iterator(); while ( iter.hasNext() ) { CompositeAffiliation affiliation =
+									(CompositeAffiliation) iter.next(); String statusStr = ""; if (affiliation.get_organization_status() != null &&
+									affiliation.get_organization_status().equals(DataConstants.getNewStatus())) { statusStr = "&nbsp;
+									<font color=\"red\">(new)</font>&nbsp;"; } if ( ( affiliation.get_is_pi() != null && ( affiliation.get_is_pi()
+									).booleanValue() ) || ( affiliation.get_is_contact_person() != null && ( affiliation.get_is_contact_person()
+									).booleanValue() ) ) { %>
+
+									<tr valign="bottom">
+										<td class="sm">
+											<a href="/servlets/Community?action=edit&type=org&communityID=<%= affiliation.get_organization_community_id()
+												%>"><%= affiliation.get_organization_name() %></a> <%= statusStr %>
+										</td>
+									</tr>
+									<% } else { %>
+
+									<tr>
+										<td class="sm" colspan="2">
+											<%= affiliation.get_organization_name() %> <%= statusStr %>
+										</td>
+									</tr>
+									<% } %> <% } %>
+								</table>
+								<% } %>
+
+
+							</td>
+
+							<td class="sm">
+								<table border="0" cellpadding="1" cellspacing="0">
+									<tr>
+										<td class="sm">
+											<font class="header">ABRC Stock Order Tools</font>
+										</td>
+									</tr>
+
+									<tr>
+										<td class="sm">
+											<% if ( SessionHandler.orderInProgress( request ) ) { %>
+											<a href="/servlets/Order?state=view">View Current Order</a> <% } else { %>
+											<a href="/servlets/Order/current">Create Stock Order</a> <% } %>
+										</td>
+									</tr>
+
+									<% if ( LoginChecker.isDonor( request ) ) { %>
+									<tr>
+										<td class="sm">
+											<a href="/servlets/Order?state=search&mode=donor">Search Order History for Donated Stocks</a>
+										</td>
+									</tr>
+									<% } %> <% if ( LoginChecker.hasDonorLab( request ) ) { %>
+									<tr>
+										<td class="sm">
+											<a href="/servlets/Order?state=search&mode=donor_lab">Search Order History for Stocks Donated by Lab</a>
+										</td>
+									</tr>
+									<% } %>
+
+									<tr>
+										<td class="sm">
+											<% if ( LoginChecker.isPI( request ) ) { %>
+											<a href="/servlets/Order?state=search&mode=user">Search My Orders</a> <% } else { %>
+											<a href="/servlets/Order?state=search&mode=user">Search My Orders</a> <% } %>
+										</td>
+									</tr>
+
+									<tr>
+										<td class="sm">
+											<% if ( LoginChecker.isPI( request ) || LoginChecker.isContactPerson(request) ) { %>
+											<a href="/servlets/Search?type=invoice&mode=user&search_action=choose_search">Search My Invoices</a>
+											<img alt="[NEW]" src="/images/new.gif" border=0>
+												<% } else { %> 
+											<a href="/servlets/Search?type=invoice&mode=user&search_action=search">Search My Invoices</a>
+											<img alt="[NEW]" src="/images/new.gif" border=0>
+												<% } %> 
+										</td>
+									</tr>
+
+									<tr>
+										<td class="sm">
+											<a href="/servlets/Search?type=dna&search_action=new_search">Search DNA Stocks</a>
+										</td>
+									</tr>
+
+									<tr>
+										<td class="sm">
+											<a href="/servlets/Search?type=germplasm&search_action=new_search">Search Seed Stocks</a>
+										</td>
+									</tr>
+
+
+
+									<tr>
+										<td>
+											&nbsp;
+										</td>
+									</TR>
+
+									<tr>
+										<td class="sm" colspan="2">
+											<font class="formheader">TAIR Tools</font>
+										</td>
+									</tr>
+									<tr>
+										<td class="sm">
+											<a href="/servlets/processor?type=genesymbol">Submit New Gene Class Symbol</a>
+										</td>
+									</tr>
+
+									<% int submitted = GeneClassSymbolCollection.numberSymbolsByUser(new Long(communityID)); if (submitted >0 ) { %>
+									<tr>
+
+										<td class="sm">
+											<a href="/servlets/processor?type=genesymbol&update_action=view_symbol&from=user">Complete List of Symbols
+												Submitted (Total: <%= submitted %>)</a>
+										</td>
+									</tr>
+									<% } %>
+
+								</table>
+
+							</td>
+						</tr>
+
+						<tr>
+							<td class="sm" colspan="2">
+								&nbsp;
+							</td>
+						</tr>
+
+						<tr valign="top">
+							<td class="sm">
+								<table>
+									<tr>
+										<td class="sm">
+											<font class="header">Logout</font>
+										</td>
+									</tr>
+									<tr>
+										<td class="sm">
+											<a href="/servlets/Community?action=logout">Logout</a>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											&nbsp;
+										</td>
+									</tr>
+
+									<% if ( curator && ( persons || organizations ) ) { %>
+									<tr>
+										<td class="sm">
+											<font class="header">New Registrations</font>
+										</td>
+									</tr>
+
+									<% if (persons ) { %>
+									<tr>
+										<td class="sm">
+											<font class="formheader">Person Name</font>
+										</td>
+									</tr>
+
+									<% for ( int i = 0; i < newPersons.length; i++ ) { %>
+									<tr valign="top">
+										<td class="sm">
+											<a href="/servlets/Community?type=person&action=edit&communityID=<%= newPersons[ i ].getCommunityID()%>"><%=
+												newPersons[ i ].getDisplayName() %></a>
+										</td>
+									</tr>
+									<% } //end for%>
+
+									<tr>
+										<td class="sm">
+											&nbsp;
+										</td>
+									</tr>
+									<% } //end if persons%> <% if ( organizations ) { %>
+									<tr>
+										<td class="sm" colspan="2">
+											<font class="formheader">Organization Name</font>
+										</td>
+									</tr>
+									<% for ( int i = 0; i < newOrgs.length; i++ ) { %>
+									<tr>
+										<td class="sm">
+											<a href="/servlets/Community?type=org&action=edit&communityID=<%= newOrgs[ i ].getCommunityID() %>"><%= newOrgs[ i
+												].getDisplayName() %></a>
+										</td>
+									</tr>
+									<% } //end for%> <% } //end if organizations%> <% } //end if curator,persons,organizations%>
+
+								</table>
+							</td>
+
+							<td class="sm">
+
+								<% if ( curator ) { %>
+								<table>
+									<tr>
+										<td class="sm">
+											<font class="header">Curator Tools</font>
+										</td>
+									</tr>
+
+									<tr>
+										<td class="sm">
+											<a href="/tairusage/index_curator.jsp">Detailed Web Statistics</a>
+										</td>
+									</tr>
+
+									<tr>
+										<td class="sm">
+											<a href="/servlets/Order?state=search&mode=curator">Search Stock Orders</a>
+										</td>
+									</tr>
+									<tr>
+										<td class="sm">
+											<a href="/servlets/Search?type=invoice&search_action=new_search">Search Invoices</a>
+										</td>
+									</tr>
+									<tr>
+										<td class="sm">
+											<a href="/servlets/Search?type=payment&search_action=new_search">Search Payments</a>
+										</td>
+									</tr>
+
+									<tr>
+										<td class="sm">
+											<a href="/servlets/Order/proxy">Create Stock Order for User</a>
+										</td>
+									</tr>
+
+									<tr>
+										<td class="sm">
+											<a href="/servlets/Order?state=updateStock">Update Stock Record</a>
+										</td>
+									</tr>
+
+									<tr>
+										<td class="sm">
+											<a href="/servlets/processor?type=country">Update Country Data</a>
+										</td>
+									</tr>
+
+									<tr>
+										<td class="sm">
+											<a href="/servlets/Order?state=constant">Update ABRC Constants</a>
+										</td>
+									</tr>
+
+									<tr>
+										<td class="sm">
+											<a href="/servlets/Search?type=community&action=new_search">Community Search</a>
+										</td>
+									</tr>
+
+									<tr>
+										<td class="sm">
+											<a href="/servlets/Community?action=edit&type=person&new=true">Add New Person</a>
+										</td>
+									</tr>
+
+									<tr>
+										<td class="sm">
+											<a href="/servlets/Community?action=edit&type=org&&new=true">Add New Organization</a>
+										</td>
+									</tr>
+
+									<tr>
+										<td class="sm">
+											<a href="/servlets/processor?type=definition">Add/Update Definitions</a>
+										</td>
+									</tr>
+
+									<tr>
+										<td class="sm">
+											<a href="/servlets/processor?type=notepad&update_action=search">Deactivate Notepad Entry</a>
+										</td>
+									</tr>
+
+								</table>
+								<% } %> <% if (curator || communityID==Long.parseLong( WebApp.getProperty("MUTANT_SYMBOL_CURATOR_ID"))) { %>
+								<table>
+									<tr>
+										<td class="sm">
+											<a href="/servlets/processor?type=genesymbol&update_action=view_symbol&from=curator&status=new">Review New
+												Submitted Gene Class Symbols</a>
+										</td>
+									</tr>
+									<tr>
+										<td class="sm">
+											<a href="/servlets/processor?type=genesymbol&update_action=view_symbol&from=curator&status=all">Browse All Gene
+												Class Symbols</a>
+										</td>
+									</tr>
+								</table>
+								<% } %>
+					</table>
+          
+          &nbsp;
+         </td>
+					</tr>
+
+
+
+
+
+
+
+					</table>
+				</h:form>
+			</ui:define>
+		</ui:composition>
+	</f:view>
+</html>

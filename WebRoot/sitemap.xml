@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<page name="Home" url="/index.jsp" id="0">
+    <page name="Help" url="/help/index.jsp" id="2">
+        <page name="Tutorials" url="/help/tutorials/index.jsp" id="200">
+            <page name="AraCyc Tutorial" url="/help/tutorials/aracyc_intro.jsp" id="2000" >
+                <page name="Searching AraCyc: Pathways, Reactions, Genes and Compounds" url="/help/tutorials/aracyc1.jsp" id="20000"/>
+                <page name="Understanding the AraCyc Detail Pages" url="/help/tutorials/aracyc2.jsp" id="20001"/>
+                <page name="Browsing AraCyc: Pathways, Reactions, Genes and Compounds" url="/help/tutorials/aracyc3.jsp" id="20002"/>
+                <page name="Using the Metabolic Map Overview" url="/help/tutorials/aracyc4.jsp" id="20003"/>
+                <page name="Displaying Gene Expression, Proteomic, Metabolomic and other Data in the Omics Viewer" url="/help/tutorials/aracyc5.jsp" id="20004"/>
+                <page name="Evidence Codes and Their Usage in AraCyc" url="/help/tutorials/aracyc6.jsp" id="20005"/>
+                <page name="Demos-Quicktime Movies" url="/help/tutorials/aracyc7.jsp" id="20006"/>
+            </page>
+            <page name="TAIR Gene Ontology Tools" url="/help/tutorials/go_intro.jsp" id="201" >
+                <page name="What is the Gene Ontology" url="/help/tutorials/go1.jsp" id="2010"/>
+                <page name="Anatomy of a GO Annotation" url="/help/tutorials/go2.jsp" id="2011"/>
+                <page name="Where to find GO Annotations/GO tools" url="/help/tutorials/go3.jsp" id="2012"/>
+                <page name="Finding genes using GO terms" url="/help/tutorials/go4.jsp" id="2013"/>
+                <page name="How to find similarly annotated genes" url="/help/tutorials/go5.jsp" id="2014"/>
+                <page name="How to classify sets of genes by function, location and biological role" url="/help/tutorials/go6.jsp" id="2015"/>
+                <page name="Demos-Quicktime Movies" url="/help/tutorials/go7.jsp" id="2016"/>
+            </page>
+            <page name="TAIR Microarray Tools" url="/help/tutorials/micro_intro.jsp" id="202">
+                <page name="Available data and tools" url="/help/tutorials/micro1.jsp" id="2020"/>
+                <page name="How to find microarray experiments" url="/help/tutorials/micro2.jsp" id="2021"/>
+                <page name="How to find information about the expression of specific genes" url="/help/tutorials/micro3.jsp" id="2022"/>
+                <page name="Finding arrays that contain a gene or set of genes" url="/help/tutorials/micro4.jsp" id="2023"/>
+                <page name="Finding genes that are similarly expressed in multiple experiments" url="/help/tutorials/micro5.jsp" id="2024"/>
+                <page name="Finding potential regulatory sequences in co-clustered genes" url="/help/tutorials/micro6.jsp" id="2025"/>
+                <page name="How to download and view microarray data" url="/help/tutorials/micro7.jsp" id="2026"/>
+            </page>
+                
+        </page>
+        <page name="Getting Started Guide" url="/help/quickstart.jsp" id="203"/>
+        <page name="Database/Tool Help Pages" url="/help/helpcontents.jsp" id="204"/>
+        <page name="FAQ" url="/help/faq.jsp" id="205"/>
+        <page name="TAIR Glossary" url="/servlets/processor?type=definition&amp;update_action=glossary" id="206"/>
+        <page name="TAIR User Guide" url="/about/TAIRUserGuideV1.0.pdf"/>
+        
+    </page>
+    <page name="Contact" url="/contact/index.jsp" id="3"/>
+    <page name="About Us" url="/about/index.jsp" id="4">
+        <page name="About TAIR" url="/about/index.jsp" id="40">
+            <page name="TAIR Staff" url="/about/staff.jsp" id="400">
+                <page name="People previously associated with TAIR" url="/about/exstaff.jsp" id="4000"/>
+            </page>
+            <page name="TAIR data sources" url="/about/datasources.jsp" id="401"/>
+            <page name="Hyperlinking to TAIR" url="/about/linktotair.jsp" id="402"/>
+            <page name="Citing TAIR" url="/about/citingtair.jsp" id="403"/>
+            <page name="TAIR Database Schema" url="/search/ERwin/Tair.htm" id="404"/>
+            <page name="Publications" url="/about/tairpubs.jsp" id="405"/>
+            <page name="TAIR Software" url="/about/software.jsp" id="406"/>
+            <page name="TAIR Database Statistics" url="/jsp/tairjsp/pubDbStats.jsp" id="407"/>
+            <page name="TAIR Usage Statistics" url="/usage/" id="408"/>
+            <page name="TAIR Board" url="/about/board.jsp" id="409"/>
+            <page name="TAIR Presentations(ppt)" url="/portals/education/presentations.jsp"/>
+            <page name="Users Guide(pdf)" url="/about/TAIRUserGuideV1.0.pdf"/>
+            <page name="TAIR Survey" url="/doc/about/tair_survey/411" id="411"/>
+            <page name="TAIR Funding" url="/doc/about/tair_funding/410" id="410"/>
+            <page name="TAIR Sponsorship" url="/doc/about/tair_sponsorship/412" id="412"/>
+            <page name="TAIR Sponsors" url="/doc/about/tair_sponsors/413" id="413"/>
+            <page name="PLAIN Data Warehouse" url="/about/data_warehouse.jsp" id="414"/>
+            <page name="PLAIN Project" url="/about/data_warehouse.jsp" id="415"/>
+        </page>
+        <page name="About ABRC" url="http://abrc.osu.edu/">
+            <page name="ABRC Staff" url="https://abrc.osu.edu/directory">
+                <page name="ABRC Fee Structure" url="https://abrc.osu.edu/fee-structure"/>
+                <page name="How to Make Payments to ABRC" url="https://abrc.osu.edu/how-make-payments"/>
+                <page name="Stock Donation Forms" url="https://abrc.osu.edu/donate-stocks"/>
+                <page name="ABRC Stock Acquisition and Deacquisition Policy" url="https://abrc.osu.edu/stock-acquisition-and-deaquisition-policy" id=""/>
+                <page name="ABRC Advisory Committee" url="https://abrc.osu.edu/advisory-committee" id=""/>
+            </page>
+        </page>
+    </page>
+    <page name="Login/Register" url="/servlets/Community?action=login" id="5"/>
+    <page name="Search" url="/servlets/Search?type=general&amp;action=new_search" id="50">
+        <page name="Search Overview" url="/servlets/Search?type=general&amp;action=new_search" id="500"/>
+        <page name="DNA/Clones" url="/servlets/Search?action=new_search&amp;type=dna" id="501"/>
+        <page name="Ecotypes (Natural Variants)" url="/servlets/Search?action=new_search&amp;type=ecotype" id="502"/>
+        <page name="Genes" url="/servlets/Search?action=new_search&amp;type=gene" id="503"/>
+        <page name="GO Annotations" url="/tools/bulk/go/index.jsp"/>
+        <page name="Keywords" url="/servlets/Search?action=new_search&amp;type=keyword" id="504"/>
+        <page name="Locus History" url="/tools/bulk/locushistory/index.jsp"/>
+        <page name="Markers" url="/servlets/Search?action=new_search&amp;type=marker" id="505"/>
+        <page name="Microarray Element" url="/tools/bulk/microarray/index.jsp"/>
+        <page name="Microarray Expression" url="/servlets/Search?action=new_search&amp;type=expression" id="506"/>
+        <page name="People/Labs" url="/servlets/Search?action=new_search&amp;type=community" id="507"/>
+        <page name="Polymorphisms/Alleles" url="/servlets/Search?action=new_search&amp;type=polyallele" id="508"/>
+        <page name="Proteins" url="/servlets/Search?action=new_search&amp;type=protein" id="509"/>
+        <page name="Protocols" url="/servlets/Search?action=new_search&amp;type=protocol" id="510"/>
+        <page name="Publication" url="/servlets/Search?action=new_search&amp;type=publication" id="511"/>
+        <page name="Seed/Germplasm" url="/servlets/Search?action=new_search&amp;type=germplasm" id="512"/>
+        <page name="Microarray Experiment" url="/servlets/Search?type=expr&amp;search_action=new_search" id="513"/>
+        <page name="Sequences" url="/tools/bulk/sequences/index.jsp"/>
+    </page>
+    <page name="Browse" url="/browse/index.jsp" id="6">
+        <page name="Browse Overview" url="/browse/index.jsp" id="60"/>
+        <page name="ABRC Catalog" url="/servlets/Order?state=catalog" id="61"/>
+        <page name="2010 Projects" url="/portals/masc/projects.jsp"/>
+        <page name="Monsanto SNP and Ler Collections" url="/browse/Cereon/index.jsp" id="62"/>
+        <page name="Gene Families" url="/browse/genefamily/index.jsp" id="63"/>
+        <page name="Gene Class Symbols" url="/servlets/processor?type=genesymbol&amp;update_action=view_symbol"/>
+        <page name="Ontologies/Keywords" url="/servlets/Search?action=new_search&amp;type=keyword"/>
+        <page name="Archived e-Journals" url="/browse/electricarab.jsp" id="64">
+            <page name=" The Electronic Arabidopsis Information Service" url="/ais/newaishint.jsp" id="640"/>
+            <page name="Weeds World" url="/weedsworld/index.jsp" id="641"/>
+        </page>
+    </page>
+    <page name="Tools" url="/tools/index.jsp" id="7">
+        <page name="GBrowse" url="/cgi-bin/gbrowse/arabidopsis/" id="70"/>
+        <page name="Seqviewer" url="http://tairvm09.tacc.utexas.edu/servlets/sv" id="71"/>
+        <page name="NBrowse" url="/tools/nbrowse.jsp" id="803"/>
+        <page name="IGB" url="/doc/tools/igb/91" id="91"/>
+        <page name="Mapviewer" url="/servlets/mapper" id="72"/>
+        <page name="AraCyc Pathways" url="/biocyc/index.jsp" id="73">
+            <page name="AraCyc" url="/biocyc/index.jsp" id="730">
+               <page name="Search AraCyc" url="http://www.plantcyc.org:1555/ARA/server.html"/>
+               <page name="Introduction" url="/biocyc/introduction.jsp" id="7300"/>
+               <page name="Metabolic Map" url="http://www.plantcyc.org:1555/ARA/new-image?type=OVERVIEW"/>
+               <page name="Pathway Data Submission Form" url="/submit/pathway_submission.jsp"/>
+               <page name="Release Notes" url="/biocyc/releasenotes.jsp" id="7301"/>
+            </page>
+            <page name="AraCyc Tutorials" url="../../help/tutorials/aracyc_intro.jsp"/>
+            <page name="Tools" url="/biocyc/tools.jsp" id="731">
+                <page name="OMICS Viewer" url="http://www.plantcyc.org:1555/expression.html"/>
+                <page name="Comparative Analysis" url="http://www.plantcyc.org:1555/ARA/comp-genomics?" />
+                <page name="Other tools" url="/biocyc/tools.jsp"/>
+            </page>
+            <page name="Downloads/FTP" url="/biocyc/downloads.jsp" id="732">
+                <page name="AraCyc Pathways" url="ftp://ftp.plantcyc.org/Pathways/"/>
+                <page name="AraCyc Compounds" url="ftp://ftp.plantcyc.org/Pathways/"/>
+                <page name="AraCyc Database" url="/aracyc/form.html"/>
+                <page name="PerlCyc" url="/biocyc/perlcyc/index.jsp" id="7320"/>
+                <page name="JavaCyc" url="/biocyc/javacyc/index.jsp" id="7321"/>
+            </page>
+            <page name="Other DataBases" url="/biocyc/databases.jsp" id="733">
+                <page name="MetaCyc" url="http://www.metacyc.org/"/>
+                <page name="KEGG" url="http://www.genome.jp/kegg/"/>
+                <page name="Brenda" url="http://www.brenda.uni-koeln.de/"/>
+                <page name="UniProt" url="http://www.expasy.uniprot.org/"/>
+                <page name="Enzyme Nomenclature" url="http://www.chem.qmul.ac.uk/iubmb/enzyme/"/>
+            </page>
+            <page name="Contributors" url="/biocyc/contributors.jsp" id="734"/>
+        </page>
+        <page name="BLAST" url="/Blast/index.jsp" id="74"/>
+        <page name="WU-BLAST2" url="/wublast/index2.jsp" id="75"/>
+        <page name="FASTA" url="/cgi-bin/fasta/nph-TAIRfasta.pl" id="76"/>
+        <page name="Pattern Matching" url="/cgi-bin/patmatch/nph-patmatch.pl" id="77"/>
+        <page name="Motif Analysis" url="/tools/bulk/motiffinder/index.jsp" id="78"/>
+        <page name="VxInsight&#174;" url="/tools/bulk/microarray/analysis/index.jsp#vx" id="79"/>
+        <page name="Java TreeView" url="/tools/bulk/microarray/analysis/index.jsp#jtv" id="80"/>
+        <page name="Bulk Data Retrieval" url="/tools/bulk/index.jsp" id="81">
+        <page name="GO Annotations" url="/tools/bulk/go/index.jsp" id="82"/>
+        <page name="PO Annotations" url="/tools/bulk/po/index.jsp" id="90"/>
+        <page name="Sequences" url="/tools/bulk/sequences/index.jsp" id="83"/>
+        <page name="Proteins" url="/tools/bulk/protein/index.jsp" id="84"/>
+        <page name="Locus History" url="/tools/bulk/locushistory/index.jsp" id="85"/>
+        <page name="Microarray Elements" url="/tools/bulk/microarray/index.jsp" id="86"/>
+        <page name="Gene Descriptions" url="/tools/bulk/genes/index.jsp" id="151"/>
+        </page>
+        <page name="Chromosome Map Tool" url="/jsp/ChromosomeMap/tool.jsp" id="87"/>
+        <page name="Gene Hunter" url="/cgi-bin/geneform/geneform.pl" id="88"/>
+        <page name="Gene Symbol Registry" url="/portals/nomenclature/symbol_main.jsp"/>
+    </page>
+    <page name="Stocks" url="/abrc/index.jsp" id="10">
+        <page name="Stocks Overview" url="/abrc/index.jsp" id="100"/>
+        <page name="ABRC Home" url="https://abrc.osu.edu/"/>
+        <page name="Browse ABRC Catalog" url="/servlets/Order?state=catalog" id="101"/>
+        <page name="Supplement to ABRC Catalog" url="/abrc/major_stocks.jsp" id="102"/>
+        <page name="Search ABRC DNA/Clone Stocks" url="/servlets/Search?action=new_search&amp;type=dna"/>
+        <page name="Search ABRC Seed/Germplasm Stocks" url="/servlets/Search?action=new_search&amp;type=germplasm"/>
+        <page name="ABRC Stock Order History" url="/servlets/Order?state=search&amp;mode=stock_number" id="103"/>
+        <page name="ABRC Fee Structure" url="https://abrc.osu.edu/fee-structure" id="104"/>
+        <page name="Place ABRC Order" url="/servlets/Order/current"/>
+        <page name="Search My ABRC Orders" url="/servlets/Order?state=search&amp;mode=user" id="105"/>
+        <page name="Search ABRC Invoices" url="/user_invoice_form.jsp" id="106"/>
+        <page name="How to Make Payments to ABRC" url="https://abrc.osu.edu/how-make-payments" id="107"/>
+        <page name="ABRC Stock Donation" url="https://abrc.osu.edu/donate-stocks"/>
+    </page>
+    <page name="Portals" url="/portals/index.jsp" id="11">
+        <page name="Portals Overview" url="/portals/index.jsp" id="110"/>
+        <page name="Clones/DNA Resources" url="/portals/clones_DNA/index.jsp" id="111">
+            <page name="Find DNA Resources" url="/portals/clones_DNA/find_dna.jsp" id="1110">
+                <page name="Search ABRC Stocks" url="/servlets/Search?action=new_search&amp;type=dna"/>
+                <page name="Browse ABRC Stocks" url="/servlets/Order?state=catalog#dna" id="11110"/>
+                <page name="Search Riken FL-cDNA" url="http://rarge.gsc.riken.jp/cdna/cdna_keyword.pl"/>
+                <page name="Search SALK-SIGnAL/T-DNA Express" url="http://signal.salk.edu/cgi-bin/tdnaexpress" id="11111"/>
+            </page>
+            <page name="Full-length cDNA and ORF Collections" url="/portals/clones_DNA/clones.jsp" id="1111"/>
+            <page name="HaloTag&#174; ORF Clones" url="/abrc/halo_tagged_orf_clones.jsp" id="1116"/>
+            <page name="Arabidopsis Expressed Sequence Tags" url="/abrc/ests.jsp" id="1112"/>
+            <page name="Radish Expressed Sequence Tags" url="/abrc/radish_ests.jsp" id="1115"/>
+            <page name="Libraries" url="/abrc/libraries.jsp" id="1113">
+                <page name="cDNA libraries" url="/abrc/catalog/cdna_library_1.html"/>
+                <page name="Genomic libraries" url="/abrc/catalog/genomic_library_1.html"/>
+                <page name="Arabidopsis YAC libraries" url="/abrc/YACs.jsp" id="11130"/>
+                <page name="Arabidopsis BAC libraries" url="/abrc/BACs_At.jsp" id="11131"/>
+                <page name="BAC libraries from other species" url="/abrc/BACs_OtherSp.jsp" id="11132"/>
+            </page>
+            <page name="Pooled Genomic DNA" url="/abrc/pooled_dna.jsp" id="1114"/>
+        </page>
+        <page name="Education and Outreach" url="/portals/education/index.jsp" id="112">
+            <page name="About Arabidopsis" url="/portals/education/aboutarabidopsis.jsp" id="1120"/>
+            <page name="Search Arabidopsis Protocols and Manuals" url="/servlets/Search?type=protocol&amp;action=new_search"/>
+            <page name="Science Education and Outreach Programs" url="/portals/education/programs.jsp" id="1121"/>
+            <page name="Teaching Resources" url="/portals/education/teach.jsp" id="1122"/>
+            <page name="Funding for Education and Outreach" url="/portals/education/outreach.jsp" id="1123"/>
+            <page name="Plant Biology Education Newsgroups" url="/portals/education/email.jsp" id="1124"/>
+            <page name="TAIR Presentations(ppt)" url="/portals/education/presentations.jsp" id="1125"/>
+        </page>
+        <page name="Gene Expression Resources" url="/portals/expression/index.jsp" id="113">
+            <page name="Microarrays" url="/portals/expression/microarray/index.jsp" id="1130">
+                <page name="Datasets" url="/portals/expression/microarray/microarrayDatasetsV2.jsp" id="11300"/>
+                <page name="Data Mining Tools" url="/portals/expression/microarray/microarrayExpressionV2.jsp" id="11301"/>
+                <page name="Array Designs/Array Element Mapping" url="/portals/expression/microarray/microarrayElementsV2.jsp" id="11302"/>
+                <page name="Microarray Facilities" url="/portals/expression/microarray/microarrayFacilitiesV2.jsp" id="11303"/>
+                <page name="Data Analysis Tools" url="/portals/expression/microarray/microarraySoftwareV2.jsp" id="11304"/>
+                <page name="Microarray Standards and User Groups" url="/portals/expression/microarray/microarrayStandardsV2.jsp" id="11305"/>
+            </page>
+            <page name="Massively Parallel Signature Sequencing" url="http://mpss.udel.edu/at?/"/>
+            <page name="Protein/RNA Localization" url="/portals/expression/localization.jsp" id="1131"/>
+            <page name="Functional Genomics Expression Projects" url="/portals/expression/microarrayFunctionalV2.jsp" id="1132"/>
+        </page>
+        <page name="Genome Annotation" url="/portals/genAnnotation/index.jsp" id="114">
+            <page name="Genome Snapshot" url="/portals/genAnnotation/genome_snapshot.jsp" id="1140"/>
+            <page name="Gene Structural Annotation" url="/portals/genAnnotation/gene_structural_annotation/index.jsp" id="1141">
+                <page name="Genome Assembly" url="/portals/genAnnotation/gene_structural_annotation/agicomplete.jsp" id="11410"/>
+                <page name="Genome Annotation" url="/portals/genAnnotation/gene_structural_annotation/genome_annotation.jsp" id="11411"/>
+                <page name="Genome Publications and Documents" url="/portals/genAnnotation/gene_structural_annotation/genome_release.jsp" id="11412"/>
+                <page name="Submit Structural Annotation to TAIR" url="/submit/gene_annotation.submission.jsp"/>
+                <page name="Reference Genome Sequence" url="/portals/genAnnotation/gene_structural_annotation/ref_genome_sequence/11413" id="11413"/>
+            </page>
+            <page name="Gene Functional Annotation" url="/portals/genAnnotation/functional_annotation/index.jsp" id="1142">
+                <page name="Ontologies" url="/portals/genAnnotation/functional_annotation/ontologies.jsp" id="11420"/>
+                <page name="TAIR Gene Search" url="/servlets/Search?action=new_search&amp;type=gene"/>
+                <page name="Search/Browse TAIR Keywords" url="/servlets/Search?action=new_search&amp;type=keyword"/>
+                <page name="TAIR GO Annotation Download" url="/tools/bulk/go/"/>
+                <page name="TAIR and the GO Reference Genome Project" url="/portals/genAnnotation/functional_annotation/reference.jsp" id="11421"/>
+                <page name="Search/Browse Gene Ontology Database" url="http://www.geneontology.org"/>
+                <page name="Search/Browse Plant Ontology Database" url="http://plantontology.org"/> 
+                <page name="Online Gene Function Submission Form for Authors and Others" url="/doc/submit/functional_annotation/123"/>
+                <page name="FTP Downloads" url="ftp://ftp.arabidopsis.org/home/tair/Ontologies/"/>
+            </page>
+            <page name="Genome Annotation Tools" url="/portals/genAnnotation/genome_annotation_tools/index.jsp" id="1143">
+                <page name="Gene Structural Annotation Tools" url="/portals/genAnnotation/genome_annotation_tools/gene_id.jsp" id="11430"/>
+                <page name="Software Downloads" url="/portals/genAnnotation/genome_annotation_tools/bioinformatics.jsp" id="11431"/>
+                <page name="Multiple Sequence Alignment Tools" url="/portals/genAnnotation/genome_annotation_tools/seq_align.jsp" id="11432"/>
+                <page name="Comprehensive Sequence Analysis Resources" url="/portals/genAnnotation/genome_annotation_tools/seq_resources.jsp" id="11433"/>
+                <page name="Comparative Resources" url="/portals/genAnnotation/genome_annotation_tools/comparative_tools.jsp" id="11434"/>
+                <page name="Plant Promoter and Regulatory Element Resources" url="/portals/genAnnotation/genome_annotation_tools/cis_element.jsp" id="11435"/>
+                <page name="Proteomics Resources" url="/portals/proteome/index.jsp">
+                    <page name="Data Repositories" url="/portals/proteome/proteome_data.jsp">
+                        <page name="Primary Sequence" url="/portals/proteome/proteinSeq.jsp"/>
+                        <page name="Protein Domain" url="/portals/proteome/domain.jsp"/>
+                        <page name="Protein Structure" url="/portals/proteome/proteinStructure.jsp" id="1143602"/>
+                        <page name="Protein Location" url="/portals/proteome/proteinLocation.jsp" id="1143603"/>
+                        <page name="Protein-protein Interaction" url="/portals/proteome/proteinInteract.jsp"/>
+                        <page name="Biochemical Properties" url="/portals/proteome/biochem.jsp"/>
+                    </page>
+                    <page name="Data Analysis Tools" url="/portals/proteome/proteome_tool.jsp" id="114361"/>
+                    <page name="Proteome Facilities" url="/portals/proteome/proteome_facility.jsp" id="114362"/>
+                    <page name="Proteomics Standards" url="/portals/proteome/proteome_standard.jsp" id="114363"/>            
+	        </page>
+                <page name="Database Searches" url="/portals/genAnnotation/genome_annotation_tools/dbsearches.jsp" id="11437"/>
+		</page>
+	    <page name="Other Genomes" url="/portals/genAnnotation/other_genomes/index.jsp" id="1144"/>
+        </page>
+        <page name="MASC/Functional Genomics" url="/portals/masc/index.jsp" id="115">
+            <page name="About MASC" url="/portals/masc/MASC_Info.jsp" id="1150"/>
+            <page name="MASC Members" url="/portals/masc/MASC_members.jsp" id="1151"/>
+            <page name="MASC by Country" url="/portals/masc/countries/index.jsp" id="1152">
+                <page name="Asia/Pacific" url="/portals/masc/countries/asia.jsp" id="11520"/>
+                <page name="Europe" url="/portals/masc/countries/europe.jsp" id="11521"/>
+                <page name="Middle East" url="/portals/masc/countries/Mideast.jsp" id="11522"/>
+                <page name="North America" url="/portals/masc/countries/northamerica.jsp" id="11523"/>
+                <page name="South America" url="/portals/masc/countries/southamerica.jsp" id="11524"/>
+            </page>
+            <page name="MASC Subcommittees" url="/portals/masc/Subcommittees.jsp" id="1153"/>
+            <page name="MASC Documents" url="/portals/masc/masc_docs/index.jsp" id="1154">
+                <page name="MASC Annual Reports" url="/portals/masc/masc_docs/masc_reports.jsp" id="11540"/>
+                <page name="Subcommittee Reports" url="/portals/masc/masc_docs/masc_sub_rep.jsp" id="11541"/>
+                <page name="Workshop Reports" url="/portals/masc/masc_docs/masc_wk_rep.jsp" id="11542"/>
+            </page>
+            <page name="Major Genomics Projects" url="/portals/masc/genomics_projects.jsp" id="1155">
+                <page name="AFGN- Germany" url="/portals/masc/AFGN.jsp" id="11550"/>
+                <page name="AT2010- U.S." url="/portals/masc/FG_projects.jsp" id="11551">
+                    <page name="2010 Projects" url="/portals/masc/projects.jsp" id="115510"/>
+                </page>
+                <page name="GARNet- U.K." url="http://garnet.arabidopsis.org.uk/"/>
+            </page>
+            <page name="International Conferences on Arabidopsis Research" url="/news/abstracts.jsp"/>
+            <page name="Funding and Educational Opportunities" url="/portals/masc/funding.jsp" id="1156"/>
+            <page name="Arabidopsis Resource Portals" url="/portals/index.jsp"/>
+            <page name="Coordinator's Journal" url="/portals/masc/journal.jsp" id="1157"/>
+        </page>
+        <page name="Mutant and Mapping Resources" url="/portals/mutants/index.jsp" id="116">
+            <page name="Stock Centers" url="portals/mutants/stockcenters.jsp" id="1160"/>
+            <page name="Worldwide Resources" url="portals/mutants/worldwide.jsp" id="1161"/>
+            <page name="Find Mutants" url="portals/mutants/findmutants.jsp" id="1162">
+                <page name="ABRC&#047;TAIR Germplasm and Stock Search" url="/servlets/Search?action=new_search&#038;type=germplasm"/>
+                <page name="ABRC Catalog" url="/servlets/Order?state=catalog"/>
+                <page name="NASC Germplasm Search and Browse" url="http://www.arabidopsis.info/"/>
+                <page name="AtEnsembl - NASC Genome Browser" url="http://atensembl.arabidopsis.info/"/>
+                <page name="AtIDB - A. thaliana Integrated DB" url="http://atidb.org/"/>
+                <page name="SeqViewer - TAIR Genome Browser" url="http://tairvm09.tacc.utexas.edu/servlets/sv" id="11620"/>
+                <page name="SIGnAL T-DNA Express" url="http://signal.salk.edu/cgi-bin/tdnaexpress"/>
+                <page name="RARGE - RIKEN Arabidopsis Genome Encyclopedia" url="http://rarge.gsc.riken.jp/"/>
+                <page name="TAIR BLAST" url="/Blast/"/>
+                <page name="NASC Insert Watch" url="http://arabidopsis.info/insertwatch/" id="11621"/>
+                <page name="Request TILLING (Col)" url="http://tilling.fhcrc.org/" id="11622"/>
+                <page name="Request TILLer (Ler)" url="http://www.cnb.uam.es/groups/SRV/servicios_cientificos/tilling/index_html?set_language=en"/>
+            </page>
+            <page name="Analyze Mutants" url="portals/mutants/analyze.jsp" id="1163">
+                <page name="Map-based Cloning" url="/portals/mutants/mapping.jsp" id="11630"/>
+                <page name="Mutation Identification and Confirmation" url="portals/mutants/identification.jsp" id="11631"/>
+            </page>
+        </page>
+        <page name="Nomenclature" url="/portals/nomenclature/index.jsp" id="117">
+            <page name="Arabidopsis Nomenclature" url="/portals/nomenclature/guidelines.jsp" id="1170"/>
+            <page name="Nomenclature Resources" url="/portals/nomenclature/nomenclature.jsp" id="1171"/>
+            <page name="Browse Registered Arabidopsis Gene Symbols" url="/servlets/processor?type=genesymbol&amp;update_action=view_symbol"/>
+            <page name="Register Arabidopsis Gene Class Symbols" url="/portals/nomenclature/symbol_main.jsp" id="1172"/>
+            <page name="Request Locus Identifier" url="/submit/locus_identifier_request.jsp"/>
+        </page>
+        <page name="Proteomics Resources" url="/portals/proteome/index.jsp" id="118">
+            <page name="Data Repositories" url="/portals/proteome/proteome_data.jsp" id="1180">
+                <page name="Primary Sequence" url="/portals/proteome/proteinSeq.jsp" id="11800"/>
+                <page name="Protein Domain" url="/portals/proteome/domain.jsp" id="11801"/>
+                <page name="Protein Structure" url="/portals/proteome/proteinStructure.jsp" id="11802"/>
+                <page name="Protein Location" url="/portals/proteome/proteinLocation.jsp" id="11803"/>
+                <page name="Protein-protein Interaction" url="/portals/proteome/proteinInteract.jsp" id="11804"/>
+                <page name="Biochemical Properties" url="/portals/proteome/biochem.jsp" id="11805"/>
+            </page>
+            <page name="Data Analysis Tools" url="/portals/proteome/proteome_tool.jsp" id="11806"/>
+            <page name="Proteome Facilities" url="/portals/proteome/proteome_facility.jsp" id="11807"/>
+            <page name="Proteomics Standards" url="/portals/proteome/proteome_standard.jsp" id="11809"/>
+        </page>
+	<page name="Metabolomics Resources" url="/portals/metabolome/index.jsp" id="119">
+	    <page name="Databases" url="/portals/metabolome/metabolome_database.jsp" id="1190"/>
+            <page name="Metabolite Profiling Data" url="/portals/metabolome/metabolome_data.jsp" id="1191"/>
+	    <page name="Data Analysis Tools" url="/portals/metabolome/metabolome_tool.jsp" id="1192"/>
+            <page name="Services and Facilities" url="/portals/metabolome/metabolome_facility.jsp" id="1193"/>
+            <page name="Metabolomics Standards" url="/portals/metabolome/metabolome_standard.jsp" id="1194"/>
+	    <page name="Chemical Structure Tools" url="/portals/metabolome/metabolome_chemicals.jsp" id="1195"/>
+	</page>
+</page>
+    
+    <page name="Data Submission" url="/submit/index.jsp" id="12">
+        <page name="ABRC Stock Donation" url="https://abrc.osu.edu/donate-stocks" id="120"/>
+        <page name="External Links" url="/submit/ExternalLinkSubmission.jsp" id="121"/>
+        <page name="Gene Class Symbol Registration" url="/portals/nomenclature/symbol_main.jsp"/>
+        <page name="Gene Family Data" url="/submit/genefamily_submission.jsp" id="122"/>
+        <page name="Literature-Based Gene Function Data " url="/doc/submit/functional_annotation/123" id="123"/>
+        <page name="Gene Structure Additions/Modifications" url="/submit/gene_annotation.submission.jsp" id="124"/>
+        <page name="Locus Identifier Request" url="/submit/locus_identifier_request.jsp" id="125"/>
+        <page name="Marker and Polymorphism Data" url="/submit/marker_submission.jsp" id="126"/>
+        <page name="Metabolic Pathway Data" url="/submit/pathway_submission.jsp" id="127"/>
+        <page name="Phenotypes" url="/submit/phenotype_submission.jsp" id="128"/>
+        <page name="Protocols" url="/submit/protocol_submission.jsp" id="129"/>
+        <page name="2010 Functional Genomics Gene List" url="/submit/submit_2010.jsp" id="130"/>
+    </page>
+    <page name="News" url="/news/index.jsp" id="14">
+        <page name="TAIR News" url="/news/index.jsp">
+            <page name="Breaking News" url="/doc/news/breaking_news/140" id="140"/>
+            <page name="What was News" url="/news/oldnews.jsp" id="141"/>
+        </page>
+        <page name="Arabidopsis Newsgroup" url="/news/newsgroup.jsp" id="142">
+            <page name="Archives" url="http://www.bio.net/bionet/mm/arab-gen/"/>
+            <page name="About and How to Subscribe" url="/news/newsgroup.jsp"/>
+        </page>
+        
+        <page name="TAIR Newsletter Archive" url="/news/newsletter_archive.jsp" id="145"/>
+
+        <page name="Conferences and Events" url="/news/events.jsp" id="143">
+            <page name="Upcoming Events" url="/news/events.jsp" id="1430"/>
+            <page name="ICAR Abstracts" url="/news/abstracts.jsp" id="1431"/>
+        </page>
+        <page name="Job Postings" url="/news/jobs.jsp" id="144"/>
+        <page name="How to Post a Job" url="/help/faq.jsp#jobs"/>
+    </page>
+    <page name="Download" url="ftp://ftp.arabidopsis.org/home/tair" id="15">
+        <page name="Download Overview" url="/download/index.jsp" id="150"/>
+        <page name="ABRC" url="ftp://ftp.arabidopsis.org/home/tair/ABRC/"/>
+        <page name="Genes" url="ftp://ftp.arabidopsis.org/home/tair/Genes/"/>
+        <page name="GO and PO Annotations" url="ftp://ftp.arabidopsis.org/home/tair/Ontologies/"/>
+        <page name="Maps" url="ftp://ftp.arabidopsis.org/home/tair/Maps"/>
+        <page name="Pathways" url="ftp://ftp.plantcyc.org/Pathways/"/>
+        <page name="Proteins" url="ftp://ftp.arabidopsis.org/home/tair/Proteins/"/>
+        <page name="Protocols" url="ftp://ftp.arabidopsis.org/home/tair/Protocols/"/>
+        <page name="Microarray Data" url="ftp://ftp.arabidopsis.org/home/tair/Microarrays/"/>
+        <page name="Sequences" url="ftp://ftp.arabidopsis.org/home/tair/Sequences/"/>
+        <page name="Software" url="ftp://ftp.arabidopsis.org/home/tair/Software/"/>
+        <page name="User Requests" url="ftp://ftp.arabidopsis.org/home/tair/User_Requests/"/>
+    </page>
+</page>
+
+   
+   
+   

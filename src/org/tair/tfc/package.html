@@ -1,0 +1,43 @@
+<html>
+<head>
+</head>
+
+<body>
+
+<h3>Tfc Data Layer</h3>
+
+<p>
+The Tfc package acts as the main data layer that represents the database schema within the TAIR application.  Each class represents a single table in the database; each instance of a Tfc class represents a single row from that table. Tfc classes have one member variable for each (non-obsolete) column in the database table.  Each member variable can be accessed or changed through standard get/set methods.
+
+<p>
+Tfc classes usually provide two constructors: a default constructor with no arguments that simply creates an empty instance of the class, and a constructor that will take as arguments a database connection instance along with a primary key (or keys) value. Numeric primary keys are always represented as Long values.  This constructor will access the database and retrieve data for the requested row.  If no row is found for the primary key(s), a RecordNotFoundException (which inherits from java.sql.SQLException)  should be thrown.
+
+<p>
+Tfc classes should only have constructors that take an element name instead of a numeric primary key if the database table actually implements a UNIQUE constraint on the name field.  Otherwise, the element name cannot be relied on to be an identifier.
+
+<p>
+Tfc classes should only contain data for the single table they represent.  No other table data should be accessible, and no other Tfc objects should be contained within a Tfc object.  The only exception is for classes that define data through foreign keys to a lookup table.  In this case, it is acceptable to include the lookup table data within the class, since the lookup usually represents basic data such as type that is often needed by the class.
+
+<p>
+Tfc classes can be extended to contain additional data found in other tables.  This is often done within the classes found in the src.querytools package, which often inherit from Tfc base classes to include other data, either as single Tfc classes, or collections of them.  Ultimately, however, all contained data should map to aTfc class.
+
+<p>
+Data should be persisted to the database using the Tfc classes' store methods.  These methods are not included in every class, but should be added as persistance becomes required.  Store methods should usually handle data as either an UPDATE or as an INSERT.  In general, if the object's primary key is NULL, storing will be done as an INSERT; if the key is not NULL, storing will be done as an UPDATE.  The main exception to this rule is if the Tfc class represents a row in a many to many linking table.  In this case, store will only do an INSERT.  These types of objects are often handled by custom collections in src.querytools. When a collection is stored, it usually clears all previous records by executing a DELETE, then INSERTing only those elements remaining.
+
+<p>
+Store methods should not include any transaction handling within the Tfc class.  All transaction handling must be handled at higher level objects.  This is done to avoid problems with nesting transactions (which cannot be done by Sybase).
+
+<p> 
+All SQL access to each table should be managed entirely through its accompanying Tfc class whenever possible.  This includesstatic utility methods, such as retrieving a single field value for a key, or translating one type of key to another (such as map element id to clone id).  
+
+<p>
+Tfc classes may also include other methods such as data formatting convenience methods.
+
+
+
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:a4j="http://richfaces.org/a4j"
+    xmlns:rich="http://richfaces.org/rich"
+    xml:lang="en">
+    <!-- Implements content followed by non-scrolling comment section that does not require logging into add comments -->
+    <ui:insert name="head">
+        <ui:include src="/facelets/includes/head.xhtml" />
+    </ui:insert>
+    <h:body>
+        <div id="container">
+            <ui:insert name="header">
+                <ui:include src="/facelets/includes/header.xhtml" />
+            </ui:insert>
+            <div id="content">
+                <ui:insert name="breadcrumbs">
+                    <ui:include src="breadcrumbs.xhtml" />
+                </ui:insert>
+                <h:messages
+                    errorClass="error"
+                    layout="table"
+                    globalOnly="true" />
+                <div id="sidebar">
+                    <ui:insert name="sidebar">
+                        <div id="leftcolumn">
+                            <ui:include src="sidebar.xhtml" />
+                        </div>
+                    </ui:insert>
+                </div>
+                <div id="rightcolumn">
+                    <ui:insert name="content">
+                        <ui:include src="content.xhtml" />
+                    </ui:insert>
+                    <ui:insert name="comments">
+                        <div id="comments">
+                            <h:form>
+                                <a4j:outputPanel
+                                    id="comments_panel"
+                                    ajaxRendered="true">
+                                    <rich:dataTable
+                                        id="comments_table"
+                                        value="#{comment.comments}"
+                                        var="c"
+                                        rows="0">
+                                        <f:facet name="caption">
+                                            <h:outputText
+                                                value="Comments (if logged in your name will appear in User column)"
+                                                escape="false" />
+                                        </f:facet>
+                                        <rich:column>
+                                            <f:facet name="header">User</f:facet>
+                                            <h:outputText value="#{c.userName}" />
+                                        </rich:column>
+                                        <rich:column width="85px">
+                                            <f:facet name="header">Date</f:facet>
+                                            <h:outputText value="#{c.commentDate}" />
+                                        </rich:column>
+                                        <rich:column>
+                                            <f:facet name="header">Comment</f:facet>
+                                            <h:outputText value="#{c.comment}" />
+                                        </rich:column>
+                                    </rich:dataTable>
+                                    <!-- text area here so Ajax renders it on submit -->
+                                    <h:inputTextarea
+                                        id="add_comment"
+                                        value="#{comment.comment}"
+                                        required="true"
+                                        rows="10"
+                                        cols="67">
+                                    </h:inputTextarea>
+                                </a4j:outputPanel>
+                                <!-- Panel grid with buttons here to rerender comment panel -->
+                                <h:panelGrid columns="1">
+                                    <h:panelGroup>
+                                        <a4j:commandButton
+                                            type="submit"
+                                            value="Add Comment"
+                                            action="#{comment.addComment}"
+                                            reRender="comments_panel" />
+                                        <h:commandButton
+                                            type="reset"
+                                            value="Cancel" />
+                                    </h:panelGroup>
+                                </h:panelGrid>
+                                <ui:insert name="login_link" />
+                                <strong><br /> <h:outputText
+                                        rendered="#{!login.loggedIn}"
+                                        value="Login is optional; if you log in, your name will appear in the User column." /> </strong>
+                                <a id="comment_anchor" />
+                            </h:form>
+                            <ui:insert name="postscript">
+                                <ui:include src="postscript.xhtml" />
+                            </ui:insert>
+                        </div>
+                    </ui:insert>
+                </div>
+            </div>
+            <ui:insert name="footer">
+                <ui:include src="/facelets/includes/footer.xhtml" />
+            </ui:insert>
+        </div>
+    </h:body>
+</html>

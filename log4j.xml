@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<!-- ===================================================================== -->
+<!--                                                                       -->
+<!--  Log4j Configuration                                                  -->
+<!--                                                                       -->
+<!-- ===================================================================== -->
+
+<!--
+   | For more configuration information and examples see the Jakarta Log4j
+   | owebsite: http://jakarta.apache.org/log4j
+ -->
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/" debug="false">
+
+   <!-- ============================== -->
+   <!-- Append messages to the console -->
+   <!-- ============================== -->
+
+   <appender name="CONSOLE" class="org.apache.log4j.ConsoleAppender">
+      <param name="Target" value="System.out"/>
+      <param name="Threshold" value="DEBUG"/>
+
+      <layout class="org.apache.log4j.PatternLayout">
+         <!-- The default pattern: Date Priority [Category] Message\n -->
+         <param name="ConversionPattern" value="%d{ABSOLUTE} %-5p [%c{1}] %m%n"/>
+      </layout>
+   </appender>
+
+   <!-- ================ -->
+   <!-- Limit categories -->
+   <!-- ================ -->
+
+   <!-- TAIR logging -->
+   <!-- Note: if you want to set the priority for only one appender, add
+        <appender-ref ref="CONSOLE"/> or whatever; but note that you also
+        have the root appending, so you'll get two messages unless you also
+        set log4j.additivity.<package>.<class>=false -->
+   <category name="org.jnp">
+     <priority value="WARN" />
+   </category>
+   
+   <category name="com.arjuna">
+     <priority value="WARN" />
+   </category>
+   
+   <category name="org.apache.coyote">
+     <priority value="WARN" />
+   </category>
+
+   <category name="org.apache.catalina">
+     <priority value="WARN" />
+   </category>
+
+   <!-- TAIR logging -->
+   <category name="org.tair">
+     <priority value="DEBUG" />
+   </category>
+
+   <category name="org.tair.tfc.DBconnection">
+     <priority value="WARN" />
+   </category>
+
+   <category name="org.tair.tfc.DatabaseManager">
+     <priority value="WARN" />
+   </category>
+
+   <!-- TAIR Germplasm_Pedigree_wrk table builder -->
+   <category name="org.tair.search.germplasm">
+     <priority value="DEBUG" />
+   </category>
+
+   <category name="com.poesys">
+     <priority value="WARN" />
+   </category>
+
+   <!-- connection logging -->
+   <category name="com.poesys.bs.delegate.AbstractConnectionDelegate">
+     <priority value="INFO" />
+   </category>
+
+   <!-- connection logging -->
+   <category name="com.poesys.db.connection.JndiConnectionFactory">
+     <priority value="INFO" />
+   </category>
+
+   <category name="com.poesys.db.dao.DaoManager">
+     <priority value="INFO" />
+   </category>
+
+  <category name="com.poesys.db.dao.CacheListenerExecutor">
+     <priority value="INFO" />
+   </category>
+
+   <category name="com.poesys.db.dao.CacheMessageListener">
+     <priority value="INFO" />
+   </category>
+
+   <category name="com.poesys.db.dto.DtoCacheWithMessaging">
+     <priority value="INFO" />
+   </category>
+
+   <category name="org.tair.bs.community.CommunityDelegateFactory">
+     <priority value="INFO" />
+   </category>
+   
+   <category name="org.tair.abrc.catalog.category.CatalogCategory">
+     <priority value="DEBUG" />
+   </category>
+
+   <category name="org.tair.abrc.catalog.CatalogManager">
+     <priority value="DEBUG" />
+   </category>
+
+   <category name="org.ajax4jsf">
+     <priority value="WARN" />
+   </category>
+   
+   <category name="org.apache.myfaces">
+     <priority value="WARN" />
+   </category>
+   
+   <category name="facelets">
+     <priority value="WARN" />
+   </category>
+   
+   <category name="javax.faces">
+     <priority value="WARN" />
+   </category>
+   
+   <category name="org.richfaces">
+     <priority value="WARN" />
+   </category>
+
+   <category name="net.rubyeye.xmemcached">
+     <priority value="ERROR" />
+   </category>
+
+   <category name="com.google">
+     <priority value="ERROR" />
+   </category>
+
+   <!-- ======================= -->
+   <!-- Setup the Root category -->
+   <!-- ======================= -->
+
+   <root>
+      <priority value="DEBUG"/>
+      <appender-ref ref="CONSOLE"/>
+   </root>
+
+</log4j:configuration>
+

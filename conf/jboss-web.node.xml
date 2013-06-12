@@ -1,0 +1,6 @@
+<jboss-web>
+ <passivation-config>
+  <use-session-passivation>true</use-session-passivation>
+  <passivation-max-idle-time>3600</passivation-max-idle-time>
+ </passivation-config>
+</jboss-web>

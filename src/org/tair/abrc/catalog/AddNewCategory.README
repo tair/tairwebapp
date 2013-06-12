@@ -1,0 +1,15 @@
+To add a new stock category, do the following:
+
+- implement subclass of src.abrc.catalog.category.CatalogCategory to represent stock category. Class specifies what SQL to use for getting stocks in category, what ancillary data to retrieve for stocks in category, and what name to refer to category as
+
+- add entry for new category to config file (should be in abrc/conf/Categories.properties); entry should use category name (as defined in category class) referencing the full class name of the Category class to instantiate when populating
+
+- create JSP to display category. JSP must be named as [category name].jsp. JSP must be added to the jsp/abrc/catalog directory.
+
+- create directory to contain data files in data/catalog. Directory must have the same name as the category name specified in the category class.
+
+- populate category by running src.abrc.catalog.CatalogServer, supplying category name as command line argument; local web server must be running to fully generate HTML pages, though usually some tweaking of dynamic JSP is required
+
+- add link to new category pages from main page at jsp/abrc/catalog/contents.jsp
+
+- deploy new catalog pages to production by pushing new classes, adding directories and config file entries and static HTML pages

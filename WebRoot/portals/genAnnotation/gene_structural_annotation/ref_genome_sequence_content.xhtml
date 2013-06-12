@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core" xml:lang="en" lang="en" xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich">
+
+	<ui:composition>
+		<span class="mainheader"> Policy Statement on Arabidopsis thaliana Reference Sequence </span>
+		<p>
+			The first genome sequence of Arabidopsis thaliana was completed in 2000. Sequencing was accomplished by a consortium, using
+			several different clone libraries with varying amounts of documentation with regard to which stock of the ecotype/accession
+			Columbia (Col-0) was used in creating the libraries, and how these stocks were related to each other.
+		</p>
+		<p>
+			Responsibility for updating the reference genome annotation was passed from TIGR to TAIR after the TIGR5 genome release in
+			January 2004. The following two releases (TAIR6 and TAIR7) contained large numbers of updates to gene structure and function,
+			reflecting the continued accumulation of new transcript sequences and function data. However, updates to the underlying
+			chromosome assemblies were not made for these releases, as there was little or no new genomic sequence data to be incorporated
+			during this period.
+		</p>
+		<p>
+			In the past year the situation has begun to change rapidly, with new low-cost sequencing technologies becoming widely
+			available. These technologies are sparking a new round of genome sequencing for Arabidopsis, mainly focused on identifying
+			ecotype differences. Although these new sequencing projects are not primarily focused on the Columbia ecotype, they do include
+			this ecotype as a reference standard. This new Columbia sequence data has begun to reveal a significant number of differences
+			from the existing reference genome sequence. Many of these are likely to be errors in the original reference, while others
+			probably simply reflect spontaneous mutations that have accumulated in different Columbia seed stocks.
+		</p>
+		<p>
+			This policy document aims to more rigorously define the Arabidopsis reference genome sequence and outline a standard of
+			evidence to be used in making updates. These steps will help to maximize the usefulness of the reference sequence to the
+			research community and ensure that any changes to the reference sequence meet a standard of evidence support endorsed by the
+			community. This document does not address the separate but related need for a sequence resource containing a complete set of
+			Arabidopsis genes from all sequenced accessions but is limited to how we can maximize the sequence quality for a single
+			reference accession.
+		</p>
+		<h2>
+			Defining the Arabidopsis reference sequence
+		</h2>
+		<p>
+			The reference sequence is currently defined as a composite sequence from several different laboratory stocks of the Columbia
+			ecotype. While this definition has served well enough up to this point, the increasing availability of sequences from various
+			Columbia seed stocks has begun to reveal sequence differences even at this level. Currently there are 11 Columbia lines
+			described in TAIR, each of which has one or more seed stocks associated with it, for a total of 30 different stocks. For the
+			line Col-0 alone ABRC maintains 11 separate stocks submitted by different labs. While differences among these Col-0 stocks are
+			not expected to be large, there is little doubt that they will exist, and specific examples have already been documented.
+		</p>
+		<p>
+			There are several advantages to agreeing on a single seed stock as the reference sequence stock. For those who choose to work
+			with the reference stock for studies of natural variation, gene expression, etc. the advantage will be a greater certainty that
+			the reference genome sequence accurately represents the genome sequence of the biological samples being used, thereby avoiding
+			miscalling of SNPs and improving accuracy of microarray and tiling chip experiments and other technologies that rely on an
+			accurate genome sequence. Identifying a single, highly inbred seed stock as the standard will also improve the consistency of
+			the reference sequence and minimize repeated changes that update the genome first to one reference seed stock, and then
+			another, depending on which sequence was contributed most recently or judged to be most reliable.
+		</p>
+		<p>
+			A good choice for the reference seed stock would be the stock that has been used to generate the largest number of publicly
+			available clones, mutant lines, etc., since this approach will maximize the utility of these public resources. Using this
+			criterion we propose that the Col-0 seed stock CS70000, the stock used to generate the Ecker T-DNA and cDNA collections, be
+			designated as the reference seed stock.
+		</p>
+		<h2>
+			Standard of evidence for updating the reference sequence
+		</h2>
+		<p>
+			In addition to defining what the reference sequence represents, it&#39;s necessary to define a standard of evidence that will
+			ensure that the reference genome sequence will continue to meet community expectations of quality.
+		</p>
+		<h3>
+			Proposed evidence standards:
+		</h3>
+		<ol>
+			<li>
+				Corrections will be made if supported by two or more independently derived sequence libraries from the Columbia ecotype (and
+				at least one of the two is derived from genomic DNA), and the correction is supported by the majority of available sequence
+				data. Corrections will not be made if only one independently derived sequence supports the change, or if the majority of
+				Columbia sequence data at that position does not support the change (except in the case outlined below).
+			</li>
+			<li>
+				At positions where CS70000 is found to differ from other Columbia seed stocks based on at least two independently derived
+				CS70000 sequences (one of which is genomic), the CS70000 sequence will be adopted.
+			</li>
+			<li>
+				Quality standards will be required for sequences used to support a correction. These standards must necessarily be specific to
+				the sequencing technology used, but will include such parameters as depth of coverage and the percentage of reads that support
+				the correction.
+			</li>
+		</ol>
+		<h2>
+			Process for updating the reference sequence
+		</h2>
+		<p>
+			Updates to the reference sequence will be carried out as a part of TAIR&#39;s regular genome releases, and the changes will be
+			released at TAIR and propagated to NCBI RefSeq along with updates to gene structure and function that are already propagated in
+			this way. No changes will be made to the original BAC sequence records stored in GenBank, DDBJ and EMBL as these are owned by
+			the submitters and represent archival copies of the original experimental data from the sequencing project.
+		</p>
+		<h2>
+			Procedure for adopting these recommendations
+		</h2>
+		<p>
+			This document will be circulated to the following groups for comment and revision: TAIR advisory board, NAASC, MASC. Following
+			incorporation of suggested changes, the document will be posted on TAIR for public comment for a period of three months. The
+			broader community will be informed of the opportunity to comment through postings to TAIR and the BioNet international
+			Arabidopsis newsgroup. At the end of that period a final round of revision will be carried out and the resulting document will
+			be published in a refereed journal and posted on the TAIR website.
+		</p>
+	</ui:composition>
+</html>

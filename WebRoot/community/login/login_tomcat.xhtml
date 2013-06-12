@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core" xml:lang="en" lang="en">
+
+	<f:view>
+		<ui:composition template="/facelets/templates/standard.xhtml">
+			<ui:define name="title">TAIR - Tomcat Login Page</ui:define>
+			<ui:define name="css">
+				<link rel="stylesheet" type="text/css" href="/css/page/login.css" />
+			</ui:define>
+			<ui:define name="content">
+				<form id="tomcat_login_form" action="j_security_check" method="post">
+					<table id="tomcat_login_form_table" border="0">
+						<tr>
+							<td>
+								Username:
+							</td>
+							<td>
+								<input type="text" name="j_username" size="22" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Password:
+							</td>
+							<td>
+								<input type="password" name="j_password" size="22" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="submit" value="Login" />
+							</td>
+						</tr>
+					</table>
+				</form>
+				<h:form>
+					<p>
+						If you forgot your username or password,
+						<h:commandLink value=" request your login information here."
+							action="request_info" />
+					</p>
+					<p>
+						If your personal profile does not exist in our database,
+						<h:commandLink value=" register " action="register" />
+						as a new Tair user.
+					</p>
+				</h:form>
+			</ui:define>
+		</ui:composition>
+	</f:view>
+</html>

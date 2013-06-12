@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+
+	<display-name>TAIR Payment Handler</display-name>
+	<description />
+
+	<servlet>
+		<servlet-name>PaymentInfo</servlet-name>
+		<servlet-class>
+			org.tair.abrc.handler.PaymentInfoHandler
+		</servlet-class>
+		<init-param>
+			<param-name>jndiName</param-name>
+			<param-value>java:${database.write.jndi.name}</param-value>
+		</init-param>
+	</servlet>
+
+	<servlet-mapping>
+		<url-pattern>/payment</url-pattern>
+		<servlet-name>PaymentInfo</servlet-name>
+	</servlet-mapping>
+
+</web-app>

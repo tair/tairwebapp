@@ -1,0 +1,71 @@
+    <!-- TAIR authentication policy: add to login-config.xml in ${jboss.home}/server/${server}/conf -->
+    <application-policy name="tairweb">
+        <authentication>
+            <!-- A JDBC based LoginModule
+                LoginModule options:
+                dsJndiName: The name of the DataSource of the database containing the Principals, Roles tables
+                principalsQuery: The prepared statement query equivalent to:
+                "select Password from Principals where PrincipalID=?"
+                rolesQuery: The prepared statement query equivalent to:
+                "select Role, RoleGroup from Roles where PrincipalID=?"
+            -->
+            <login-module code="org.jboss.security.auth.spi.DatabaseServerLoginModule" flag="required">
+                <!-- password-stacking useFirstPass puts the authentication into the shared state for use in ClientLoginModule -->
+                <module-option name="password-stacking">useFirstPass</module-option>
+                <module-option name="dsJndiName">java:jdbc/ReadOnlyTairTestJTDS</module-option>
+                <module-option name="password-stacking">useFirstPass</module-option>  
+                <module-option name="principalsQuery">select ltrim(rtrim(password)) from Community where user_name=?</module-option>
+                <module-option name="rolesQuery">
+                    SELECT "Role", 'Roles' AS RoleGroup 
+                      FROM (SELECT c.user_name, 'community_user' AS "Role" 
+                              FROM Person p JOIN
+                                   Community c ON p.community_id = c.community_id
+                             WHERE c.is_obsolete = 'F' AND
+                                   c.status = 'active'
+                            UNION 
+                            SELECT c.user_name, 'tair_curator' AS "Role" 
+                              FROM Person p JOIN 
+                                   Community c ON p.community_id = c.community_id 
+                             WHERE p.is_tair_curator = 'T' AND
+                                   c.is_obsolete = 'F' AND
+                                   c.status = 'active'
+                            UNION 
+                            SELECT c.user_name, 'external_curator' AS "Role" 
+                              FROM Person p JOIN 
+                                   Community c ON p.community_id = c.community_id 
+                             WHERE p.is_external_curator = 'T' AND
+                                   c.is_obsolete = 'F' AND
+                                   c.status = 'active'
+                            UNION
+                            SELECT c.user_name, 'donor' AS "Role"
+                              FROM Community c JOIN
+                                   Donor d ON c.community_id = d.community_id JOIN
+                                   Stock s ON d.stock_id = s.stock_id
+                             WHERE c.is_obsolete = 'F' AND
+                                   c.status = 'active'
+                            UNION
+                            SELECT c.user_name, 'contact_person' AS "Role"
+                              FROM Community c JOIN
+                                   Organization o ON c.community_id = o.community_id JOIN
+                                   Affiliation a ON o.organization_id = a.organization_id
+                             WHERE c.is_obsolete = 'F' AND
+                                   c.status = 'active' AND
+                                   a.is_contact_person = 'T'
+                            UNION
+                            SELECT c.user_name, 'pi' AS "Role"
+                              FROM Community c JOIN
+                                   Organization o ON c.community_id = o.community_id JOIN
+                                   Affiliation a ON o.organization_id = a.organization_id
+                             WHERE c.is_obsolete = 'F' AND
+                                   c.status = 'active' AND
+                                   a.is_pi = 'T') AS Roles
+                     WHERE user_name = 'techteam';
+                </module-option>
+            </login-module>
+            <!-- ClientLoginModule propagates the authentication to the client servlet/ejb -->
+            <login-module code = "org.jboss.security.ClientLoginModule" flag = "required">
+                <!-- Any existing security context will be restored on logout -->
+                <module-option name="restore-login-identity">true</module-option>
+            </login-module>
+        </authentication>
+    </application-policy>

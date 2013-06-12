@@ -1,0 +1,75 @@
+<pretty-config xmlns="http://ocpsoft.com/prettyfaces-xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://ocpsoft.com/prettyfaces-xsd  http://ocpsoft.com/xml/ns/prettyfaces/pretty-1.0.xsd"
+>
+	<!-- First pattern element is object category: entity (a TAIR object) or doc (a web
+		document) or a specific resource like locus; #{page.pageId} is from sitemap.xml
+		and enables the breadcrumb display for the page using the static page id; the load
+		actions call the load method on the managed bean to fill in the data on the page
+		at startup given the data injected by the pattern expression. -->
+	<url-mapping id="org.tair.community.personDetail">
+		<pattern>/entity/person_detail/#{f_person.id}</pattern>
+		<view-id>/community/person_detail.faces</view-id>
+		<action>#{f_person.load}</action>
+	</url-mapping>
+	<url-mapping id="org.tair.search.locusDetail">
+		<pattern>/entity/locus/#{locus.id}</pattern>
+		<view-id>/search/locus_detail.faces</view-id>
+		<action>#{locus.load}</action>
+	</url-mapping>
+	<url-mapping id="org.tair.resources.locusSummary">
+		<pattern>/locus/#{locusSummary.name}</pattern>
+		<view-id>/resources/locus_summary.faces</view-id>
+		<action>#{locusSummary.load}</action>
+	</url-mapping>
+	<url-mapping id="org.tair.portals.gen_annotation.gene_structural_annotation.ref_genome_sequence">
+		<pattern>
+			/doc/portals/genAnnotation/gene_structural_annotation/ref_genome_sequence/#{comment.pageId}
+		</pattern>
+		<view-id>
+			/portals/genAnnotation/gene_structural_annotation/ref_genome_sequence.faces
+		</view-id>
+		<action>#{comment.load}</action>
+	</url-mapping>
+	<url-mapping id="org.tair.about.tair_survey">
+		<pattern>/doc/about/tair_survey/#{comment.pageId}</pattern>
+		<view-id>/about/tair_survey.faces</view-id>
+		<action>#{comment.load}</action>
+	</url-mapping>
+	<url-mapping id="org.tair.about.tair_funding">
+		<pattern>/doc/about/tair_funding/#{funding.pageId}</pattern>
+		<view-id>/about/tair_funding.faces</view-id>
+		<action>#{funding.load}</action>
+	</url-mapping>
+	<url-mapping id="org.tair.about.tair_sponsorship">
+		<pattern>/doc/about/tair_sponsorship/#{page.pageId}</pattern>
+		<view-id>/about/tair_sponsorship.faces</view-id>
+		<action>#{page.load}</action>
+	</url-mapping>
+	<url-mapping id="org.tair.about.tair_sponsors">
+		<pattern>/doc/about/tair_sponsors/#{page.pageId}</pattern>
+		<view-id>/about/tair_sponsors.faces</view-id>
+		<action>#{page.load}</action>
+	</url-mapping>
+	<url-mapping id="org.tair.news.breaking_news">
+		<pattern>/doc/news/breaking_news/#{news.pageId}</pattern>
+		<view-id>/news/breaking_news.faces</view-id>
+		<action>#{news.load}</action>
+	</url-mapping>
+	<url-mapping id="org.tair.submit.functional_annotation">
+		<pattern>/doc/submit/functional_annotation/#{geneSubmission.pageId}</pattern>
+		<view-id>/submit/gene_functional_annotation.faces</view-id>
+		<action>#{geneSubmission.load}</action>
+	</url-mapping>
+	<url-mapping id="org.tair.submit.functional_annotation.spreadsheet">
+		<pattern>
+			/doc/submit/functional_annotation_spreadsheet/#{geneSubmission.pageId}
+		</pattern>
+		<view-id>/submit/gene_functional_annotation.faces</view-id>
+		<action>#{geneSubmission.load}</action>
+	</url-mapping>
+	<url-mapping id="org.tair.tools.igb">
+		<pattern>/doc/tools/igb/#{page.pageId}</pattern>
+		<view-id>/tools/igb.faces</view-id>
+		<action>#{page.load}</action>
+	</url-mapping>
+</pretty-config>

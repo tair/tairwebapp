@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core" xml:lang="en"
+    xmlns:a4j="http://richfaces.org/a4j" xmlns:rich="http://richfaces.org/rich"
+>
+<ui:composition>
+    <h:form>
+        <rich:panelMenu >
+            <rich:panelMenuGroup name="masc_home_group"
+                label="MASC/Functional Genomics" expanded="true"
+                iconExpanded="triangleDown" iconCollapsed="triangle"
+            >
+                <rich:panelMenuItem  name="masc_home"
+                    label="MASC/Functional Genomics"
+                    alt="MASC/Functional Genomics" icon="none"
+                    onclick="document.location.href='/portals/masc/index.jsp'"
+                />
+                <rich:panelMenuItem  name="about_masc"
+                    label="About MASC" alt="About MASC" icon="none"
+                    onclick="document.location.href='/portals/masc/MASC_Info.jsp'"
+                />
+                <rich:panelMenuItem 
+                    name="coordinators_journal" label="Coordinator's Journal"
+                    alt="Coordinator's Journal" icon="none"
+                    onclick="document.location.href='/portals/masc/journal.jsp'"
+                />
+                <rich:panelMenuItem  name="masc_members"
+                    label="MASC Members" alt="MASC Members" icon="none"
+                    onclick="document.location.href='/portals/masc/MASC_members.jsp'"
+                />
+                <rich:panelMenuItem  name="masc_subcommittees"
+                    label="MASC Subcommittees" alt="MASC Subcommittees"
+                    icon="none"
+                    onclick="document.location.href='/portals/genAnnotation/functional_annotation/index.jsp'"
+                />
+                <rich:panelMenuItem  name="icar"
+                    label="International Conferences on Arabidopsis Research"
+                    alt="International Conferences on Arabidopsis Research"
+                    icon="none"
+                    onclick="document.location.href='/news/abstracts.jsp'"
+                />
+                <rich:panelMenuItem  name="funding"
+                    label="Funding and Educational Opportunities"
+                    alt="Funding and Educational Opportunities" icon="none"
+                    onclick="document.location.href='/portals/masc/funding.jsp'"
+                />
+                <rich:panelMenuItem  name="portals"
+                    label="Arabidopsis Resource Portals"
+                    alt="Arabidopsis Resource Portals" icon="none"
+                    onclick="document.location.href='/portals/index.jsp'"
+                />
+            </rich:panelMenuGroup>
+            <rich:panelMenuGroup name="masc_by_country_group"
+                label="MASC by Country" expanded="true"
+                iconExpanded="triangleDown" iconCollapsed="triangle"
+            >
+                <rich:panelMenuItem  name="masc_by_country"
+                    label="MASC by Country" alt="MASC by Country" icon="none"
+                    onclick="document.location.href='/portals/masc/countries/index.jsp'"
+                />
+                <rich:panelMenuItem  name="asia_pacific"
+                    label="Asia/Pacific" alt="Asia Pacific" icon="none"
+                    onclick="document.location.href='/portals/masc/countries/asia.jsp'"
+                />
+                <rich:panelMenuItem  name="europe"
+                    label="Europe" alt="Europe" icon="none"
+                    onclick="document.location.href='/portals/masc/countries/europe.jsp'"
+                />
+                <rich:panelMenuItem  name="middle_east"
+                    label="Middle East" alt="Middle East" icon="none"
+                    onclick="document.location.href='/portals/masc/countries/Mideast.jsp'"
+                />
+                <rich:panelMenuItem  name="north_america"
+                    label="North America" alt="North America" icon="none"
+                    onclick="document.location.href='/portals/masc/countries/northamerica.jsp'"
+                />
+                <rich:panelMenuItem  name="south_america"
+                    label="South America" alt="South America" icon="none"
+                    onclick="document.location.href='/portals/masc/countries/southamerica.jsp'"
+                />
+            </rich:panelMenuGroup>
+            <rich:panelMenuGroup name="masc_documents_group"
+                label="MASC Documents" expanded="true"
+                iconExpanded="triangleDown" iconCollapsed="triangle"
+            >
+                <rich:panelMenuItem  name="masc_documents"
+                    label="MASC Documents" alt="MASC Documents" icon="none"
+                    onclick="document.location.href='/portals/masc/masc_docs/index.jsp'"
+                />
+                <rich:panelMenuItem  name="masc_annual_reports"
+                    label="MASC Annual Reports" alt="MASC Annual Reports"
+                    icon="none"
+                    onclick="document.location.href='/portals/masc/masc_docs/masc_reports.jsp'"
+                />
+                <rich:panelMenuItem 
+                    name="subcommittee_reports" label="Subcommittee Reports"
+                    alt="Subcommittee Reports" icon="none"
+                    onclick="document.location.href='/portals/masc/masc_docs/masc_sub_rep.jsp'"
+                />
+                <rich:panelMenuItem  name="workshop_reports"
+                    label="Workshop Reports" alt="Workshop Reports" icon="none"
+                    onclick="document.location.href='/portals/masc/masc_docs/masc_wk_rep.jsp'"
+                />
+            </rich:panelMenuGroup>
+            <rich:panelMenuGroup name="major_genomics_projects_group"
+                label="Major Genomics Projects" expanded="true"
+                iconExpanded="triangleDown" iconCollapsed="triangle"
+            >
+                <rich:panelMenuItem 
+                    name="major_genomics_projects"
+                    label="Major Genomics Projects"
+                    alt="Major Genomics Projects" icon="none"
+                    onclick="document.location.href='/portals/masc/genomics_projects.jsp'"
+                />
+                <rich:panelMenuItem  name="afgn"
+                    label="AFGN- Germany" alt="AFGN Germany" icon="none"
+                    onclick="document.location.href='/portals/masc/AFGN.jsp'"
+                />
+                <rich:panelMenuItem  name="at2010"
+                    label="AT2010- U.S." alt="AT2010 U.S." icon="none"
+                    onclick="document.location.href='/portals/masc/FG_projects.jsp'"
+                />
+                <rich:panelMenuItem  name="garnet"
+                    label="GARNet- U.K." alt="GARNet U.K." icon="none"
+                    onclick="document.location.href='http://garnet.arabidopsis.org.uk/'"
+                />
+            </rich:panelMenuGroup>
+        </rich:panelMenu>
+    </h:form>
+</ui:composition>
+</html>

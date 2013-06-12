@@ -1,0 +1,41 @@
+<html>
+<head>
+</head>
+
+<body>
+
+<p>
+The querytools package contains a variety of classes that extend and combine Tfc objects to form more complex data objects than can be represented by the Tfc class alone. Classes in the querytools package are reused heavily throughout the site, but are most often used within object detail pages for displaying various data elements.  There are three types of classes found within the querytools package:
+
+<p>
+<b>&quot;Band&quot; objects</b> <br>
+These classes extend Tfc classes directly to present more complicated data for a given data object.  They are called band objects, since they often are used to present data about an object in a single band of a detail page.  Band objects do not have as much data as a full Detail object, but may contain several different objects and collections to fill out data.  Band classes (unfortunately) do not follow any single naming convention; often they are named simply as the data type ( i.e. GeneModel), or as the data type followed by the suffix &quot;Object&quot; (i.e. StockObject).
+
+<p>
+There is some crossover between Band objects and &quot;Lite&quot; objects that are found in the org.tair.search package.  Lite objects were originally created to be extremely lightweight objects for display on search results pages where both Tfc and Band objects were too heavyweight.  If the querytools package is refactored to populate data on demand, instead of up front as it is now, the Lite objects should probably be done away with.
+
+<p>
+<b>Detail objects</b><br>
+These classes represent all data needed for displaying an object's data on its detail page.  All Detail objects are named with the suffix &quot;Detail&quot; (i.e. GeneDetail, CloneDetail).  Detail objects must all implement the Detail interface, which simply specifies two methods for populating the object instance with either a numeric or String key.  This is done to allow for creation of Detail objects using an abstract factory (DetailFactory) in the TairObject servlet.
+
+<p>
+ Detail objects have their own inheritance hierarchy for tair objects, map elements and references.. Because of Java's single inheritance model, Tfc base objects within the larger Detail hierarchy must be contained as member variables.
+
+<p>
+<b>Custom collections</b><br>
+These classes are used for representing multiple relationships. Custom collections contain standard Java collection objects such as ArrayList or HashMap and provide access to the collections as strongly typed wrapper methods.  This allows the collection to only contain objects of a single type (as opposed to the Object allowed by Java collections).  
+
+<p>
+Custom collections include the SQL and logic for retrieving elements associated to another data element.  This means, for example, that all publications for any TairObject can be retrieved by instantiating a PublicationObjectCollection, passing the TairObject's tair object id as an argument to the constructor. Some collections may allow for an additional argument that specifies the logic to be used for populating the collection; this is done to allow for the different paths to associated data within the database. For instance, the logic for retrieving loci for a gene is different than getting them for an amino acid sequence.
+
+<p>
+Collection population is done in two steps; primary keys for the data types in the collection (i.e. reference ids for publications) are retrieved according to whatever logic or data path is required, then individual objects are created using their constructors and added to the collection. This population method allows us to keep all details of the objects being constructed within the object constructors themselves, though it is at the cost of multiple database queries.
+
+<p>
+Custom collections are almost always named as the object type they contain followed by &quot;Collection&quot; (i.e. StockObjectCollection, PublicationObjectCollection).
+
+<p>
+Collections contained within another class (such as a Band or Detail object) should almost never be directly accessible by client code.  Access should be provided with an iterator method in the containing class.  This is done to avoid coupling client code to any specific collection.
+
+</body>
+</html>

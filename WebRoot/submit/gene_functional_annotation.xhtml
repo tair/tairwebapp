@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core" xmlns:a4j="http://richfaces.org/a4j"
+    xmlns:rich="http://richfaces.org/rich" xml:lang="en">
+
+<ui:composition template="/facelets/templates/sidebar.xhtml">
+    <ui:define name="title">TAIR - Online Gene Function Submission Form for Authors and Others</ui:define>
+    <ui:define name="css">
+        <link rel="stylesheet" type="text/css" href="/css/page/pagelevels.css" />
+        <link rel="stylesheet" type="text/css" href="/css/template/sidebar.css" />
+        <link rel="stylesheet" type="text/css"
+            href="/css/page/functional_annotation.css" />
+    </ui:define>
+    <ui:define name="breadcrumbs">
+        <h:outputText value="#{breadcrumbs.breadcrumb}"
+            binding="#{breadcrumbs.output}" escape="false">
+            <f:attribute name="pageId" value="123" />
+        </h:outputText>
+    </ui:define>
+    <ui:define name="sidebar">
+        <div id="leftcolumn">
+            <ui:include src="/facelets/includes/dataSubmissionSidebar.xhtml" />
+        </div>
+    </ui:define>
+    <ui:define name="content">
+        <div id="rightcolumn">
+            <span class="mainheader">Online Gene Function Submission Form
+                for Authors and Others</span>
+            <p>
+                Authors are encouraged to submit their gene function data to
+                TAIR at the time of publication. We also welcome submission of
+                data from older articles by any community member whether or not
+                you are an author on the article. Gene function data accepted by
+                this form include molecular function (for example, protein
+                kinase), localization (cellular, sub-cellular or gross anatomy),
+                biological role (for example, seed development), and interacting
+                partners. If you have other types of data to submit please
+                choose the appropriate form from our <a href="/submit">Submit
+                    Overview</a> page.
+            </p>
+            <p>
+                <strong>All submissions will be reviewed by a curator
+                    before making the data public and will not be released until
+                    the relevant publication is published.</strong>
+            </p>
+            <p>
+                <a href="/submit/submitters_list.jsp">List of submitters</a>
+            </p>
+            <p>
+                <strong> The form for direct submission of gene
+                    function data to TAIR is currently unavailable but will
+                    return soon. Please use the downloadable spreadsheet to
+                    submit data until then.</strong>
+            </p>
+            <p>
+                We provide a <a
+                    href="ftp://ftp.arabidopsis.org/home/tair/Data_Submission/functional_annotation_data_form.xls">
+                    preformatted Excel spreadsheet</a>. Please click on the link to
+                download the spreadsheet. Required fields are <span class="blue"><b>blue</b>
+                </span>. Fields with an asterisk(*) can have more than one entry
+                separated by a pipe with no intervening spaces (e.g.
+                Ecker,Joseph|Bell,Callum). Send completed files to <a
+                    href="javascript:location.href='mailto:curator@arabidopsis.org?SUBJECT=' + document.title + '&amp;BODY=' +'URL: ' + escape(location.href)"
+                    onclick="javascript:urchinTracker('/outgoing/curator_at_arabidopsis_org');">curator@arabidopsis.org</a>.
+                If submitting a manuscript to The Plant Journal, please include
+                this file in your TPJ submission as a supplemental file.
+            </p>
+            <p>
+                If you have any questions or suggestions, please send an email
+                to <a
+                    href="javascript:location.href='mailto:curator@arabidopsis.org?SUBJECT=' + document.title + '&amp;BODY=' +'URL: ' + escape(location.href)"
+                    onclick="javascript:urchinTracker('/outgoing/curator_at_arabidopsis_org');">curator@arabidopsis.org</a>.
+            </p>
+
+            <div>
+                <b>File Format</b>
+                <table border="1" cellspacing="0" cellpadding="2">
+                    <tr>
+                        <th><b>Field</b></th>
+                        <th><b>Description</b></th>
+                        <th><b>Values/Constraints</b></th>
+                        <th><b>Examples</b></th>
+                    </tr>
+
+                    <tr>
+                        <td valign="top"><span class="blue"><b>Contact
+                                    Person/<br /> Submitter </b> </span>*</td>
+                        <td>Name of the person we can contact if we have
+                            questions about the annotation</td>
+                        <td>none</td>
+                        <td>Eva Huala</td>
+                    </tr>
+
+                    <tr>
+                        <td valign="top"><span class="blue"><b>Locus
+                                    Identifier</b> </span></td>
+                        <td>AGI locus id or name of genetic locus</td>
+                        <td>At#g#####, see <a
+                            href="/portals/nomenclature/guidelines.jsp#locus"
+                            target="display">AGI coding convention</a> if the
+                            gene is new, splitting or merging existing genes</td>
+                        <td>AAAP or At1g10010</td>
+                    </tr>
+
+                    <tr>
+                        <td valign="top"><b>Gene Name</b></td>
+                        <td>symbol-based name of gene, if this exists</td>
+                        <td>See <a
+                            href="/portals/nomenclature/guidelines.jsp#genes">nomenclature
+                                guidelines</a></td>
+                        <td>ETO1</td>
+                    </tr>
+
+                    <tr>
+                        <td valign="top"><span class="blue"><b>Reference</b>
+                        </span>*</td>
+                        <td>PubMedID or citation</td>
+                        <td>PubMed ID can be obtained from <a
+                            href="/servlets/Search?action=new_search&amp;type=publication"
+                            target="display">TAIR Publication Search</a> or <a
+                            href="http://www.ncbi.nih.gov/entrez/query.fcgi"
+                            target="display">Entrez-PubMed</a></td>
+                        <td>PubMedID:14576282; <br /> Smith (2006) Science
+                            123:23; <br /> DOI:10.1111/j.1365-313x.
+                            2010.04399.x; submitted to Plant Journal</td>
+                    </tr>
+
+
+                    <tr>
+                        <td valign="top"><span class="blue"><b>Gene
+                                    function, process, location or interacting
+                                    partner</b> </span></td>
+                        <td>functional annotation that you'd like to make</td>
+                        <td>For interacting partners, please use the AGI
+                            code (At1g01010.1) in addition to the gene name</td>
+                        <td>ser/thr kinase, outer mitochondrial membrane,
+                            anther, gynoecium morphogenesis, At1g01010.1(ABC1)</td>
+                    </tr>
+
+                    <tr>
+                        <td valign="top"><b>Method description</b>
+                        </td>
+                        <td>Method and evidence used to support the
+                            functional annotation</td>
+                        <td>A list of method descriptions is given as the
+                            second sheet of the Excel workbook</td>
+                        <td>enzyme assay, mutant phenotype, transcript
+                            levels, yeast two-hybrid-assay</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </ui:define>
+</ui:composition>
+</html>

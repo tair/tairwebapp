@@ -1,0 +1,261 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+  Copyright (c) 2003 NCGR.  All rights 
+  reserved.
+-->
+
+<%@ page 
+errorPage="/jsp/common/gen_error.jsp" 
+import="java.util.*, org.tair.utilities.*, org.tair.abrc.catalog.*, org.tair.querytools.*, org.tair.search.*, org.tair.community.*, org.tair.tfc.*"
+%>
+
+<% 
+//SearchResultsCollection pageObj = (SearchResultsCollection) request.getAttribute( "pageObj" );
+CatalogStock[] stocks = (CatalogStock[]) pageObj.getResults();
+
+int resultSize = pageObj.getResultSize();
+int floor = pageObj.getFloor();
+int ceiling = pageObj.getCeiling();
+String scrollLinks = pageObj.getScrollLinks();
+%>
+
+<html>
+        <head>
+          <title>Chromatin Charting Lines (includes Ds insertion, launch pad, and transposase lines)</title>
+          <link rel="stylesheet" type="text/css" href="/css/main.css">
+          <link rel="stylesheet" type="text/css" href="/css/search.css">
+        </head>
+
+        <body bgcolor="#F5F9FF">
+
+          <center>
+            <img src="/images/abrc_med.gif">
+            <br>
+
+            <h2>Chromatin Charting Lines (includes Ds insertion, launch pad, and transposase lines)</h2>
+
+             Sorted by donor stock number
+             <br><br>
+             Displaying <%= floor %> - <%= ceiling %> of <%= resultSize %> in category
+             <br>
+             <br>
+         </center>
+
+         <form action="/servlets/Order/current" method="POST">
+             <input type="hidden" name="state" value="addStock">
+            
+          <table center cellpadding="1" align="center">
+
+
+          <tr>
+             <td class="sm">&nbsp;</td>
+             <td class="sm" colspan="5">
+                <table width="100%">
+                   <tr>
+                       <td class="sm" nowrap>
+                          <input type="submit" value="Order Stocks">
+                           &nbsp;&nbsp;
+                          <input type="reset" value="Reset">
+                      </td>
+                      <td class="sm">
+                         If you have checked any stocks to order, please click on "Order Stocks"
+                         before leaving this page.  You can return to this page by using the 
+                        "Back" button on your browser.
+                      </td>
+                    </tr>
+                 </table>
+              </td>
+            </tr>
+
+            <!-- write hyperlinks to scroll through catalog pages -->
+            <% if ( scrollLinks != null ) { %>
+            <tr>
+               <td class="sm" colspan="6" align="center"><%= scrollLinks %></td>
+            </tr>
+
+            <tr>
+               <td class="sm" colspan="6">&nbsp;</td>
+            </tr>
+
+            <% } %>
+
+            <tr valign="bottom">
+              <th class="sm">Order</th>
+              <th class="sm">Stock #</th>
+              <th class="sm" nowrap>Donor/Donor Stock #</th>
+              <th class="sm">Background</th>
+              <th class="sm">Vector Name/Type</th>
+              <th class="sm" align="center">Image</th>
+            </tr>
+
+      <% for ( int i = 0; i < stocks.length; i++ ) { %>
+
+           <tr valign="top">
+              <!-- all stocks should be available so show checkbox no matter what -->
+              <td class="sm" align="center"><input type="checkbox" name="stock_number" value="<%= stocks[ i ].get_name() %>"></td>
+
+  
+              <!-- Show stock #, but create link to germplasm page .. per Debbie & Randy -->
+              <% Germplasm germplasm = stocks[ i ].getGermplasm(); %>
+              <td class="sm" align="center" nowrap>
+                 <a href="/servlets/TairObject?type=germplasm&id=<%= germplasm.get_tair_object_id() %>" target=_blank><%= stocks[ i ].get_name() %></a>
+              </td> 
+
+              <td class="sm" nowrap>
+ 
+               <% if ( stocks[ i ].hasDonors() ) { 
+
+                      // keep track of donor stock numbers and only show distinct numbers
+                      List distinct = new ArrayList();
+
+                      Iterator donorIter = stocks[ i ].getDonors();
+                      Donor donor = null;
+                      boolean firstDonor = true;
+                      while ( donorIter.hasNext() ) {
+                          donor = (Donor) donorIter.next();
+                          if ( !firstDonor ) {
+                              out.write( "<br>" );
+                          }
+                          firstDonor = false;
+               %>
+                       <a href="/servlets/TairObject?type=<%= donor.getCommunityType() %>&id=<%= donor.getCommunityID() %>" target=_blank><%= donor.getDisplayName() %></a>
+
+                       <%
+                          if ( donor.getDonorStockNumber() != null && !distinct.contains( donor.getDonorStockNumber() ) ) { 
+                              out.write( "/" + donor.getDonorStockNumber() );
+                          }
+                          distinct.add( donor.getDonorStockNumber() );
+                       %>
+                   <% } %>
+               <% } %>
+               &nbsp;
+              </td>
+
+              <td class="sm" align="center">
+               <% if ( germplasm.hasPedigreeSpeciesVariants() ) {
+                      Iterator speciesVariantIter = germplasm.getPedigreeSpeciesVariants();
+                      String abbrevName = null;
+                      Long speciesVariantID = null;
+                      boolean firstVariant = true;
+                      while ( speciesVariantIter.hasNext() ) {
+                          abbrevName = (String) speciesVariantIter.next();
+                          speciesVariantID = germplasm.getPedigreeSpeciesVariantID( abbrevName );
+                          if ( !firstVariant ) {
+                              out.write( "<br>" );
+                          }
+                          firstVariant = false;
+               %>
+                          <a href="/servlets/TairObject?type=species_variant&id=<%= speciesVariantID %>" target=_blank><%= abbrevName %></a>
+
+                  <% } %>
+               <% } else { %>
+                   &nbsp;
+               <% } %>
+              </td>
+
+              <td class="sm" align="center">
+                <% if ( germplasm.hasClones() ) {
+                       Iterator cloneIter = germplasm.getClones();
+                       Clone clone = null;
+                       boolean firstClone = true;
+                       while ( cloneIter.hasNext() ) {
+                           clone = (Clone) cloneIter.next();
+                           if ( !firstClone ) {
+                               out.write( "<br>" );
+                           }
+                           firstClone = false;
+                %>
+
+                          <%= clone.get_original_name() %>/<%= clone.get_construct_type() %>
+                  <% } %>
+               <% } else { %>
+                   &nbsp;
+               <% } %>
+              </td>
+
+              <td class="sm" align="center">
+               <% if ( stocks[ i ].hasImages() ) { 
+                      Iterator imageIter = stocks[ i ].getImages();
+                      TfcImage image = null;
+                      boolean firstImage = true;
+                      while ( imageIter.hasNext() ) { 
+                          image = (TfcImage) imageIter.next();
+                          if ( !firstImage ) {
+                              out.write( "<br>" );
+                          }
+                          firstImage = false;
+                %>
+                          <a href="/jsp/common/image.jsp?id=<%= image.get_image_id() %>&format=<%= image.getLinkSuffix() %>" target=_blank><img src="/images/camera.gif" border="0"></a>
+                   <% } %>
+                <% } else { %>
+                   &nbsp;
+                <% } %>
+            </td>
+
+         </tr>
+
+        <% if ( germplasm.get_description() != null ) { %>
+         <tr>
+             <td class="sm">&nbsp;</td>
+             <td class="sm" colspan="5">
+                 <b>Description:</b> <%= germplasm.get_description() %></td>
+         </tr>
+        <% } %>
+  
+
+         <tr>
+             <td class="sm" colspan="6"><hr></td>
+         </tr>
+
+       <% } // end main stock loop %>
+
+
+       <!-- write hyperlinks to scroll through catalog pages -->
+       <% if ( scrollLinks != null ) { %>
+        <tr>
+              <td class="sm" colspan="6" align="center"><%= scrollLinks %></td>
+        </tr>
+       <% } %>
+
+        <tr>
+             <td class="sm">&nbsp;</td>
+             <td class="sm" colspan="5">
+                <table width="100%">
+                   <tr>
+                       <td class="sm" nowrap>
+                          <input type="submit" value="Order Stocks">
+                           &nbsp;&nbsp;
+                          <input type="reset" value="Reset">
+                      </td>
+                      <td class="sm">
+                         If you have checked any stocks to order, please click on "Order Stocks"
+                         before leaving this page.  You can return to this page by using the 
+                        "Back" button on your browser.
+                      </td>
+                   </tr>
+                </table>
+             </td>
+        </tr>
+
+      </table>
+     </form>
+
+     
+<table width="602" align="center">
+      <tr>
+        <td align="center"><img src="/images/abrc.gif"></td>
+      </tr>
+
+      <tr>
+        <td align="center" class="sm">
+          If you have comments or questions concerning seed stocks, 
+          DNA stocks, stock orders, or fee structure/invoice/payment information,
+          please email ABRC at <a href="mailto:abrc@osu.edu">abrc@osu.edu</a>
+        </td>
+      </tr>
+</table>
+
+
+  </body>
+</html>

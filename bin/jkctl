@@ -1,0 +1,34 @@
+#!/bin/env python
+import urllib2,sys,xml.dom.minidom
+
+def update_worker_url(**kargs):
+	return "%(base_url)s?cmd=update&from=list&w=loadbalancer&sw=%(name)s&wa=%(activation)i&wf=1&wn=%(name)s&wr=&wc=&wd=0" % kargs
+
+def stop_worker(base_url,worker):
+	f = urllib2.urlopen(update_worker_url(base_url=base_url,name=worker,activation=2))
+	f.read()
+	worker_status(base_url,worker)
+
+def start_worker(base_url,worker):
+	f = urllib2.urlopen(update_worker_url(base_url=base_url,name=worker,activation=0))
+	f.read()
+	worker_status(base_url,worker)
+
+def worker_status(base_url,worker):
+	f = urllib2.urlopen(base_url+'?mime=xml')
+	xdoc = xml.dom.minidom.parseString(f.read())
+	for e in xdoc.getElementsByTagName('jk:member'):
+		if worker == e.getAttribute('name'):
+			print worker, 'state:', e.getAttribute('state')
+			print worker, 'activation:', e.getAttribute('activation')
+			return
+	print 'unknown worker:', worker
+
+funcs = {'start':start_worker,'stop':stop_worker,'status':worker_status}
+if not sys.argv[3:] or sys.argv[3] not in funcs:
+	print sys.argv[0], 'URL WORKER [start|stop|status]'
+else:
+	try:
+		funcs[sys.argv[3]](sys.argv[1],sys.argv[2])
+	except Exception, e:
+		print e

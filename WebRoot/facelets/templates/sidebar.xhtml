@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xml:lang="en"
+    xmlns:a4j="http://richfaces.org/a4j"
+    xmlns:rich="http://richfaces.org/rich">
+    <ui:insert name="head">
+        <ui:include src="/facelets/includes/head.xhtml" />
+    </ui:insert>
+    <h:body>
+        <div id="container">
+            <ui:insert name="header">
+                <ui:include src="/facelets/includes/header.xhtml" />
+            </ui:insert>
+            <div id="content">
+                <ui:insert name="breadcrumbs">
+                    <ui:include src="breadcrumbs.xhtml" />
+                </ui:insert>
+                <div id="sidebar">
+                    <ui:insert name="sidebar">
+                        <div id="leftcolumn">
+                            <ui:include src="sidebar.xhtml" />
+                        </div>
+                    </ui:insert>
+                </div>
+                <ui:insert name="content">
+                    <div id="rightcolumn">
+                        <ui:include src="content.xhtml" />
+                    </div>
+                </ui:insert>
+            </div>
+            <ui:insert name="footer">
+                <ui:include src="/facelets/includes/footer.xhtml" />
+            </ui:insert>
+        </div>
+    </h:body>
+</html>

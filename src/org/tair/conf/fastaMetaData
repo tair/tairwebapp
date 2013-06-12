@@ -1,0 +1,29 @@
+Name	Type	NumSeqs	Residues	Date	Description
+At_transcripts	DNA	38963	59766823	Dec 12, 2002	TAIR10 Transcripts (-introns, +UTRs)
+ATH1_cds	DNA	32825	39588516	Jul 7, 2003	TAIR10 CDS (-introns, -UTRs)
+ATH1_seq	DNA	38963	85192362	May 29, 2003	TAIR10 Genes (+introns, +UTRs)
+ATH1_pep	AA	32825	13166001	Jul 7, 2003	TAIR10 Proteins
+ATH1_bacs_con	DNA	1613	135709386	Jan 17, 2003	TAIR10 Whole Genome (BAC clones)
+At_upstream_500	DNA	33282	16640724	Oct 24, 2002	TAIR10 Loci Upstream Sequences -- 500 bp
+At_upstream_1000	DNA	33282	33281224	Apr 3, 2002	TAIR10 Loci Upstream Sequences -- 1000 bp
+At_upstream_3000	DNA	33282	99836350	Apr 3, 2002	TAIR10 Loci Upstream Sequences -- 3000 bp
+At_downstream_1000	DNA	33282	33277449	Apr 3, 2002	TAIR10 Loci Downstream Sequences -- 1000 bp
+At_downstream_3000	DNA	33282	99819529	Apr 3, 2002	TAIR10 Loci Downstream Sequences -- 3000 bp
+At_intergenic	DNA	31353	50070015	Jun 4, 2002	TAIR10 Intergenic
+At_intron	DNA	154240	25425536	Jun 4, 2002	TAIR10 Intron
+ATH1_5_UTR	DNA	24267	3614786	Jul 14, 2003	TAIR10 5' UTRs
+ATH1_3_UTR	DNA	25273	6019104	Jul 14, 2003	TAIR10 3' UTRs
+At_flanks_DNA	DNA	411613	153767700	Sep 5, 2006	A. thaliana Insertion Flanks
+At_Uniprot_prot	AA	49912	19195282	Oct 1, 2007	A. thaliana UniProt
+At_GB_exp_prot	AA	49962	17436533	Oct 1, 2007	A. thaliana GB derived from mRNA
+At_GB_refseq_prot	AA	32016	13096298	Oct 1, 2007	A. thaliana GB refseq/tpa
+At_GB_all_prot	AA	130814	49998078	Oct 1, 2007	A. thaliana GB all
+At_GB_exp_tx_DNA	DNA	15805603	655565955	Oct 1, 2007	A. thaliana GB experimental cDNA/EST
+At_GB_refseq_tx_DNA	DNA	31770	48103132	Oct 1, 2007	A. thaliana GB refseq/tpa cDNA
+At_GB_genomic_DNA	DNA	552601	413160186	Oct 1, 2007	A. thaliana GB genomic
+gp_GB_exp_prot	AA	46447	14839118	Oct 1, 2007	Green plant GB derived from mRNA
+gp_GB_refseq_prot	AA	45236	16732444	Oct 1, 2007	Green plant GB refseq/tpa
+gp_GB_all_prot	AA	546608	188428649	Oct 1, 2007	Green plant GB all
+gp_GB_exp_tx_DNA	DNA	176076660	8855255827	Oct 1, 2007	Green plant GB experimental cDNA/EST
+gp_GB_refseq_tx_DNA	DNA	34508	54165149	Oct 1, 2007	Green plant GB refseq/tpa cDNA
+gp_GB_genomic_DNA	DNA	99290100	14388942807	Oct 1, 2007	Green plant GB genomic

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core" xmlns:a4j="http://richfaces.org/a4j"
+    xmlns:rich="http://richfaces.org/rich" xml:lang="en"
+>
+<ui:composition>
+    <h:form>
+        <rich:panelMenu selectedChild="#{page.pageId}">
+            <rich:panelMenuGroup name="data_submission_group"
+                label="Data Submission" expanded="true"
+                iconExpanded="triangleDown" iconCollapsed="triangle"
+            >
+                <rich:panelMenuItem name="submission"
+                    label="Data Submission" icon="none"
+                    onclick="document.location.href='/submit/index.jsp'"
+                />
+                <rich:panelMenuItem name="abrc_stock_donation"
+                    label="ABRC Stock Donation" icon="none"
+                    onclick="document.location.href='https://abrc.osu.edu/donate-stocks'"
+                />
+                <rich:panelMenuItem name="external_link_submission"
+                    label="External Links" icon="none"
+                    onclick="document.location.href='/submit/ExternalLinkSubmission.jsp'"
+                />
+                <rich:panelMenuItem
+                    name="gene_class_symbol_registration"
+                    label="Gene Class Symbol Registration" icon="none"
+                    onclick="document.location.href='/portals/nomenclature/symbol_main.jsp'"
+                />
+                <rich:panelMenuItem name="gene_family_data"
+                    label="Gene Family Data" icon="none"
+                    onclick="document.location.href='/submit/genefamily_submission.jsp'"
+                />
+                <rich:panelMenuItem 
+                    name="online_submission_for_authors_and_others"
+                    label="Online Submission for Authors and Others" icon="none"
+                    onclick="document.location.href='/doc/submit/functional_annotation/123'"
+                />
+                <rich:panelMenuItem 
+                    name="gene_structure_additions_modifications"
+                    label="Gene Structure Additions/Modifications" icon="none"
+                    onclick="document.location.href='/submit/gene_annotation.submission.jsp'"
+                />
+                <rich:panelMenuItem name="locus_identifier_request"
+                    label="Locus Identifier Request" icon="none"
+                    onclick="document.location.href='/submit/locus_identifier_request.jsp'"
+                />
+                <rich:panelMenuItem 
+                    name="marker_and_polymorphism_data"
+                    label="Marker and Polymorphism Data" icon="none"
+                    onclick="document.location.href='/submit/marker_submission.jsp'"
+                />
+                <rich:panelMenuItem name="metabolic_pathway_data"
+                    label="Metabolic Pathway Data" icon="none"
+                    onclick="document.location.href='/submit/pathway_submission.jsp'"
+                />
+                <rich:panelMenuItem name="phenotypes"
+                    label="Phenotypes" icon="none"
+                    onclick="document.location.href='/submit/phenotype_submission.jsp'"
+                />
+                <rich:panelMenuItem name="protocols"
+                    label="Protocols" icon="none"
+                    onclick="document.location.href='/submit/protocol_submission.jsp'"
+                />
+                <rich:panelMenuItem name="2010_gene_list"
+                    label="2010 Functional Genomics Gene List" icon="none"
+                    onclick="document.location.href='/submit/submit_2010.jsp'"
+                />
+            </rich:panelMenuGroup>
+        </rich:panelMenu>
+    </h:form>
+</ui:composition>
+</html>

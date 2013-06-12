@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+	<!-- the log configuration file for the AndroMDA project -->
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/"
+	debug="false">
+
+	<!--
+		============================================ Append error messages to
+		a local error log ============================================
+	-->
+	<appender name="FILE" class="org.apache.log4j.FileAppender">
+		<param name="File" value="tair-db-runtime.log" />
+		<param name="Threshold" value="DEBUG" />
+		<param name="Append" value="false" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<!-- The default pattern: Date Priority [Category] Message\n -->
+			<param name="ConversionPattern" value="%d %-5p [%c] %m%n" />
+		</layout>
+	</appender>
+
+	<!--
+		================================ Append messages to the console
+		================================
+	-->
+	<appender name="CONSOLE" class="org.apache.log4j.ConsoleAppender">
+		<param name="Threshold" value="DEBUG" />
+		<param name="Target" value="System.out" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<!-- The default pattern: Date Priority [Category] Message\n -->
+			<!-- <param name="ConversionPattern" value="%-5p [%c{1}] %m%n"/> -->
+			<param name="ConversionPattern" value="%-5p [%C] %m%n" />
+		</layout>
+	</appender>
+
+
+	<!--
+		================== Custom limit categories ==================
+	-->
+
+	<!-- All Apache tools -->
+	<category name="org.apache">
+		<priority value="INFO" />
+	</category>
+
+	<!-- All AndroMDA code -->
+	<category name="org.andromda">
+		<priority value="INFO" />
+	</category>
+
+	<!-- AndroMDA namespaces, set to DEBUG for detailed object info -->
+	<category name="org.andromda.namespaces">
+		<priority value="INFO" />
+	</category>
+
+	<!-- TAIR-DB and TAIR-BS -->
+	<category name="org.tair.db">
+		<priority value="INFO" />
+	</category>
+
+	<category name="org.tair.bs">
+		<priority value="INFO" />
+	</category>
+
+	<!-- TAIR Foundation Classes, set to DEBUG to see connections  -->
+	<category name="org.tair.tfc">
+		<priority value="INFO" />
+	</category>
+
+	<!-- Poesys/DB -->
+	<category name="com.poesys">
+		<priority value="INFO" />
+	</category>
+
+	<!-- Poesys/DB connection delegate, set to DEBUG to see connections closed -->
+	<category name="com.poesys.bs.delegate.AbstractConnectionDelegate">
+		<priority value="INFO" />
+	</category>
+
+	<!-- Poesys/DB DTO caching subsystem -->
+	<category name="com.poesys.db.dto">
+		<priority value="INFO" />
+	</category>
+
+	<category name="com.poesys.db.dao.DaoCacheFactory">
+		<priority value="INFO" />
+	</category>
+
+	<!-- memcached distributed memory caching subsystem	-->
+	<category name="net.rubyeye.xmemcached">
+		<priority value="ERROR" />
+	</category>
+
+	<category name="com.google.code.yanf4j">
+		<priority value="WARN" />
+	</category>
+
+	<category name="com.googlecode.hibernate.memcached">
+		<priority value="WARN" />
+	</category>
+
+	<!--
+		Turn off cached object serialization debugging; set to DEBUG to see
+		object serialization details for cached objects.
+	-->
+	<category name="com.google.code.yanf4j.core.impl.AbstractSession">
+		<priority value="WARN" />
+	</category>
+
+	<!--
+		========================= Setup the Root category
+		=========================
+	-->
+	<root>
+		<priority value="DEBUG" />
+		<appender-ref ref="FILE" />
+		<appender-ref ref="CONSOLE" />
+	</root>
+
+</log4j:configuration>

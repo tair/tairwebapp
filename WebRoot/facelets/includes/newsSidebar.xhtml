@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core" xmlns:a4j="http://richfaces.org/a4j"
+    xmlns:rich="http://richfaces.org/rich" xml:lang="en"
+>
+<ui:composition>
+    <h:form>
+        <rich:panelMenu>
+            <rich:panelMenuGroup name="news_group" label="TAIR News"
+                expanded="true" iconExpanded="triangleDown"
+                iconCollapsed="triangle"
+            >
+                <rich:panelMenuItem name="tair_news"
+                    label="TAIR News" icon="none"
+                    onclick="document.location.href='/news/index.jsp'"
+                />
+                <rich:panelMenuItem name="breaking_news"
+                    label="Breaking News" icon="none"
+                    onclick="document.location.href='/doc/news/breaking_news/140'"
+                />
+                <rich:panelMenuItem name="what_was_news"
+                    label="What Was News" icon="none"
+                    onclick="document.location.href='/news/oldnews.jsp'"
+                />
+            </rich:panelMenuGroup>
+            <rich:panelMenuGroup name="newsgroup_group"
+                label="Arabidopsis Newsgroup" expanded="false"
+                iconExpanded="triangleDown" iconCollapsed="triangle"
+            >
+                <rich:panelMenuItem name="arabidopsis_newsgroup"
+                    label="Arabidopsis Newsgroup" icon="none"
+                    onclick="document.location.href='/news/newsgroup.jsp'"
+                />
+            </rich:panelMenuGroup>
+            <rich:panelMenuGroup name="newsletter_group"
+                label="TAIR Newsletter Archive" expanded="false"
+                iconExpanded="triangleDown" iconCollapsed="triangle"
+            >
+                <rich:panelMenuItem name="newsletter_archive"
+                    label="TAIR Newsletter Archive" icon="none"
+                    onclick="document.location.href='/news/newsletter_archive.jsp'"
+                />
+            </rich:panelMenuGroup>
+            <rich:panelMenuGroup name="conferences_group"
+                label="Conferences and Events" expanded="true"
+                iconExpanded="triangleDown" iconCollapsed="triangle"
+            >
+                <rich:panelMenuItem name="upcoming_events"
+                    label="Upcoming Events" icon="none"
+                    onclick="document.location.href='/news/events.jsp'"
+                />
+                <rich:panelMenuItem name="icar_abstracts"
+                    label="ICAR Abstracts" icon="none"
+                    onclick="document.location.href='/news/abstracts.jsp'"
+                />
+            </rich:panelMenuGroup>
+            <rich:panelMenuGroup name="job_postings_group" label="Job Postings"
+                expanded="true" iconExpanded="triangleDown"
+                iconCollapsed="triangle"
+            >
+                <rich:panelMenuItem name="job_postings"
+                    label="Job Postings" icon="none"
+                    onclick="document.location.href='/news/jobs.jsp'"
+                />
+                <rich:panelMenuItem name="job_postings_faq"
+                    label="How to Post a Job" icon="none"
+                    onclick="document.location.href='/help/faq.jsp#jobs'"
+                />
+            </rich:panelMenuGroup>
+        </rich:panelMenu>
+    </h:form>
+</ui:composition>
+</html>

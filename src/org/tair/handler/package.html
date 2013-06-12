@@ -1,0 +1,32 @@
+<html>
+<head>
+</head>
+
+<body>
+
+<h3>RequestHandler Delegation</h3>
+
+<p>
+Many TAIR servlets use classes that implement the RequestHandler interface (src.handler.RequestHandler) to encapsulate different types of functionality. For instance, ProcessorServlet (src.processor.ProcessorServlet) handles requests for the definitions, gene symbol registry, and Notepad modules as well as others.  Each of these modules are represented to ProcessorServlet as a RequestHandler object that is capable of handling all tasks related to that module. At runtime, a servlet containing RequestHandler objects delegates processing to the appropriate RequestHandler object based on the type of functionality being requested.  In this way, a single servlet can handle all HTTP specific requests for many different kinds of tasks. Conceivably, all functionality outside of the visualization tools could be handled by a single servlet that contained RequestHandlers for all functions on the site.
+
+<p>
+RequestHandler is a simple interface that defines a single method called process().  Process() returns a custom response called RequestHandlerResponse that contains the string value of the JSP to redirect to as well as any objects needed for display on the JSP. These objects are added to the request, and can be retrieved by the JSP for displaying data.
+
+<p>
+Complex modules may need to be further broken down to prevent the module's RequestHandler class from becoming too big.  To do this, RequestHandler classes may define their own collection of RequestHandler classes to delegate processing of module sub-tasks.
+
+<p>
+All new development that does not logically belong to one of the other existing servlets (Search, TairObject, Community, Order) should deployed using the ProcessorServlet. New modules should be added as sub-packages within the src.processor package.
+
+<p>
+Examples of RequestHander:
+
+
+
+@see src.processor.ProcessorServlet
+@see src.tairquery.SearchServlet
+@see src.community.CommunityServlet
+@see src.abrc.OrderServlet
+
+</body>
+</html>

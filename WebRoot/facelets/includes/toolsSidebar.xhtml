@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core" xmlns:a4j="http://richfaces.org/a4j"
+    xmlns:rich="http://richfaces.org/rich" xml:lang="en"
+>
+<ui:composition>
+    <h:form>
+        <rich:panelMenu >
+            <rich:panelMenuGroup name="gbrowse_group" label="GBrowse"
+                expanded="true" iconExpanded="triangleDown"
+                iconCollapsed="triangle"
+            >
+                <rich:panelMenuItem  name="gbrowse" label="GBrowse"
+                    icon="none"
+                    onclick="document.location.href='/cgi-bin/gbrowse/arabidopsis/'"
+                />
+            </rich:panelMenuGroup>
+            <rich:panelMenuGroup name="synteny_group" label="Synteny Viewer"
+                expanded="false" iconExpanded="triangleDown"
+                iconCollapsed="triangle"
+            >
+                <rich:panelMenuItem  name="synteny"
+                    label="Synteny Viewer" icon="none"
+                    onclick="document.location.href='/cgi-bin/gbrowse_syn/arabidopsis/'"
+                />
+            </rich:panelMenuGroup>
+            <rich:panelMenuGroup name="seqviewer_group" label="Seqviewer"
+                expanded="false" iconExpanded="triangleDown"
+                iconCollapsed="triangle"
+            >
+                <rich:panelMenuItem  name="seqviewer"
+                    label="Seqviewer" icon="none"
+                    onclick="document.location.href='/servlets/sv'"
+                />
+            </rich:panelMenuGroup>
+            <rich:panelMenuGroup name="nbrowse_group" label="N-Browse"
+                expanded="true" iconExpanded="triangleDown"
+                iconCollapsed="triangle"
+            >
+                <rich:panelMenuItem  name="nbrowse" label="N-Browse"
+                    icon="none"
+                    onclick="document.location.href='/tools/nbrowse.jsp'"
+                />
+            </rich:panelMenuGroup>
+            <rich:panelMenuGroup name="igb_group" label="IGB" expanded="true"
+                iconExpanded="triangleDown" iconCollapsed="triangle"
+            >
+                <rich:panelMenuItem  name="igb" label="IGB"
+                    icon="none"
+                    onclick="document.location.href='/doc/tools/igb/91'"
+                />
+            </rich:panelMenuGroup>
+            <rich:panelMenuGroup name="mapviewer_group" label="Mapviewer"
+                expanded="true" iconExpanded="triangleDown"
+                iconCollapsed="triangle"
+            >
+                <rich:panelMenuItem  name="mapviewer"
+                    label="Mapviewer" icon="none"
+                    onclick="document.location.href='/servlets/mapper'"
+                />
+            </rich:panelMenuGroup>
+            <rich:panelMenuGroup name="aracyc_group" label="AraCyc Pathways"
+                expanded="true" iconExpanded="triangleDown"
+                iconCollapsed="triangle"
+            >
+                <rich:panelMenuItem  name="aracyc"
+                    label="AraCyc Pathways" icon="none"
+                    onclick="document.location.href='/biocyc/index.jsp'"
+                />
+            </rich:panelMenuGroup>
+            <rich:panelMenuGroup name="blast_group" label="BLAST"
+                expanded="true" iconExpanded="triangleDown"
+                iconCollapsed="triangle"
+            >
+                <rich:panelMenuItem  name="blast" label="BLAST"
+                    icon="none"
+                    onclick="document.location.href='/Blast/index.jsp'"
+                />
+            </rich:panelMenuGroup>
+            <rich:panelMenuGroup name="wublast_group" label="WU-BLAST2"
+                expanded="true" iconExpanded="triangleDown"
+                iconCollapsed="triangle"
+            >
+                <rich:panelMenuItem  name="wublast" label="WU-BLAST2"
+                    icon="none"
+                    onclick="document.location.href='/wublast/index2.jsp'"
+                />
+            </rich:panelMenuGroup>
+            <rich:panelMenuGroup name="fasta_group" label="FASTA"
+                expanded="true" iconExpanded="triangleDown"
+                iconCollapsed="triangle"
+            >
+                <rich:panelMenuItem  name="fasta" label="FASTA"
+                    icon="none"
+                    onclick="document.location.href='/cgi-bin/fasta/nph-TAIRfasta.pl'"
+                />
+            </rich:panelMenuGroup>
+            <rich:panelMenuGroup name="patmatch_group" label="Pattern Matching"
+                expanded="true" iconExpanded="triangleDown"
+                iconCollapsed="triangle"
+            >
+                <rich:panelMenuItem  name="patmatch"
+                    label="Pattern Matching" icon="none"
+                    onclick="document.location.href='/cgi-bin/patmatch/nph-patmatch.pl'"
+                />
+            </rich:panelMenuGroup>
+            <rich:panelMenuGroup name="motif_group" label="Motif Analysis"
+                expanded="true" iconExpanded="triangleDown"
+                iconCollapsed="triangle"
+            >
+                <rich:panelMenuItem  name="motif"
+                    label="Motif Analysis" icon="none"
+                    onclick="document.location.href='/tools/bulk/motiffinder/index.jsp'"
+                />
+            </rich:panelMenuGroup>
+            <rich:panelMenuGroup name="vxinsight_group" label="VxInsight&reg;"
+                expanded="true" iconExpanded="triangleDown"
+                iconCollapsed="triangle"
+            >
+                <rich:panelMenuItem  name="vxinsight"
+                    label="VxInsight&reg;" icon="none"
+                    onclick="document.location.href='/tools/bulk/microarray/analysis/index.jsp#vx'"
+                />
+            </rich:panelMenuGroup>
+            <rich:panelMenuGroup name="treeview_group" label="Java TreeView"
+                expanded="true" iconExpanded="triangleDown"
+                iconCollapsed="triangle"
+            >
+                <rich:panelMenuItem  name="treeview"
+                    label="Java TreeView" icon="none"
+                    onclick="document.location.href='/tools/bulk/microarray/analysis/index.jsp#jtv'"
+                />
+            </rich:panelMenuGroup>
+            <rich:panelMenuGroup name="bulk_group" label="Bulk Data Retrieval"
+                expanded="true" iconExpanded="triangleDown"
+                iconCollapsed="triangle"
+            >
+                <rich:panelMenuItem  name="bulk"
+                    label="Bulk Data Retrieval" icon="none"
+                    onclick="document.location.href='/tools/bulk/index.jsp'"
+                />
+                <rich:panelMenuItem  name="gene"
+                    label="Gene Descriptions" icon="none"
+                    onclick="document.location.href='/tools/bulk/genes/index.jsp'"
+                />
+                <rich:panelMenuItem  name="go" label="GO Annotations"
+                    icon="none"
+                    onclick="document.location.href='/tools/bulk/go/index.jsp'"
+                />
+                <rich:panelMenuItem  name="po" label="PO Annotations"
+                    icon="none"
+                    onclick="document.location.href='/tools/bulk/po/index.jsp'"
+                />
+                <rich:panelMenuItem  name="sequences"
+                    label="Sequences" icon="none"
+                    onclick="document.location.href='/tools/bulk/sequences/index.jsp'"
+                />
+                <rich:panelMenuItem  name="proteins" label="Proteins"
+                    icon="none"
+                    onclick="document.location.href='/tools/bulk/protein/index.jsp'"
+                />
+                <rich:panelMenuItem  name="locus_history"
+                    label="Locus History" icon="none"
+                    onclick="document.location.href='/tools/bulk/locushistory/index.jsp'"
+                />
+                <rich:panelMenuItem  name="microarray"
+                    label="Microarray Elements" icon="none"
+                    onclick="document.location.href='/tools/bulk/microarray/index.jsp'"
+                />
+            </rich:panelMenuGroup>
+            <rich:panelMenuGroup name="chromosome_map_group"
+                label="Chromosome Map Tool" expanded="true"
+                iconExpanded="triangleDown" iconCollapsed="triangle"
+            >
+                <rich:panelMenuItem  name="chromosome_map"
+                    label="Chromosome Map Tool" icon="none"
+                    onclick="document.location.href='/jsp/ChromosomeMap/tool.jsp'"
+                />
+            </rich:panelMenuGroup>
+            <rich:panelMenuGroup name="gene_symbol_registry_group"
+                label="Gene Symbol Registry" expanded="true"
+                iconExpanded="triangleDown" iconCollapsed="triangle"
+            >
+                <rich:panelMenuItem  name="gene_symbol_registry"
+                    label="Gene Symbol Registry" icon="none"
+                    onclick="document.location.href='/portals/nomenclature/symbol_main.jsp'"
+                />
+            </rich:panelMenuGroup>
+            <rich:panelMenuGroup name="textpresso_group"
+                label="Textpresso Full Text" expanded="true"
+                iconExpanded="triangleDown" iconCollapsed="triangle"
+            >
+                <rich:panelMenuItem  name="textpresso"
+                    label="Textpresso Full Text" icon="none"
+                    onclick="document.location.href='http://www.textpresso.org/arabidopsis/';javascript:urchinTracker('/outgoing/textpresso');"
+                />
+            </rich:panelMenuGroup>
+        </rich:panelMenu>
+    </h:form>
+</ui:composition>
+</html>

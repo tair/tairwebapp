@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- ===================================================================== -->
+<!--                                                                       -->
+<!--  JBoss Server Configuration                                           -->
+<!--                                                                       -->
+<!-- ===================================================================== -->
+
+<!-- $Id: oracle-ds.xml 63175 2007-05-21 16:26:06Z rrajesh $ -->
+<!-- ==================================================================== -->
+<!--  Datasource config for Oracle originally from Steven Coy             -->
+<!--  Edited for TAIR Oracle 11g data sources                             -->
+<!-- ==================================================================== -->
+
+
+<datasources>
+  <local-tx-datasource>
+    <jndi-name>jdbc/tair/ReadOnly</jndi-name>
+<!-- ==================================================================== 
+    <connection-url>jdbc:oracle:thin:@@wales:1521:tairtest</connection-url>
+    <connection-url>jdbc:oracle:thin:@argentina:1521:tairprod</connection-url>
+========================================================================= -->
+    <driver-class>oracle.jdbc.driver.OracleDriver</driver-class>
+    <user-name>readonly</user-name>
+    <password>readonly</password>
+    <min-pool-size>5</min-pool-size>
+    <max-pool-size>100</max-pool-size>
+    <idle-timeout-minutes>1</idle-timeout-minutes>
+    <exception-sorter-class-name>org.jboss.resource.adapter.jdbc.vendor.OracleExceptionSorter</exception-sorter-class-name>
+    <metadata><type-mapping>Oracle9i</type-mapping></metadata>
+  </local-tx-datasource>
+  <local-tx-datasource>
+    <jndi-name>jdbc/tair/WebWriter</jndi-name>
+<!-- ==================================================================== 
+    <connection-url>jdbc:oracle:thin:@@wales:1521:tairtest</connection-url>
+    <connection-url>jdbc:oracle:thin:@argentina:1521:tairprod</connection-url>
+========================================================================= -->
+    <driver-class>oracle.jdbc.driver.OracleDriver</driver-class>
+    <user-name>webwriter</user-name>
+    <password>danger</password>
+    <min-pool-size>5</min-pool-size>
+    <max-pool-size>100</max-pool-size>
+    <idle-timeout-minutes>1</idle-timeout-minutes>
+    <exception-sorter-class-name>org.jboss.resource.adapter.jdbc.vendor.OracleExceptionSorter</exception-sorter-class-name>
+    <metadata><type-mapping>Oracle9i</type-mapping></metadata>
+  </local-tx-datasource>
+</datasources>

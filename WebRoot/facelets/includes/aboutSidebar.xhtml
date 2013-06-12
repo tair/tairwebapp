@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core" xmlns:a4j="http://richfaces.org/a4j"
+    xmlns:rich="http://richfaces.org/rich" xml:lang="en"
+>
+<ui:composition>
+    <h:form>
+        <rich:panelMenu >
+            <rich:panelMenuGroup name="about_tair_group" label="About TAIR"
+                expanded="true" iconExpanded="triangleDown"
+                iconCollapsed="triangle"
+            >
+                <rich:panelMenuItem  name="about_tair"
+                    label="About TAIR" alt="About TAIR"
+                    onclick="document.location.href='/about/index.jsp'"
+                />
+                <rich:panelMenuItem  name="tair_staff"
+                    label="TAIR Staff" alt="TAIR Staff" 
+                    onclick="document.location.href='/about/staff.jsp'"
+                />
+                <rich:panelMenuItem  name="tair_board"
+                    label="TAIR Board" alt="TAIR Board" 
+                    onclick="document.location.href='/about/board.jsp'"
+                />
+                <rich:panelMenuItem  name="tair_data_sources"
+                    label="TAIR Data Sources" alt="TAIR Data Sources"
+                    onclick="document.location.href='/about/datasources.jsp'"
+                />
+                <rich:panelMenuItem 
+                    name="hyperlinking_to_tair" label="Hyperlinking to TAIR"
+                    alt="Hyperlinking to TAIR" 
+                    onclick="document.location.href='/about/linktotair.jsp'"
+                />
+                <rich:panelMenuItem  name="citing_tair"
+                    label="Citing TAIR" alt="Citing TAIR" 
+                    onclick="document.location.href='/about/citingtair.jsp'"
+                />
+                <rich:panelMenuItem 
+                    name="tair_database_schema" label="TAIR Database Schema"
+                    alt="TAIR Database Schema" 
+                    onclick="document.location.href='/search/ERwin/Tair.htm'"
+                />
+                <rich:panelMenuItem  name="plain"
+                    label="PLAIN Project" alt="PLAIN Project"
+                    onclick="document.location.href='/about/plain.jsp'"
+                />
+                <rich:panelMenuItem 
+                    name="plain_data_warehouse" label="PLAIN Data Warehouse"
+                    alt="PLAIN Data Warehouse"
+                    onclick="document.location.href='/about/data_warehouse.jsp'"
+                />
+                <rich:panelMenuItem  name="publications"
+                    label="Publications" alt="Publications"
+                    onclick="document.location.href='/about/tairpubs.jsp'"
+                />
+                <rich:panelMenuItem  name="tair_software"
+                    label="TAIR Software" alt="TAIR Software"
+                    onclick="document.location.href='/about/software.jsp'"
+                />
+                <rich:panelMenuItem 
+                    name="tair_database_statistics"
+                    label="TAIR Database Statistics"
+                    alt="TAIR Database Statistics"
+                    onclick="document.location.href='/jsp/tairjsp/pubDbStats.jsp'"
+                />
+                <rich:panelMenuItem 
+                    name="tair_usage_statistics" label="TAIR Usage Statistics"
+                    alt="TAIR Usage Statistics" 
+                    onclick="document.location.href='/usage/'"
+                />
+                <rich:panelMenuItem  name="tair_presentations"
+                    label="TAIR Presentations (ppt)"
+                    alt="TAIR Presentations (ppt)"
+                    onclick="document.location.href='/portals/education/presentations.jsp'"
+                />
+                <rich:panelMenuItem  name="users_guide"
+                    label="Users Guide (pdf)" alt="Users Guide (pdf)"
+                    onclick="document.location.href='TAIRUserGuideV1.0.pdf'"
+                />
+                <rich:panelMenuItem  name="tair_survey"
+                    label="TAIR Survey" alt="TAIR Survey"
+                    onclick="document.location.href='/doc/about/tair_survey/411'"
+                />
+                <rich:panelMenuItem  name="tair_funding"
+                    label="TAIR Funding" alt="TAIR Funding"
+                    onclick="document.location.href='/doc/about/tair_funding/410'"
+                />
+                <rich:panelMenuItem  name="tair_sponsorship"
+                    label="TAIR Sponsorship" alt="TAIR Sponsorship" 
+                    onclick="document.location.href='/doc/about/tair_sponsorship/412'"
+                />
+                <rich:panelMenuItem  name="tair_sponsors"
+                    label="TAIR Sponsors" alt="TAIR Sponsors"
+                    onclick="document.location.href='/doc/about/tair_sponsors/413'"
+                />
+            </rich:panelMenuGroup>
+            <rich:panelMenuGroup name="about_abrc_group" label="About ABRC"
+                expanded="true" iconExpanded="triangleDown"
+                iconCollapsed="triangle"
+            >
+                <rich:panelMenuItem  name="about_abrc"
+                    label="About ABRC" alt="About ABRC"
+                    onclick="document.location.href='http://www.biosci.ohio-state.edu/~plantbio/Facilities/abrc/abrchome.htm'"
+                />
+                <rich:panelMenuItem  name="abrc_staff"
+                    label="ABRC Staff" alt="ABRC Staff" icon="none"
+                    onclick="document.location.href='https://abrc.osu.edu/directory'"
+                />
+                <rich:panelMenuItem  name="abrc_fee_structure"
+                    label="ABRC Fee Structure" alt="ABRC Fee Structure"
+                    onclick="document.location.href='https://abrc.osu.edu/fee-structure'"
+                />
+                <rich:panelMenuItem  name="abrc_payments"
+                    label="How to Make Payments to ABRC"
+                    alt="How to Make Payments to ABRC"
+                    onclick="document.location.href=''"
+                />
+                <rich:panelMenuItem 
+                    name="stock_donation_forms" label="Stock Donation Forms"
+                    alt="Stock Donation Forms"
+                    onclick="document.location.href='https://abrc.osu.edu/donate-stocks'"
+                />
+                <rich:panelMenuItem 
+                    name="stock_acquisition_policy"
+                    label="ABRC Stock Acquisition and Deacquisition Policy"
+                    alt="ABRC Stock Acquisition and Deacquisition Policy"
+                    onclick="document.location.href='https://abrc.osu.edu/stock-acquisition-and-deaquisition-policy'"
+                />
+                <rich:panelMenuItem 
+                    name="abrc_advisory_committee"
+                    label="ABRC Advisory Committee" alt="ABRC Advisory Committee"
+                    onclick="document.location.href='https://abrc.osu.edu/advisory-committee'"
+                />
+            </rich:panelMenuGroup>
+        </rich:panelMenu>
+    </h:form>
+</ui:composition>
+</html>

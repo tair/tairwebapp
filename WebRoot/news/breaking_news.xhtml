@@ -1,0 +1,699 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core" xmlns:a4j="http://richfaces.org/a4j"
+    xmlns:rich="http://richfaces.org/rich" xml:lang="en">
+
+    <ui:composition template="/facelets/templates/sidebar.xhtml">
+        <ui:define name="title">TAIR Breaking News</ui:define>
+        <ui:define name="css">
+            <!-- not needed yet
+                 link
+                    rel="stylesheet"
+                    type="text/css"
+                    href="/css/page/news.css" /> -->
+            <link rel="stylesheet" type="text/css"
+                href="/css/template/sidebar.css" />
+            <link rel="stylesheet" type="text/css"
+                href="/css/page/pagelevels.css" />
+        </ui:define>
+        <ui:define name="breadcrumbs">
+            <h:outputText value="#{breadcrumbs.breadcrumb}"
+                binding="#{breadcrumbs.output}" escape="false">
+                <f:attribute name="pageId" value="#{news.pageId}" />
+            </h:outputText>
+        </ui:define>
+        <ui:define name="sidebar">
+            <div id="leftcolumn">
+                <ui:include src="/facelets/includes/newsSidebar.xhtml" />
+            </div>
+        </ui:define>
+        <ui:define name="content">
+            <div id="rightcolumn">
+
+                <div style="text-align: center;">
+                    <a href="/news/rss.xml" class="feed">Subscribe to news
+                        feed</a>
+                </div>
+                <br /> <span class="mainheader">Breaking News</span>
+                <dl>
+
+                    <dt>
+                        <b>TAIR moved to servers at iPlant&#091;May 20,
+                            2013&#093;</b> <a name="id44"></a>
+                    </dt>
+                    <dd>
+                        <p>ABRC stock ordering and TAIR registration are
+                            available again after the  move of TAIR  data files to a set of
+                            virtual machines hosted at iPlant.
+                            </p>
+                        <p> This move allows the
+                            TAIR site to remain available during the upcoming
+                            transition period as TAIR funding ends and the new
+                            Arabidopsis Information Portal is developed.</p>
+                    </dd>
+
+                    <dt>
+                        <b>TAIR moving to servers at iPlant&#091;May 8,
+                            2013&#093;</b> <a name="id43"></a>
+                    </dt>
+                    <dd>
+                        <p>ABRC stock ordering and TAIR registration will be
+                            temporarily disabled from Friday May 17 through
+                            Monday May 20 while we move data files to a set of
+                            virtual machines hosted at iPlant. Please plan ahead
+                            and place your ABRC stock orders by Thursday May 16
+                            or after Monday May 20.</p>
+                        <p>All services will be restored on May 20 and the
+                            URL will remain the same. This move will allow the
+                            TAIR site to remain available during the upcoming
+                            transition period as TAIR funding ends and the new
+                            Arabidopsis Information Portal is developed.</p>
+                    </dd>
+
+                    <dt>
+                        <b>ABRC Fee Increase&#91;April 10, 2013&#093;</b> <a
+                            name="id42"></a>
+                    </dt>
+                    <dd>
+                        <p>There will be a fee increase for stocks and
+                            orders beginning July 1, 2013. This raise in fees is
+                            in accordance to our Business Plan submitted to NSF.
+                            Due to the reduction in funding, this is the second
+                            of two increases necessary to sustain our current
+                            service to the Arabidopsis community during our
+                            current funding period from 2012-2016 . The new
+                            charge for most individual stocks will be $10 each,
+                            and the order charge will be $20 for domestic and
+                            $25 for international orders. We will continue to
+                            work on becoming more efficient and perhaps offer
+                            more services in the future. Thank you for your help
+                            in sustaining our mission. We appreciate your
+                            continued support.</p>
+                    </dd>
+
+                    <dt>
+                        <b>New Set of Confirmed T-DNA Lines
+                            Available&#91;November 28, 2012&#093;</b> <a name="id41"></a>
+                    </dt>
+                    <dd>
+                        <p>
+                            The fourth one-allele set of confirmed T-DNA lines
+                            representing 3,263 new loci is now available for
+                            ordering as <a
+                                href="http://www.arabidopsis.org/servlet/TairObject?id=4502045978&amp;type=stock">CS27944</a>.
+                            This set complements the currently distributed sets,
+                            with nearly 18,000 unique genes now represented. To
+                            view all sets available, view our <a
+                                href="http://www.arabidopsis.org/abrc/catalog/set_of_lines_1.html">catalog
+                                page</a>.
+                        </p>
+                    </dd>
+
+                    <dt>
+                        <b>New from ABRC Education and Outreach!&#91;October
+                            31, 2012&#093;</b> <a name="id40"></a>
+                    </dt>
+                    <dd>
+                        <p>
+                            ABRC is pleased to announce a re-designed Education
+                            and Outreach website at <a
+                                href="http://abrcoutreach.osu.edu">http://abrcoutreach.osu.edu</a>.
+                            The website allows quick and easy <a
+                                href="http://abrc.osu.edu/donate-stocks">donation
+                                of education modules</a>, direct ordering and <a
+                                href="http://abrcoutreach.osu.edu/trained-educational-kits">online
+                                evaluation of education kits</a>.
+                        </p>
+                    </dd>
+                    <dt>
+                        <b>2012 MASC Report Now Available&#91;July 11,
+                            2012&#093;</b><a name="id39"></a>
+                    </dt>
+                    <dd>
+                        <p>
+                            Please check out the <a
+                                href="/portals/masc/2012_MASC_Report.pdf">latest
+                                report</a> from the Multinational Arabidopsis
+                            Steering Committee.
+                        </p>
+                    </dd>
+                    <dt>
+                        <b>New Protein Chip and Cell Cultures at
+                            ABRC&#91;May 9, 2012&#093;</b><a name="id38"></a>
+                    </dt>
+                    <dd>
+                        <p>
+                            A new protein chip (Stock number: <a
+                                href="/servlets/TairObject?id=4502012518&amp;type=stock">
+                                AtProteinChip 2</a>), developed by <a
+                                href="http://dinesh-kumarlab.genomecenter.ucdavis.edu/--arabidopsis-protein-microarray.html">
+                                M. Snyder and S.P. Dinesh-Kumar</a>, is now
+                            available. This chip has a collection of 10,000
+                            Arabidopsis thaliana ORFs printed on a single array
+                            on a PATH slide surface.<br /> <br /> Cell line
+                            PSB-D (Stock number: <a
+                                href="/servlet/TairObject?id=4502009498&amp;type=stock">
+                                CCL84840</a>), derived from MM2d developed by M.
+                            Menges and J. Murray, is now available. Cell line
+                            PSB-L (Stock number: <a
+                                href="/servlet/TairObject?id=4502009499&amp;type=stock">
+                                CCL84841</a>), derived from MM1 developed by M.
+                            Menges and J. Murray, will be available in the near
+                            future. These stocks were donated by G. De Jaeger. <br />
+                            <br /> The available stocks can be found using the
+                            <a href="/servlets/Order?state=catalog">ABRC
+                                catalog</a>.
+                        </p>
+                    </dd>
+                    <dt>
+                        <b>Share Your Education Resources&#91;February 1,
+                            2012&#093;</b><a name="id37"></a>
+                    </dt>
+                    <dd>
+                        <p>
+                            Do you teach an undergraduate Lab using Arabidopsis?
+                            Can you imagine your research project on Arabidopsis
+                            illustrating an important scientific concept?
+                            Contribute to moving Arabidopsis from the bench to
+                            the classroom! <br /> <br /> As part of the
+                            ASPB-funded grant TRAINED (Translating Research on
+                            Arabidopsis Into a Network of EDucational resources)
+                            ABRC is seeking donations of stocks and/or protocols
+                            for undergraduate and K-12 teaching. Contribution of
+                            educational materials is easy. Visit the <a
+                                href="http://abrcoutreach.osu.edu">ABRC
+                                outreach</a> website to download a contribution
+                            form. Forms can be returned by email to
+                            ABRCedu@osu.edu with any accompanying materials you
+                            wish to share.
+                        </p>
+                    </dd>
+                    <dt>
+                        <b>GO Annotations from TAIR&#91;January 25,
+                            2012&#093;</b><a name="id36"></a>
+                    </dt>
+                    <dd>
+                        <p>
+                            TAIR integrates <a
+                                href="http://www.arabidopsis.org/tools/bulk/go/index.jsp">
+                                GO annotations</a> for A. thaliana from the research
+                            community, UniProtKB, the Gene Ontology Consortium,
+                            BIOGRID and IntAct. Our community (127 individuals)
+                            contributed 12080 annotations in 2011. In the same
+                            time period, we added 2472 from UniProtKB, 1084 from
+                            GOC, 4854 from BIOGRID and 1685 from IntAct. <a
+                                href="http://www.arabidopsis.org/doc/submit/functional_annotation/123">
+                                Submit here!</a>
+                        </p>
+                    </dd>
+                    <dt>
+                        <b>Elsevier/TAIR partnership &#91;January 11,
+                            2012&#093;</b><a name="id35"></a>
+                    </dt>
+                    <dd>
+                        <p>Elsevier's electronic platform SciVerse
+                            ScienceDirect links Elsevier Life Sciences papers
+                            that describe Arabidopsis genes and use AGI codes
+                            (e.g. AT4G32520) to the corresponding pages at TAIR.
+                            You'll need a Science Direct account, then add the
+                            TAIR Arabidopsis app (beta) to your preferences.</p>
+                    </dd>
+                    <dt>
+                        <b>ABRC Outreach Initiative Funded by ASPB
+                            &#91;January 11, 2012&#093;</b><a name="id34"></a>
+                    </dt>
+                    <dd>
+                        <p>
+                            ABRC is pleased to announce funding for the <a
+                                href="http://bit.ly/qpXZob">TRAINED</a>
+                            (Translating Research on Arabidopsis Into a Network
+                            of EDucational resources) grant by the ASPB
+                            Education Foundation Grants (EFG) program. This
+                            project enhances ABRC's ongoing stock propagation
+                            and distribution activities, supported by NSF grant
+                            DBI-1049341 until 2016.
+                        </p>
+                    </dd>
+
+                    <dt>
+                        <b>Ordering Now Available &#91;November 3,
+                            2011&#093;</b><a name="id33"></a>
+                    </dt>
+                    <dd>
+                        <p>Stock ordering and registration are now fully
+                            operational. Please contact us at
+                            curator@arabidopsis.org if you experience any
+                            problems.</p>
+                    </dd>
+                    <dt>
+                        <b>Ordering Not Yet Available &#91;November 1,
+                            2011&#093;</b><a name="id32"></a>
+                    </dt>
+                    <dd>
+                        <p>Stock ordering and registration are not available
+                            due to problems encountered during the site
+                            migration. Please hold off on ordering until further
+                            notice.</p>
+                    </dd>
+                    <dt>
+                        <b>Site Maintenance Completed &#91;October 31,
+                            2011&#093;</b><a name="id31"></a>
+                    </dt>
+                    <dd>
+                        <p>Stock ordering and registration are available
+                            again. Please contact us at curator@arabidopsis.org
+                            if you experience any problems.</p>
+                    </dd>
+                    <dt>
+                        <b>Upcoming Site Maintenance &#91;October 19,
+                            2011&#093;</b><a name="id30"></a>
+                    </dt>
+                    <dd>
+                        <p>
+                            Stock ordering and registration <font color='red'>will
+                            not be available</font> from 6pm Pacific Time on October 28
+                            to approximately October 31 due to a migration to
+                            new hardware. All searches and detail pages will be
+                            fully functional throughout this period.
+                        </p>
+                    </dd>
+
+
+                    <dt>
+                        <b>GBrowse now available for eight plant species at
+                            TAIR &#91;May 19, 2011&#093;</b><a name="id29"></a>
+                    </dt>
+                    <dd>
+                        <p>
+                            GBrowse instances for the following plants have been
+                            added to TAIR: Arabidopsis lyrata, Brachypodium
+                            distachyon, Oryza sativa japonica, Oryza sativa
+                            indica, Populus trichocarpa, Physcomitrella patens,
+                            Sorghum bicolor, Vitis vinifera, Zea mays. The Beta
+                            versions of GBrowse instances for these plants are
+                            available from the 'Data Source' drop-down menu on
+                            the <a
+                                href="http://gbrowse.arabidopsis.org/cgi-bin/gbrowse/arabidopsis/">TAIR
+                                GBrowse page</a>. Gene models for each species were
+                            obtained from Ensembl version8. We plan on updating
+                            the Gbrowse instances based on Ensembl models twice
+                            a year. Gene models link either to the corresponding
+                            Ensembl gene page, or to other database gene pages
+                            (maizesequence.org for Zea mays, and TAIR for A.
+                            lyrata).
+                        </p>
+
+                        <p>
+                            ESTs and cDNAs for each plant species were
+                            downloaded from Genbank (April 2011) and aligned to
+                            the respective genomes using the <a
+                                href="http://www.ncbi.nlm.nih.gov/pubmed/15728110">gmap
+                                sequence alignment tool</a>. Sequence alignment gaps
+                            were limited to 20 Kb.
+                        </p>
+
+                        <p>Arabidopsis thaliana cDNAs (TAIR10) were aligned
+                            to each plant genome using the CAT program (Li et
+                            al. 2007) with default parameters and similarity
+                            matrix. To remove poor quality alignments a number
+                            of filters were applied: 1) alignment segments with
+                            a negative CAT value for matched bases were removed,
+                            2) Alignments with an overall alignment percentage
+                            below 30% were removed (overall% =percent match ID *
+                            percent match length), 3) Where sequences mapped to
+                            multiple locations, only alignments 70% similar to
+                            the match with the best overall% were retained, 4)
+                            alignment segments separated by >3Kb were evaluated
+                            as distinct groups with only the alignment part with
+                            the highest overall% retained.</p>
+                    </dd>
+
+                    <dt>
+                        <b>New AraCyc release at the PMN &#91;April 14,
+                            2011&#093;</b><a name="id27"></a>
+                    </dt>
+                    <dd>
+                        <p>
+                            The <a href="http://plantcyc.org">Plant
+                                Metabolic Network</a> (PMN) is pleased to announce
+                            the release of three updated versions of its plant
+                            metabolic pathway databases: <a
+                                href="http://plantcyc.org/release_notes/aracyc/aracyc_release_notes.faces">AraCyc
+                                8.0</a>, <a
+                                href="http://plantcyc.org/release_notes/plantcyc/plantcyc_release_notes.faces">PlantCyc
+                                5.0</a>, and <a
+                                href="http://plantcyc.org/release_notes/poplarcyc/poplarcyc_release_notes.faces">PoplarCyc
+                                3.0</a>. AraCyc now has <a
+                                href="http://pmn.plantcyc.org/ARA/search-query?type=PATHWAY&amp;class=">446
+                                pathways and superpathways</a> and <a
+                                href="http://pmn.plantcyc.org/ARA/search-query?type=PATHWAY&amp;ev=EV-EXP">
+                                over 350 are experimentally supported</a>. It also
+                            has information on over 5500 enzymes. Come see how
+                            the data and tools available at the PMN can support
+                            your plant metabolism research or teaching efforts.
+                        </p>
+                    </dd>
+
+                    <dt>
+                        <b>ABRC and NASC fee increase &#91;March 25,
+                            2011&#093;</b><a name="id26"></a>
+                    </dt>
+                    <dd>
+                        <p>Stock fees will change effective April 1, 2011.
+                            The fees for individual stocks will increase to $7
+                            each for academic users and to $56 each for
+                            commercial users. The fees for sets of stocks will
+                            also be increased by approximately 40%. The $15
+                            charge for each order will not change at this time.
+                            Stock fees have not been changed for two years, and
+                            the current fee increase was necessary to
+                            accommodate for increased maintenance costs of both
+                            centers. We will continue to keep fees as low as
+                            possible while providing the highest level of
+                            service.</p>
+                    </dd>
+
+                    <dt>
+                        <b>New Education Resources available at ABRC
+                            &#91;March 23, 2011&#093;</b><a name="id25"></a>
+                    </dt>
+                    <dd>
+                        <p>
+                            Seven Education Kits containing seeds, DNA and
+                            written materials are now available from ABRC. These
+                            stocks can be found in the <a
+                                href="/abrc/catalog/education_kits_1.html">
+                                ABRC catalog</a>. Four are suitable for K-12
+                            classes, do not contain transgenic materials and are
+                            distributed free of charge. Two of these represent
+                            ABRC Education Resources, the details of which can
+                            be found at <a
+                                href="http://abrc.osu.edu/Education.html">
+                                ABRC Education website</a>. More education resources
+                            will be added as they are developed.
+                        </p>
+                    </dd>
+
+                    <dt>
+                        <b>Change in ABRC Ordering Policy &#091;December 7,
+                            2010&#093;</b><a name="id24"></a>
+                    </dt>
+                    <dd>
+                        <p>To streamline stock ordering, ABRC now accepts
+                            both seeds and other types of stocks in a single
+                            order. In this case, the order charge will be $30.
+                            This higher fee reflects our shipping costs, since
+                            seeds are shipped separately from other stocks. If
+                            you prefer, you can continue to place separate
+                            orders for seed and other stocks, and each order
+                            will have a $15 charge.</p>
+                    </dd>
+
+                    <dt>
+                        <b>TAIR10 Genome release &#091;Nov 17, 2010&#093;</b><a
+                            name="id22"></a>
+                    </dt>
+                    <dd>
+                        <p>
+                            The Arabidopsis Information Resource (TAIR) is
+                            pleased to announce the release of the latest
+                            version of the Arabidopsis genome annotation
+                            (TAIR10). The latest release builds upon the gene
+                            structures of the previous TAIR9 release using
+                            RNA-seq and proteomics datasets as well as manual
+                            updates informed by cross species alignments,
+                            peptides and community input regarding missing and
+                            incorrectly annotated genes. <br /> <br /> The
+                            TAIR10 release contains 27,416 protein coding genes,
+                            4827 pseudogenes or transposable element genes and
+                            1359 ncRNAs (33,602 genes in all, 41,671 gene
+                            models). A total of 126 new loci and 2099 new gene
+                            models were added. <br /> <br /> Eighteen percent
+                            (5885) of Arabidopsis genes now have annotated
+                            splice variants. Updates were made to 1184 gene
+                            models of which 707 had CDS updates. There were 41
+                            gene splits and 37 gene merges. No changes were made
+                            to the Arabidopsis genome assembly for the TAIR10
+                            release. <br /> <br /> Gene annotation utilized
+                            available proteomics data (Baerenfaller et al., 2008
+                            and Castellana et al., 2008) and RNA-seq data from
+                            the Ecker and Mockler labs (Lister et al. 2008,
+                            Filichkin et al. 2010). RNA-seq data was mapped to
+                            the Arabidopsis genome using TopHat, HashMatch or
+                            supersplat. After quality and low complexity
+                            filtering a total of ~200 million RNA-seq reads were
+                            successfully mapped to the genome. Of these, ~9
+                            million represent spliced reads. Proteomics data and
+                            spliced RNA-seq reads were provided to Augustus and
+                            the resulting gene models categorised and manually
+                            reviewed. Validated gene updates, novel genes and
+                            novel splice variants were incorporated into the
+                            TAIR10 release. Additional spliced RNA-seq reads not
+                            already incorporated into gene models by Augustus
+                            were supplied to TAU. The resulting TAU models were
+                            again reviewed for potential novel splice variants.
+                            Transcript assemblies were generated via Cufflinks
+                            using all spliced reads and unspliced reads from the
+                            Ecker sets. Transcript assemblies were filtered and
+                            compared to existing gene models, resulting in the
+                            addition of 56 novel genes. Additional new proteome
+                            data provided to us by Katja Baerenfaller was used
+                            to directly update 24 gene models. <br /> <br />
+                            Gene models created using the Gnomon pipeline were
+                            provided to TAIR by NCBI. Reanalysis of these models
+                            for TAIR10 resulted in 11 additional novel genes, 67
+                            additional alternative splice variants and 164
+                            updates to existing genes. <br /> <br /> We would
+                            like to thank all those who contributed to the
+                            latest release by providing submissions for new and
+                            incorrectly annotated genes. <br /> <br /> TAIR
+                            wishes to thank Cornell University for use of the
+                            computer clusters at the Cornell Center for Advanced
+                            Computing (CAC).
+                        </p>
+                    </dd>
+                    <dt>
+                        <b>TAIR server migration update &#091;August 05,
+                            2010&#093;</b><a name="id21"></a>
+                    </dt>
+                    <dd>
+                        <p>Recent code changes have improved the speed of
+                            locus page loading. Our move to new servers, now
+                            expected in late August, will provide an additional
+                            performance boost</p>
+                    </dd>
+
+                    <dt>
+                        <b>ABRC Ordering Policy &#091;July 27, 2010&#093;</b><a
+                            name="id20"></a>
+                    </dt>
+                    <dd>
+                        <p>Effective August 1, 2010 we can no longer process
+                            orders that have both seed and DNA stocks, and will
+                            cancel some items from your order if it contains
+                            both. You will receive an email with a list of any
+                            canceled items and you must place a new order for
+                            these items.</p>
+                    </dd>
+
+                    <dt>
+                        <b>TAIR Slowdowns &#091;May 26, 2010&#093;</b><a
+                            name="id19"></a>
+                    </dt>
+                    <dd>
+                        <p>
+                            Due to recent increases in usage TAIR will continue
+                            to be slow or unavailable during peak use times
+                            (weekdays 12:00-16:00 GMT) in May and June. If the
+                            site is slow please return during nonpeak hours. <strong>Please
+                                avoid pressing the reload button or resubmitting
+                                the same URL if you don't get a response; this
+                                just overloads the server with more requests for
+                                data. </strong>We will migrate to faster servers in July,
+                            this should eliminate the problems. IMPORTANT:
+                            please do not run scripts to collect data from TAIR
+                            pages, contact us instead for an ftp file.
+                        </p>
+                    </dd>
+
+                    <dt>
+                        <b>ASPB Early Bird Registration Deadline &#091;April
+                            30, 2010&#093;</b><a name="id18"></a>
+                    </dt>
+                    <dd>
+                        <p>
+                            The Early Bird Registration Deadline of this year's
+                            Plant Biology Meeting in Montreal is fast
+                            approaching! Register by Friday, May 7th at <a
+                                href="http://www.aspb.org/pb-2010/">http://www.aspb.org/pb-2010/</a>.
+                        </p>
+                    </dd>
+
+                    <dt>
+                        <b>New Set of Natural accessions available at ABRC
+                            &#091;April 29, 2010&#093;</b><a name="id17"></a>
+                    </dt>
+                    <dd>
+                        <p>
+                            80 natural accessions sequenced using the Illumina
+                            platform by the D. Weigel laboratory at the Max
+                            Planck Institute for Developmental Biology and
+                            collaborators, as part of the 1001 Genomes Project,
+                            are available at ABRC. Each of the accessions is an
+                            inbred line that can be ordered as an individual
+                            line or as a set ( <a
+                                href="/servlets/TairObject?id=6030195929&amp;type=germplasm">CS76427</a>).
+                            These stocks can be found using the <a
+                                href="/servlets/Order?state=catalog">ABRC
+                                catalog</a>. The complete genome sequences of these
+                            accessions have been released by the Weigel
+                            laboratory. For more details, please go to
+                            http://1001genomes.org/
+                        </p>
+                    </dd>
+
+                    <dt>
+                        <b>Arabidopsis N-Browse added to TAIR tools.
+                            &#091;April 1, 2010&#093; </b><a name="id16"></a>
+                    </dt>
+                    <dd>
+                        <p>
+                            N-Browse, a molecular interaction viewer, is now
+                            available at TAIR and allows users to visualize
+                            protein interactions of their Arabidopsis genes of
+                            interest. Go to the <a href="/tools/nbrowse.jsp">TAIR
+                                N-Browse page.</a>
+                        </p>
+                    </dd>
+
+                    <dt>
+                        <b>TAIR Survey &#091;March 10, 2010&#093;</b><a
+                            name="id15"></a>
+                    </dt>
+                    <dd>
+                        <p>
+                            Please take the <a
+                                href="http://www.surveymonkey.com/s/XVWH7Q3">survey</a>
+                            to help us gather information on who uses TAIR and
+                            give feedback on future priorities. Survey will be
+                            up for only one week, please don't delay!
+                        </p>
+                    </dd>
+
+
+                    <dt>
+                        <b>First ABRC Mutant Hunt &#091;February 11,
+                            2010&#093;</b><a name="id14"></a>
+                    </dt>
+                    <dd>
+                        <p>
+                            We would like to invite you to visit ABRC and look
+                            for your favorite mutant in our greenhouses during
+                            our Spring growing cycle. Whether you want to
+                            conduct a forward screen looking for your favorite
+                            phenotype or a reverse screen of several mutants in
+                            your favorite gene, the Mutant Hunt is your
+                            solution. For details, please go to our <a
+                                href="https://abrc.osu.edu/">ABRC Home page</a>.
+                        </p>
+                    </dd>
+
+
+                    <dt>
+                        <b>New Protein Chip Resource at ABRC &#091;January
+                            13, 2010&#093;</b><a name="id13"></a>
+                    </dt>
+                    <dd>
+                        <p>
+                            Approximately 400 copies of Arabidopsis Protein Chip
+                            v1 <a
+                                href="http://www.arabidopsis.org/servlets/TairObject?type=stock&amp;id=4001872756">ATPROTEINCHIP
+                                1</a>, developed by <a
+                                href="http://plants.gersteinlab.org">M.
+                                Snyder, S.P. Dinesh-Kumar, and M. Gerstein</a> have
+                            been received at <a href="http://abrc.osu.edu">ABRC</a>
+                            and are ready for distribution. Each chip contains a
+                            collection of <a
+                                href="ftp://ftp.arabidopsis.org/ABRC/DK_LAB_Protein_Chip_Layout_Dec_2009.xlsx">5,000
+                                Arabidopsis proteins</a> printed on a single array.
+                            Protein chips offer a variety of applications
+                            related to high-throughput functional analysis,
+                            including antibody screens, enzymatic or other
+                            functional assays, as well as interactions of
+                            proteins with DNA, RNA, lipids, small molecules or
+                            other proteins.
+                        </p>
+                        <p>We would like to determine the interest of the
+                            community in this type of resource. Please select
+                            from the options below:</p>
+                        <p>
+                            <h:outputLink
+                                value="http://www.arabidopsis.org/servlets/TairObject?type=stock&amp;id=4001872756"
+                                title="Order ABRC Protein Chips">I would like to place an order now.</h:outputLink>
+                        </p>
+                        <p>
+                            <h:outputLink
+                                value="/servlets/Community?action=login&amp;originalPage=/doc/news/breaking_news/140"
+                                title="Login/Register"
+                                rendered="#{!login.loggedIn}">I would like to order in the future.</h:outputLink>
+                            <h:outputText rendered="#{login.loggedIn}"
+                                value="I would like to order in the future:" />
+                            <br />
+                            <h:outputText
+                                rendered="#{login.loggedIn and !news.submitted}"
+                                value="User: #{news.user}">
+                                <br />
+                            </h:outputText>
+                            <h:form
+                                rendered="#{login.loggedIn and !news.submitted}">
+                                <h:panelGrid columns="4"
+                                    columnClasses="fieldLabel,field"
+                                    width="100%" border="1">
+                                    <h:outputLabel for="number"
+                                        value="Number of Chips:" />
+                                    <rich:inputNumberSpinner id="number"
+                                        minValue="1" maxValue="50" step="1"
+                                        value="#{news.numberOfChips}"
+                                        inputSize="2">
+                                    </rich:inputNumberSpinner>
+                                    <h:panelGroup>
+                                        <h:outputLabel for="interest"
+                                            value="I would be interested in future chip versions:" />
+                                    </h:panelGroup>
+                                    <h:selectBooleanCheckbox id="interest"
+                                        value="#{news.futureInterest}"></h:selectBooleanCheckbox>
+                                </h:panelGrid>
+                                <br />
+                                <h:commandButton type="submit"
+                                    action="#{news.submitSurvey}" value="Submit" />
+                            </h:form>
+                            <h:outputText
+                                rendered="#{login.loggedIn and news.submitted}"
+                                value="Thank you for your interest (#{news.numberOfChips} chips). ">
+                                <br />
+                            </h:outputText>
+                            <h:outputText
+                                rendered="#{login.loggedIn and news.submitted and news.futureInterest}"
+                                value="Your interest in future chips has been recorded." />
+                        </p>
+                    </dd>
+
+                </dl>
+
+
+                <br /> <br />
+                <div style="text-align: center;">
+                    <a href="/news/oldnews.jsp">What Was News</a>
+                </div>
+
+
+                <div style="text-align: center;">Last modified on November
+                    28, 2012</div>
+            </div>
+        </ui:define>
+    </ui:composition>
+</html>
