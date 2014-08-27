@@ -30,669 +30,610 @@ import="org.tair.tfc.*,org.tair.querytools.*, org.tair.utilities.*,java.util.*, 
 <br/>
 <dl>
 
-<dt><a href="/news/job_postings/laurian08202014.html" >Aug 20 2014, Postdoctoral Visiting Fellowship/Plant Molecular Biology and Bioinformatics  </a></dt><dd>Agriculture and AgriFood Canada, Eastern Cereal and Oilseed Research Center, Ottawa, Ontario, Canada</dd><dl>
+<dt><a href="/news/job_postings/stergiopoulos06042013-2.pdf" >Jun 4 2013, Post-doctoral Position in Fungal Proteomics</a></dt>
+<dd>Department of Plant Pathology, University of California, Davis, CA, USA</dd><dl>
 
-<dt><a href="/news/job_postings/folta08192014.html" >Aug 19 2014, Research Professor position</a></dt><dd>Horticultural Sciences Department, University of Florida, Gainesville, FL, USA</dd><dl>
+<dt><a href="/news/job_postings/stergiopoulos06042013.pdf" >Jun 4 2013, Bioinformatics Position in Comparative Fungal Genomics</a></dt>
+<dd>Department of Plant Pathology, University of California, Davis, CA, USA</dd><dl>
 
-<dt><a href="/news/job_postings/pribil08192014_2.pdf" >Aug 19 2014, Postdoc in plant molecular/membrane protein biology</a></dt><dd>Copenhagen Plant Science Centre, Department of Plant and Environmental Sciences, Faculty of Science, University of Copenhagen, Copenhagen, Denmark</dd><dl>
+<dt><a href="/news/job_postings/schueller06032013.pdf" >Jun 5 2013, Postdoctoral Researchers in the Areas of Evolutionary and Statistical Genetics</a></dt>
+<dd>Max Planck Institute for Plant Breeding Research, Köln, Germany</dd><dl>
 
-<dt><a href="/news/job_postings/pribil08192014_1.pdf" >Aug 19 2014, PhD fellow in plant molecular/membrane protein biology</a></dt><dd>Copenhagen Plant Science Centre, Department of Plant and Environmental Sciences, Faculty of Science, University of Copenhagen, Copenhagen, Denmark</dd><dl>
+<dt><a href="/news/job_postings/ni05302013.html" >May 30 2013, Postdoctoral position</a></dt>
+<dd>University of Minnesota, Minneapolis/St. Paul, USA</dd><dl>
 
-<dt><a href="/news/job_postings/schachtman08182014.pdf" >Aug 18 2014, Postdoctoral Position Available:  Plant Root – Microbe Interactions</a></dt><dd>Schachtman Lab, University of Nebraska-Lincoln, Lincoln, NE, USA</dd><dl>
-
-<dt><a href="/news/job_postings/gallaghar08182014.html" >Aug 18 2014, Post-Doc position</a></dt><dd>University of Pennsylvania, Philadelphia, PA, USA</dd><dl>
-
-<dt><a href="/news/job_postings/laclair08142014.html" >Aug 14 2014, Faculty Position in Genomics</a></dt><dd>Department of Plant Biology, Michigan State University,East Lansing, MI, USA</dd><dl>
-
-<dt><a href="/news/job_postings/tarter08122014.html" >Aug 12 2014, Faculty Position in Genomics</a></dt><dd>Department of Biology, Indiana University, Bloomington, Indiana, USA</dd><dl>
-
-<dt><a href="/news/job_postings/ahn08122014.html" >Aug 12 2014, Two Post-doctoral positions available in genetics of flowering</a></dt><dd>Creative Research Initiative, Korea University, Seoul, Korea</dd><dl>
-
-<dt><a href="/news/job_postings/poethig08082014.html" >Aug 08 2014, LSRF Post-doctoral Fellowships</a></dt><dd>Life Sciences Research Foundation (LSRF), USA</dd><dl>
-
-<dt><a href="/news/job_postings/tian08072014.pdf" >Assistant/Associate Professor Position in Plant Genetics and Genomics</a></dt><dd>Institute of Genetics and Developmental Biology, Chinese Academy of Science, Chaoyang District, Beijing, China</dd><dl>
-
-<dt><a href="/news/job_postings/baurle08062014.pdf" >Aug 06 2014, Postdoctoral position to study the role of epigenetic processes in the adaptation of plants to recurring stress</a></dt><dd>University of Potsdam, Potsdam, Germany</dd><dl>
-
-<dt><a href="/news/job_postings/hideki08052014.html" >Aug 05 2014, Postdoctoral research associate position</a></dt><dd>Michigan State University, East Lansing, MI, USA</dd><dl>
-
-<dt><a href="/news/job_postings/tarter08052014.html" >Aug 05 2014, Tenure-track Assistant Professor position</a></dt><dd>Department of Biology, Indiana University, Bloomington, Indiana, USA</dd><dl>
-
-<dt><a href="/news/job_postings/muller08052014.html" >Aug 05 2014, Enable Scientific Discoveries with your Software Development Skills - Join Phoenix!</a></dt><dd>Phoenix Bioinformatics, Redwood City, CA, USA</dd><dl>
-
-<dt><a href="/news/job_postings/smith08052014.pdf" >Aug 05 2014, Program Director position</a></dt><dd>Texas Higher Education Coordinating Board (THECB), Austin, Texas, USA</dd><dl>
-
-<dt><a href="/news/job_postings/ramirez07312014.pdf" >July 31 2014, Post-Doctoral Fellow / Bread Wheat Improvement</a></dt>
-<dd>The International Maize and Wheat Improvement Center (CIMMYT), Texocco, Mexico</dd><dl>
-
-<dt><a href="/news/job_postings/mitra07312014.html" >July 31 2014, Assistant Professor position</a></dt>
-<dd>The Carleton College, Department of Biology, Northfield, Minnesota, USA</dd><dl>
-
-<dt><a href="/news/job_postings/devos07292014.pdf" >July 29 2014, Postdoctoral positions available immediately </a></dt>
-<dd>University of Georgia, Athens, USA</dd><dl>
-
-<dt><a href="/news/job_postings/chen07252014.html" >July 25 2014, Postdoctoral Fellow / Reasearch Assistant in Bioinformatics </a></dt>
-<dd>Institute of Plant and Microbial Biology, Academia Sinica, Taiwan</dd><dl>
-
-<dt><a href="/news/job_postings/moroz07212014.pdf" >July 21 2014, Postdoctoral position </a></dt>
-<dd>Division of Plant & Crop Sciences, School of Biosciences, University of Nottingham, UK</dd><dl>
-
-<dt><a href="/news/job_postings/spandl07212014.pdf" >July 21 2014, Ph.D. positions at the MPI for Plant Breeding Research</a></dt>
-<dd>International Max Planck Research School, Cologne, Germany</dd><dl>
-
-<dt><a href="/news/job_postings/hua07212014.html" >July 21 2014, Postdoctoral Position in Temperature Modulation of Plant Immunity </a></dt>
-<dd>Hua lab, Plant Biology Section of the School of Integrative Plant Science, Cornell University, Ithaca, NY, USA</dd><dl>
-
-<dt><a href="/news/job_postings/schmidt07162014.pdf" >July 16 2014, Postdoctoral position</a></dt>
-<dd>Institute of Plant and Microbial Biology, Academia Sinica, Taipei, Taiwan</dd><dl>
-
-<dt><a href="/news/job_postings/hay07152014.pdf" >July 15 2014, Postdoctoral Fellowship position</a></dt>
-<dd>Max	Planck	Institute, Cologne, Germany</dd><dl>
-
-<dt><a href="/news/job_postings/bishopp07142014.pdf" >July 14 2014, Postdoctoral Research Associate – Plant Developmental Biology </a></dt>
-<dd>Centre of Plant Integrative Biology, University of Nottingham, UK</dd><dl>
-
-<dt><a href="/news/job_postings/zeng07112014.html" >July 11 2014, Postdoctoral position and graduate student Research Assistantships in bioinformatics</a></dt>
-<dd>Laboratory for Bioinformatics and Computational Systems Biology (LBCSB),University of South Dakota, Vermillion, SD, USA</dd><dl>
-
-<dt><a href="/news/job_postings/wegrzyn07102014.html" >July 10 2014, Postdoctoral Researcher in Plant Comparative Genomics</a></dt>
-<dd>Department of Ecology and Evolutionary Biology, University of Connecticut, CT, USA</dd><dl>
-
-<dt><a href="/news/job_postings/walia07102014.html" >July 10 2014, Ph.D. Position in Abiotic Stress Tolerance at University of Nebraska</a></dt>
-<dd>Walia lab, Department of Agronomy and Horticulture, University of Nebraska, Lincoln, NE, USA</dd><dl>
-
-<dt><a href="/news/job_postings/grelon07092014.pdf" >July 9 2014, Postdoctoral position in Meiotic Recombination and chromatin structure</a></dt>
-<dd>Institut Jean-Pierre Bourgin, INRA Centre de Versailles-Grignon,Versailles, Cedex, France</dd><dl>
-
-<dt><a href="/news/job_postings/loraine07082014.html" >July 8 2014, Postdoctoral Trainee in Bioinformatics</a></dt>
-<dd>Loraine lab, UNC Charlotte, NC, USA</dd><dl>
-
-<dt><a href="/news/job_postings/ntoukakis07072014.html" >July 7 2014, Postdoctoral position in mechanistic basis of MAPKs 
-activation within resistance complexes in Tomato and Arabidopsis</a></dt>
-<dd>School of Life Sciences, University of Warwick, Coventry CV4 7AL, United Kingdom</dd><dl>
-
-<dt><a href="/news/job_postings/folta07072014.html" >July 7 2014, Postdoctoral opportunity</a></dt>
-<dd>Horticultural Sciences Department, University of Florida, Gainesville, FL, USA</dd><dl>
-
-<dt><a href="/news/job_postings/trujillo07042014.pdf" >July 4 2014, Postdoctoral position</a></dt>
-<dd>Leibniz Institute for Plant Biochemistry (IPB), Halle (Saale), Germany</dd><dl>
-
-<dt><a href="/news/job_postings/haydon07032014.pdf" >July 3 2014, Postdoctoral Research Associate – Plant Molecular Biology</a></dt>
-<dd>Department of Biology, University of York, York, UK</dd><dl>
-
-<dt><a href="/news/job_postings/zhong06302014.pdf" >June 30 2014, Postdoctoral Position in Bioinformatics</a></dt>
-<dd>School of Life Sciences, Chinese University of Hong Kong, Hong Kong, People's Republic of China</dd><dl>
-
-<dt><a href="/news/job_postings/spillane06302014.html" >June 30 2014, LECTURER FIXED TERM IN SCHOOL OF NATURAL SCIENCES (2 posts)</a></dt>
-<dd>School of Natural Sciences, NUI, Galway, Ireland</dd><dl>
-
-<dt><a href="/news/job_postings/cubas06272014.html" >June 27 2014, Postdoctoral Position in Plant Developmental Biology</a></dt>
-<dd>Departamento de Genética Molecular de Plantas, Centro Nacional de Biotecnología-CSIC, Madrid, Spain</dd><dl>
-
-<dt><a href="/news/job_postings/dobritsa06242014.html" >June 24 2014, Postdoctoral Position in Pollen Wall Formation</a></dt>
-<dd>Ohio State University, Columbus, OH, USA</dd><dl>
-
-<dt><a href="/news/job_postings/zeng06192014.pdf" >June 19 2014, Postdoctoral Associate</a></dt>
-<dd>Plant Pathology Department, University of Nebraska, Lincoln, NE, USA</dd><dl>
-
-<dt><a href="/news/job_postings/altpeter06192014.html" >June 19 2014, Postdoc Position Sugarcane Genome Editing</a></dt>
-<dd>University of Florida, Gainesville, FL, USA</dd><dl>
-
-<dt><a href="/news/job_postings/cohen06192014.html" >June 19 2014, Postdoctoral Researcher in Plant Physiology/Plant Development</a></dt>
-<dd>University of Puget Sound, Tacoma, WA, USA</dd><dl>
-
-<dt><a href="/news/job_postings/madlung06182014.html" >June 18 2014, Postdoctoral Position</a></dt>
-<dd>Plant Pathology Department, University of Nebraska, Lincoln, NE, USA</dd><dl>
-
-<dt><a href="/news/job_postings/ambrose06162014.pdf" >June 16 2014, PhD Student, Plant Cell Biology</a></dt>
-<dd>Department of Biology, University of Saskatchewan, Saskatoon, SK, Canada</dd><dl>
-
-<dt><a href="/news/job_postings/moffett06102014.html" >June 10 2014, Graduate Student Positions – Molecular Plant-Virus, Plant-Microbe Interactions</a></dt>
-<dd>Department of Biology at the University of Sherbrooke, Sherbrooke, Québec, Canada</dd><dl>
-
-<dt><a href="/news/job_postings/benhamed06102014.html" >June 10 2014, Post-doc Position in the Chromatin and Development Team</a></dt>
-<dd>King Abdullah University of Science and Technology (KAUST), Kingdom of Saudi Arabia</dd><dl>
-
-<dt><a href="/news/job_postings/schueller06102014.pdf" >June 10 2014, Microscopy and Imaging Service Group Leader</a></dt>
-<dd>Max Planck Institute for Developmental Biology, Tübingen, Germany</dd><dl>
-
-<dt><a href="/news/job_postings/hu06092014.html" >June 9 2014, Two Postdoctoral Positions in Timing of Flowering Transition</a></dt>
-<dd>Kunming Institute of Botany, Chinese Academy of Sciences, Kunming, Yunnan, PRC</dd><dl>
-
-<dt><a href="/news/job_postings/folta06062014.html" >June 6 2014, Research Assistant Professor - Strawberry Molecular Marker Development and Application</a></dt>
-<dd>Gulf Coast Research and Education Center (GCREC), Wimauma, FL, USA</dd><dl>
-
-<dt><a href="/news/job_postings/singh06042014.html" >June 4 2014, Research Fellow in Plant Molecular Biology and Biotechnology</a></dt>
-<dd>The University of Melbourne, Melbourne, Australia</dd><dl>
-
-<dt><a href="/news/job_postings/nagawa06032014.html" >June 2 2014, Microscopy/Imaging Technician</a></dt>
-<dd>Shanghai Center for Plant Stress Biology, Chinese Academy of Sciences, Shanghai, People's Republic of China</dd><dl>
-
-<dt><a href="/news/job_postings/slotte05302014.html" >May 30 2014, Post-doc Position: Population Genomics in Arabidopsis Relatives</a></dt>
-<dd>Dept. of Ecology, Environment and Plant Science, Stockholm University, Stockholm, Sweden</dd><dl>
-
-<dt><a href="/news/job_postings/ahn05292014.html" >May 29 2014, Two Post-Doctoral Positions Available in Genetics of Flowering</a></dt>
-<dd>Creative Research Initiative, Korea University, Seoul, Korea</dd><dl>
-
-<dt><a href="/news/job_postings/mukhtar05202014.pdf" >May 20 2014, Postdoctoral Position - Arabidopsis Biochemistry</a></dt>
-<dd>Department of Biology, University of Alabama, Birmingham, AL, USA</dd><dl>
-
-<dt><a href="/news/job_postings/pijut05202014.pdf" >May 20 2014, Fred M. van Eck Scholarships Graduate Assistantships</a></dt>
-<dd>Hardwood Tree Improvement and Regeneration Center, Department of Forestry and Natural Resources, Purdue University, West Lafayette, IN, USA</dd><dl>
-
-<dt><a href="/news/job_postings/mahfouz05152014.html" >May 15 2014, Two Postdoctoral Positions</a></dt>
-<dd>King Abdullah University of Science and Technology (KAUST), Kingdom of Saudi Arabia</dd><dl>
-
-<dt><a href="/news/job_postings/imaizumi05122014.html" >May 12 2014, Postdoctoral Research Position</a></dt>
-<dd>Department of Biology, University of Washington, Seattle, WA, USA</dd><dl>
-
-<dt><a href="/news/job_postings/showalter05072014.html" >May 7 2014, Plant Molecular Biology/Genetics/Biochemistry Graduate Studies</a></dt>
-<dd>Department of Environmental and Plant Biology and the Molecular and Cellular Biology Program, Ohio University, Athens, OH, USA</dd><dl>
-
-<dt><a href="/news/job_postings/torii05052014.html" >May 5 2014, Postdoctoral Position in Stomatal Development</a></dt>
-<dd>University of Washington, Seattle, WA, USA</dd><dl>
-
-<dt><a href="/news/job_postings/germain05022014.html" >May 2 2014, International Student for the Ph.D. Level for a Project in Molecular Plant-Microbe Interaction</a></dt>
-<dd>University of Trois-Rivières, Trois-Rivières, Qc, Canada</dd><dl>
-
-<dt><a href="/news/job_postings/zhao05012014.html" >May 1 2014, Postdoctoral Research Associate Position</a></dt>
-<dd>Department of Biological Sciences at University of Wisconsin-Milwaukee, Milwaukee, WI, USA</dd><dl>
-
-<dt><a href="/news/job_postings/axtell04292014.html" >Apr 29 2014, Faculty Position in Plant Biology</a></dt>
-<dd>Biology Department, The Pennsylvania State University, University Park, PA, USA</dd><dl>
-
-<dt><a href="/news/job_postings/zhao04292014.html" >Apr 29 2014, Postdoctoral Research Associate Position</a></dt>
-<dd>Department of Biological Sciences, University of Wisconsin, Milwaukee, WI, USA</dd><dl>
-
-<dt><a href="/news/job_postings/fizam04282014.pdf" >Apr 28 2014, 1-Year Post-Doc Position Open in Gene Regulatory Network (GRN) Learning</a></dt>
-<dd>University of Montpellier, Montpellier, France</dd><dl>
-
-<dt><a href="/news/job_postings/catala04282014.pdf" >Apr 28 2014, Postdoctoral Associate Position</a></dt>
-<dd>The Boyce Thompson Institute for Plant Research, Cornell University, Ithaca, New York</dd><dl>
-
-<dt><a href="/news/job_postings/rosado04272014.html" >Apr 27 2014, Two Graduate Student Positions in Plant Biology</a></dt>
-<dd>University of British Columbia, Vancouver, Canada</dd><dl>
-
-<dt><a href="/news/job_postings/saez04252014.pdf" >Apr 25 2014, Postdoctoral Opportunity in Molecular Biology/Biochemistry</a></dt>
-<dd>Perpignan University, Perpignan, France</dd><dl>
-
-<dt><a href="/news/job_postings/chen04242014.html" >Apr 24 2014, Postdoctoral Fellow in Computational Biology</a></dt>
-<dd>The University of Texas at Austin, Austin, TX, USA</dd><dl>
-
-<dt><a href="/news/job_postings/dardick04242014.html" >Apr 24 2014, 2-year Postdoctoral Position</a></dt>
-<dd>USDA-ARS Appalachian Fruit Research Station, Kearneysville, WV, USA</dd><dl>
-
-<dt><a href="/news/job_postings/epi04162014.pdf" >Apr 16 2014, RA and Postdoctoral Positions</a></dt>
-<dd>Tsinghua University, Tsinghua, China</dd><dl>
-
-<dt><a href="/news/job_postings/dong04112014.pdf" >Apr 11 2014, Position for a Postdoctoral Fellow</a></dt>
-<dd>Waksman Institute of Microbiology, Rutgers University, Piscataway, NJ, USA</dd><dl>
-
-<dt><a href="/news/job_postings/baena04102014.html" >Apr 10 2014, Position for a Postdoctoral Fellow</a></dt>
-<dd>Instituto Gulbenkian de Ci&#xEA;ncia, Lisbon, Portugal</dd><dl>
-
-<dt><a href="/news/job_postings/browse04092014.pdf" >Apr 09 2014, 3 Postdoctoral Research Associates</a></dt>
-<dd>Institute of Biological Chemistry, Washington State University, Pullman, WA, USA</dd><dl>
-
-<dt><a href="/news/job_postings/mutz04092014.pdf" >Apr 09 2014, Dahlem International Network Professorships (DINP)</a></dt>
-<dd>Freie Universität Berlin, Germany</dd><dl>
-
-<dt><a href="/news/job_postings/wrzaczek04142014.html" >Apr 03 2014, Post-Doctoral Position in Plant Biology</a></dt>
-<dd>Department of Bioscience, University of Helsinki, Finland</dd><dl>
-
-<dt><a href="/news/job_postings/ma04012014.html" >Apr 01 2014, Postdoctoral Position in Plant Genomics/Bioinformatics</a></dt>
-<dd>Purdue University, West Lafayette, IN, USA</dd><dl>
-
-<dt><a href="/news/job_postings/wegrzyn03282014.html" >Mar 28 2014, Postdoctoral Researcher in Plant Computational Genomics</a></dt>
-<dd>University of Connecticut, Storrs, CT, USA</dd><dl>
-
-<dt><a href="/news/job_postings/nusinow03262014.html" >Mar 26 2014, Postdoctoral Associate</a></dt>
-<dd>Donald Danforth Plant Science Center, St. Louis, MO, USA</dd><dl>
-
-<dt><a href="/news/job_postings/davy03212014.pdf" >Mar 21 2014, Assistant Professor in Plant Physiology</a></dt>
-<dd>Dept. of Agronomy and Plant Genetics, Univ. of Minnesota-Twin Cities, Minneapolis, MN, USA</dd><dl>
-
-<dt><a href="/news/job_postings/johnston03192014.html" >Mar 19 2014, 3 year PhD project "Molecular Characterisation of Germline-Specific Retinoblastoma (pRB) Pathways in
-    Plants"</a></dt>
-<dd>University of Heidelberg, Heidelberg, Germany</dd><dl>
-
-<dt><a href="/news/job_postings/wahle03192014.pdf" >Mar 19 2014, PhD Student Positions (Early Stage Researchers)</a></dt>
-<dd>Martin Luther University, Halle-Wittenberg, Germany</dd><dl>
-
-<dt><a href="/news/job_postings/mahonen03192014.html" >Mar 19 2014, PhD Student and/or Post Doc Positions Open in Plant Developmental Biology</a></dt>
-<dd>Institute of Biotechnology / Department of Biosciences, University of Helsinki, Helsinki, Finland</dd><dl>
-
-<dt><a href="/news/job_postings/reeves03192014.html" >Mar 19 2014, Independent Research Fellowships</a></dt>
-<dd>Department of Plant Sciences, University of Oxford, Oxford, UK</dd><dl>
-
-<dt><a href="/news/job_postings/hua03112014.html" >Mar 11 2014, Two Positions for Plant Omics Graduate Studies</a></dt>
-<dd>Department of Environmental and Plant Biology, Ohio University, Athens, OH, USA</dd><dl>
-
-<dt><a href="/news/job_postings/jaiswal03102014.html" >Mar 10 2014, Tenure-Track Faculty Position in Plant-Microbe Interactions</a></dt>
-<dd>Department of Botany and Plant Pathology, Oregon State University, Corvallis, OR, USA</dd><dl>
-
-<dt><a href="/news/job_postings/ma03082014.html" >Mar 8 2014, Postdoctoral Position in Molecular Genetics and Functional Genomics</a></dt>
-<dd>Department of Agronomy, Purdue University, West Lafayette, IN, USA</dd><dl>
-
-<dt><a href="/news/job_postings/mckim03102014.html" >Mar 10 2014, Studentship to Investigate Protein-Protein Interactions Involved in Stem Internode Growth</a></dt>
-<dd>Division of Plant Sciences, University of Dundee, Dundee, Scotland, UK</dd><dl>
-
-<dt><a href="/news/job_postings/niittyla03102014.pdf" >Mar 10 2014, Symposium for Young Plant Scientists</a></dt>
-<dd>Umeå Plant Science Centre, Umeå, Sweden</dd><dl>
-
-<dt><a href="/news/job_postings/lee03082014.html" >Mar 08 2014, Student in Plant Molecular Biology/Physiology</a></dt>
-<dd>Chonnam National University, Korea</dd><dl>
-
-<dt><a href="/news/job_postings/jawurek03062014.pdf" >Mar 06 2014, 7 3-year Ph.D. Positions</a></dt>
-<dd>CEPLAS, Köln, Germany</dd><dl>
-
-<dt><a href="/news/job_postings/lepiniec03052014.pdf" >Mar 05 2014, Postdoctoral Position in Plant Molecular Biology</a></dt>
-<dd>IJPB, Versailles, France</dd><dl>
-
-<dt><a href="/news/job_postings/bassel03042014.pdf" >Mar 04 2014, Postdoctoral Research Associate</a></dt>
-<dd>School of Biosciences, University of Birmingham, Birmingham, UK</dd><dl>
-
-<dt><a href="/news/job_postings/yoder03032014.pdf" >Mar 03 2014, Postdoctoral Fellowship in Plant-Plant Interactions</a></dt>
-<dd>Department of Plant Sciences, the University of California, Davis, CA, USA</dd><dl>
-
-<dt><a href="/news/job_postings/weigel03032014.pdf" >Mar 03 2014, Positions in Genome Bioinformatics</a></dt>
-<dd>Max Planck Institute for Developmental Biology, Tübingen, Germany</dd><dl>
-
-<dt><a href="/news/job_postings/frantzeskakis02282014.html" >Feb 28 2014, 3 Ph.D. Positions</a></dt>
-<dd>International Graduate Program iGRAD-Plant, Department of Mathematics and Natural Science, Heinrich Heine University, Düsseldorf, Germany</dd><dl>
-
-<dt><a href="/news/job_postings/walia02252014.html" >Feb 25 2014, Ph.D. Position in Abiotic Stress Tolerance</a></dt>
-<dd>University of Nebraska, Lincoln, NE, USA</dd><dl>
-
-<dt><a href="/news/job_postings/mukhtar02252014.pdf" >Feb 25 2014, Postdoctoral Position - ER stress in Arabidopsis Immunity</a></dt>
-<dd>Department of Biology, University of Alabama, Birmingham, AL, USA</dd><dl>
-
-<dt><a href="/news/job_postings/saibo02242014.pdf" >Feb 24 2014, Post Doc Fellowship</a></dt>
-<dd>Instituto de Biologia Experimental e Tecnológica (iBET), Oeiras, Portugal</dd><dl>
-
-<dt><a href="/news/job_postings/frantzeskakis02232014.html" >Feb 23 2014, 4 PhD Positions</a></dt>
-<dd>The International Graduate Program iGRAD-Plant, Department of Mathematics and Natural Science, Heinrich Heine University, D&#xFC;sseldorf, Germany</dd><dl>
-
-<dt><a href="/news/job_postings/chi-ham02192014.html" >Feb 19 2014, Postdoctoral Environmental Plant Biologist/Agronomist</a></dt>
-<dd>University of California, Davis, CA, USA</dd><dl>
-
-<dt><a href="/news/job_postings/tuskan02192014.pdf" >Feb 19 2014, Postdoctoral Research Associate, Plant Systems Biology</a></dt>
-<dd>Oak Ridge National Laboratory, Oak Ridge, TN, USA</dd><dl>
-
-<dt><a href="/news/job_postings/altpeter02182014-2.html" >Feb 18 2014, Senior Biological Scientist / Lab Manager</a></dt>
-<dd>University of Florida, Gainesville, FL, USA</dd><dl>
-
-<dt><a href="/news/job_postings/altpeter02182014.html" >Feb 18 2014, Postdoc Position, Barley Genome Editing</a></dt>
-<dd>University of Florida, Gainesville, FL, USA</dd><dl>
-
-<dt><a href="/news/job_postings/babili02122014.pdf" >Feb 12 2014, Postdoc Plant Molecular Biology and Development</a></dt>
-<dd>King Abdullah University of Science and Technology (KAUST), Kingdom of Saudi Arabia</dd><dl>
-
-<dt><a href="/news/job_postings/mahfouz02112014.html" >Feb 11 2014, Postdoctoral Positions</a></dt>
-<dd>King Abdullah University of Science and Technology (KAUST), Kingdom of Saudi Arabia</dd><dl>
-
-<dt><a href="/news/job_postings/devos02072014.pdf" >Feb 07 2014, Postdoc Positions</a></dt>
-<dd>University of Georgia, Athens, GA, USA</dd><dl>
-
-<dt><a href="/news/job_postings/musick02072014.pdf" >Feb 07 2014, George &amp; Charmaine Mallinckrodt Professorship</a></dt>
-<dd>Department of Biology in Arts &amp; Sciences, Washington University, St. Louis, MO, USA</dd><dl>
-
-<dt><a href="/news/job_postings/ariza02032014.html" >Feb 03 2014, Postdoctoral Position in Epigenetics</a></dt>
-<dd>Epigenetics and DNA Repair Group of the University of Córdoba/IMIBIC, Córdoba, Spain</dd><dl>
-
-<dt><a href="/news/job_postings/cubas01282014.html" >Jan 28 2014, Postdoc in Shoot Branching Control</a></dt>
-<dd>Centro Nacional de Biotecnología-CSIC, Madrid, Spain</dd><dl>
-
-<dt><a href="/news/job_postings/franks01272014.html" >Jan 27 2014, Postdoctoral Position Investigating Gene Regulatory Networks</a></dt>
-<dd>Department of Plant and Microbial Biology, North Carolina State University, Raleigh, NC, USA</dd><dl>
-
-<dt><a href="/news/job_postings/suarez01272014.pdf" >Jan 27 2014, PhD Student Position</a></dt>
-<dd>Department of Biology, University of South Dakota, Vermillion, SD, USA</dd><dl>
-
-<dt><a href="/news/job_postings/witham01272014.pdf" >Jan 27 2014, Assistant Professor in the Area of Systems Biology of Plant-Microbe Interactions</a></dt>
-<dd>The Plant Pathology and Microbiology Department, Iowa State University, Ames, IA, USA</dd><dl>
-
-<dt><a href="/news/job_postings/lee01212014.html" >Jan 21 2014, Postdoc – Regulation of Cell-to-Cell Communication</a></dt>
-<dd>Delaware Biotechnology Institute, University of Delaware, Newark, DE, USA</dd><dl>
-
-<dt><a href="/news/job_postings/blancaflor01212014.html" >Jan 21 2014, Summer Research Scholar</a></dt>
-<dd>The Samuel Roberts Noble Foundation, Inc., Ardmore, OK, USA</dd><dl>
-
-<dt><a href="/news/job_postings/nelson01202014.pdf" >Jan 20 2014, Postdoctoral Position in Karrikin and Strigolactone Signaling Mechanisms</a></dt>
-<dd>University of Georgia, Athens, GA, USA</dd><dl>
-
-<dt><a href="/news/job_postings/haswell01162014.html" >Jan 16 2014, Postdoctoral Position in Plant Mechanotransduction</a></dt>
-<dd>Washington University, St. Louis, MO, USA</dd><dl>
-
-<dt><a href="/news/job_postings/roberts01152014.html" >Jan 15 2014, Research Associate - Transgenerational responses to stress</a></dt>
-<dd>Lancaster Environment Centre, Lancaster University, UK</dd><dl>
-
-<dt><a href="/news/job_postings/babst01142014.pdf" >Jan 14 2014, 2 Postdocs (Biological Network Analysis and Molecular Plant Physiology)</a></dt>
-<dd>Brookhaven National Laboratory, Upton, NY, USA</dd><dl>
-
-<dt><a href="/news/job_postings/spillane01142014.html" >Jan 14 2014, Postdoctoral Fellowship in Plant Genetics and Epigenetics</a></dt>
-<dd>Plant and AgriBiosciences Research Centre (PABC) at the National University of Ireland, Galway, Ireland</dd><dl>
-
-<dt><a href="/news/job_postings/kohanada01142014.html" >Jan 14 2014, Two Researcher Positions in Comparative Genomics</a></dt>
-<dd>Kyusyu Institute of Technology, Fukuoka, Japan</dd><dl>
-
-<dt><a href="/news/job_postings/qiao01132014.html" >Jan 13 2014, Postdoctoral Research Fellow Position</a></dt>
-<dd>Department of Molecular Bioscience, University of Texas, Austin, TX, USA</dd><dl>
-
-<dt><a href="/news/job_postings/malalay01122014.pdf" >Jan 12 2014, Research Associate in Plant Immunity</a></dt>
-<dd>Department of Biology, University of Virginia, Charlottesville, VA, USA</dd><dl>
-
-<dt><a href="/news/job_postings/matzke12232013.pdf" >Dec 23 2013, Postdoctoral Position</a></dt>
-<dd>Matzke lab, Institute of Plant and Microbial Biology, Academia Sinica, Taipei, Taiwan</dd><dl>
-
-<dt><a href="/news/job_postings/ayele12222013.pdf" >Dec 22 2013, Postdoctoral Position in Plant Molecular Physiology and Genomics</a></dt>
-<dd>University of Manitoba, Canada</dd><dl>
-
-<dt><a href="/news/job_postings/hermans12192013.pdf" >Dec 19 2013, Fellowships in Genetic and nutritional influences on the root architecture of Brassicaceae species</a></dt>
-<dd>Lab. of Plant Physiology and Molecular Genetics, Université de Bruxelles, Brussels, Belgium</dd><dl>
-
-<dt><a href="/news/job_postings/white12182013.html" >Dec 18 2013, Ph.D. student in roles of recombination in meiotic pairing and synapsis of specific
-    chromosomal regions in Arabidopsis</a></dt>
-<dd>Universite Blaise Pascal, Claremont-Ferrand, France</dd><dl>
-
-<dt><a href="/news/job_postings/jawurek12172013.pdf" >Dec 17 2013, Ph.D. student position in plant-microflora interactions</a></dt>
-<dd>CEPLAS Graduate School, University of Cologne, Cologne, Germany</dd><dl>
-
-<dt><a href="/news/job_postings/dunoyer12102013.pdf" >Dec 10 2013, Group leader position in plant non-coding RNA biology</a></dt>
-<dd>Institut de Biologie Moléculaire des Plantes, Strasbourg, France</dd><dl>
-
-<dt><a href="/news/job_postings/bae12092013.pdf" >Dec 9 2013, Foreign Professor &amp; Postdoctoral Researcher Positions</a></dt>
-<dd>Department of Biotechnology, Yeungnam University, Gyeongsan, Korea</dd><dl>
-
-<dt><a href="/news/job_postings/clarke12092013.pdf" >Dec 9 2013, Computational Sciences Strategic Team Hire -- Assistant or Associate Professor</a></dt>
-<dd>Institute of Agriculture and Natural Resources, University of Nebraska, Lincoln, NE, USA</dd><dl>
-
-<dt><a href="/news/job_postings/fischer12022013.html" >Dec 2 2013, Postdoctoral position: Genetic regulation of tension wood formation in   Populus</a></dt>
-<dd>UPSC, Department of Forest Genetics and Plant Physiology, Swedish Agricultural University, Ume&#xE5;, Sweden</dd><dl>
-
-<dt><a href="/news/job_postings/tamaru12022013.pdf" >Dec 2 2013, Research Technician (Plant Epigenetics)</a></dt>
+<dt><a href="/news/job_postings/friese05282013.pdf" >May 28 2013, Postdoctoral position in plant molecular biology</a></dt>
 <dd>Gregor Mendel Institute, Vienna, Austria</dd><dl>
 
-<dt><a href="/news/job_postings/mendu12022013.pdf" >Dec 2 2013, Graduate Research Assistant Positions in Plant Molecular Biology</a></dt>
-<dd>Department of Plant and Soil Science, Texas Tech University, Lubbock, TX, USA</dd><dl>
+<dt><a href="/news/job_postings/susko05242013.html" >May 24 2013, A postdoctoral position in the Systems Biology of nutrient interaction signaling</a></dt>
+<dd>NYU's Courant Institute of Math & Computer Sciences, New York City, NY, USA</dd><dl>
 
-<dt><a href="/news/job_postings/poirier11292013.html" >Nov 29 2013, Postdoctoral Position</a></dt>
-<dd>Department of Department of Plant Molecular Biology, University of Lausanne, Lausanne, Switzerland</dd><dl>
+<dt><a href="/news/job_postings/russanova05212013.html" >May 21 2013, VIB International Postdoc Program</a></dt>
+<dd>VIB, Flanders, Belgium</dd><dl>
 
-<dt><a href="/news/job_postings/aarts11282013.pdf" >Nov 28 2013, Postdoctoral Fellow Molecular Genetics</a></dt>
-<dd>Wageningen University and Research Centre, Wageningen, The Netherlands</dd><dl>
+<dt><a href="/news/job_postings/lu05202013.html" >May 20 2013, A postdoctoral position in photosynthesis and amino acid metabolism</a></dt>
+<dd>Western Michigan University, Kalamazoo, Michigan, USA</dd><dl>
 
-<dt><a href="/news/job_postings/jonikas11272013.pdf" >Nov 27 2013, Postdoctoral Position in Functional Genomics of Photosynthesis</a></dt>
-<dd>Department of Plant Biology, Carnegie Institution for Science, Stanford, CA, USA</dd><dl>
+<dt><a href="/news/job_postings/gleason05152013.html" >May 15 2013, Post-Doctoral Associate</a></dt>
+<dd>Georg-August-University Göttingen, Göttingen, Germany</dd><dl>
 
-<dt><a href="/news/job_postings/mow11262013.pdf" >Nov 26 2013, Assistant Professor Position in Genomics and Bioinformatics of Eukaryotes</a></dt>
-<dd>Department of Botany and Plant Pathology, Purdue University, West Lafayette, IN, USA</dd><dl>
+<dt><a href="/news/job_postings/germain05152013.html" >May 15 2013, Ph.D. position available</a></dt>
+<dd>University of Trois-Rivières, Trois-Rivières, Qc, CA</dd><dl>
 
-<dt><a href="/news/job_postings/hudson11202013.html" >Nov 20 2013, Faculty Position in Plant Growth Regulator/Hormone Biology</a></dt>
-<dd>The School of Integrative Biology at the University of Illinois at Urbana-Champaign, Champaign, IL, USA</dd><dl>
+<dt><a href="/news/job_postings/monroe05092013.html" >May 9 2013, Post-Doctoral Associate -- Biology Department - 0405310</a></dt>
+<dd>James Madison University, Harrisonburg, VA, USA</dd><dl>
 
-<dt><a href="/news/job_postings/kost11202013.html" >Nov 20 2013, 2 PhD Studentships in Plant Cell and Molecular Biology</a></dt>
-<dd>Cell Biology Division of the Biology Department of the Friedrich-Alexander-University, Erlangen-Nuremberg, Germany</dd><dl>
+<dt><a href="/news/job_postings/jin05032013.html" >May 3 2013, Postdoctoral position to study the regulation of small RNAs and epigenetics in plant-microbial interaction</a></dt>
+<dd>University of California Riverside, Riverside, CA, USA</dd><dl>
 
-<dt><a href="/news/job_postings/hake11192013.pdf" >Nov 20 2013, Research Computational Biologist or Research Molecular Biologist or Research Geneticist (Plants)</a></dt>
-<dd>Plant Gene Expression Center (PGEC), Agricultural Research Service, U.S. Department of Agriculture, Albany, CA, USA</dd><dl>
+<dt><a href="/news/job_postings/wagner05082013.html" >May 8 2013, Postdoctoral opportunity "Early events in flower development"</a></dt>
+<dd>University of Pennsylvania Biology Department, Philadelphia, PA, USA</dd><dl>
 
-<dt><a href="/news/job_postings/zhang11182013.html" >Nov 18 2013, Tenure-track Positions – Plant Biology</a></dt>
-<dd>University of North Carolina, Wilmington, NC, USA</dd><dl>
+<dt><a href="/news/job_postings/baskin05072013.html" >May 7 2013, Postdoctoral Position</a></dt>
+<dd>University of Massachusetts Biology Department, Amherst, MA, USA</dd><dl>
 
-<dt><a href="/news/job_postings/sloan11182013.pdf" >Nov 18 2013, Postdoc in Plant Molecular Evolution and Genomics</a></dt>
-<dd>Department of Biology, Colarado State University, Fort Collins, CO, USA</dd><dl>
+<dt><a href="/news/job_postings/walia05082013.html" >April 30 2013, Post-doctoral position in Rice Drought Tolerance</a></dt>
+<dd>University of Nebraska-Lincoln, Lincoln, NB, USA</dd><dl>
 
-<dt><a href="/news/job_postings/xia11172013.pdf" >Nov 17 2013, Research Assistant Professor in Plant Biology</a></dt>
-<dd>Hong Kong Baptist University, Kowloon, China</dd><dl>
+<dt><a href="/news/job_postings/reumann05082013.pdf" >May 3 2013, Marie Curie Fellowships (Ph.D. positions) in the Initial Training Network</a></dt>
+<dd>University of Stavanger, Stavanger, Norway</dd><dl>
 
-<dt><a href="/news/job_postings/gillmor11142013.html" >Nov 14 2013, Heads of Core Facilities</a></dt>
-<dd>Langebio, Guanajuato, Mexico</dd><dl>
+<dt><a href="/news/job_postings/mosher04302013.pdf" >May 2 2013, Postdoctoral Research Associate 1</a></dt>
+<dd>University of Arizona, Tucson, AZ, USA</dd><dl>
 
-<dt><a href="/news/job_postings/puchta11152013.html" >Nov 15 2013, PhD position in frame of the Marie Curie international training programme</a></dt>
-<dd>Karlsruhe Institute of Technology (KIT), Germany</dd><dl>
+<dt><a href="/news/job_postings/friesner04252013.txt" >April 25 2013, Postdoctoral opportunities at the University of Illinois</a></dt>
+<dd>University of Illinois, IL, USA</dd><dl>
 
-<dt><a href="/news/job_postings/wenkel11132013.html" >Nov 13 2013, Post-doctoral or graduate student position in plant developmental biology</a></dt>
-<dd>Center for Plant Molecular Biology at the University of T&#xFC;bingen, T&#xFC;bingen, Germany</dd><dl>
+<dt><a href="/news/job_postings/li04242013.pdf" >April 24 2013, Laboratory Technician, Functional Genomics of Green Algae</a></dt>
+<dd>Carnegie Institution for Science, Stanford, CA, USA</dd><dl>
 
-<dt><a href="/news/job_postings/wildermuth11082013.pdf" >Nov 8 2013, Postdoctoral Position</a></dt>
-<dd>Department of Plant and Microbial Biology, University of California, Berkeley, CA, USA</dd><dl>
+<dt><a href="/news/job_postings/wagner04242013.pdf" >April 24 2013, Postdoctoral Research Position to Elucidate the Regulatory Mechanisms that Control the Onset of Flower Formation</a></dt>
+<dd>University of Pennsylvania, Philadelphia, PA, USA</dd><dl>
 
-<dt><a href="/news/job_postings/louis11082013.pdf" >Nov 8 2013, Molecular Biologist/Entomologist</a></dt>
-<dd>University of Nebraska, Lincoln, NE, USA</dd><dl>
+<dt><a href="/news/job_postings/manoharan04232013.txt" >April 23 2013, Graduate Research Assistantships</a></dt>
+<dd>University of Arkansas at Pine Bluff, Pine Bluff, AK, USA</dd><dl>
 
-<dt><a href="/news/job_postings/mccunn11052013.html" >Nov 5 2013, Two Tenure‐Track Assistant Professor Positions</a></dt>
-<dd>Iowa State University, Ames, IA, USA</dd><dl>
+<dt><a href="/news/job_postings/galis04222013.pdf" >April 22 2013, "Women Tenure Track" Assistant Professor Position</a></dt>
+<dd>Okayama University, Okayama, Japan</dd><dl>
 
-<dt><a href="/news/job_postings/zamora11062013.html" >Nov 6 2013, Cacao Agronomy Director</a></dt>
-<dd>Mars Inc., USA</dd><dl>
+<dt><a href="/news/job_postings/kesavan04182013.pdf" >April 18 2013, Research Fellowship: Plant Genomics/Plant Molecular Biology</a></dt>
+<dd>University of Minho, Portugal</dd><dl>
 
-<dt><a href="/news/job_postings/schmitz11062013.html" >Nov 6 2013, Postdoctoral Research Position</a></dt>
-<dd>Department of Genetics at the University of Georgia, Athens, GA, USA</dd><dl>
+<dt><a href="/news/job_postings/bae04172013.pdf" >April 17 2013, Postdoctoral Researcher and Foreign Professor Positions</a></dt>
+<dd>Yeungnam University, Gyeongsan, Korea</dd><dl>
 
-<dt><a href="/news/job_postings/bonnet11042013.pdf" >Nov 4 2013, Trait Project Lead--Resistance traits to Pests and Diseases--Vegetables</a></dt>
-<dd>Syngenta, Aurangabad, India</dd><dl>
+<dt><a href="/news/job_postings/donaldson04172013.txt" >April 17 2013, Bioinformatician, Bio-Analytic Resource</a></dt>
+<dd>University of Toronto,Ontario, Canada</dd><dl>
 
-<dt><a href="/news/job_postings/zerges11022013.html" >Nov 2 2013, Tenure Track Position in Plant Molecular Biology</a></dt>
-<dd>Department of Biology of Concordia University, Montreal, Canada</dd><dl>
+<dt><a href="/news/job_postings/bishopp04172013.pdf" >April 17 2013, PhD studentship in Plant Science/Developmental Biology</a></dt>
+<dd>University of Nottingham, UK</dd><dl>
 
-<dt><a href="/news/job_postings/gangudhar11042013.html" >Nov 2 2013, Assistant Professor</a></dt>
-<dd>Konkuk University, Seoul, Korea</dd><dl>
+<dt><a href="/news/job_postings/hennig04172013.pdf" >April 17 2013, Postdoc position in plant chromatin research</a></dt>
+<dd>Swedish University of Agricultural Sciences, Uppsala, Sweden</dd><dl>
 
-<dt><a href="/news/job_postings/chatterjee10282013.html" >Oct 28 2013, POST-DOC position</a></dt>
-<dd>URGV-INRA, Evry Cedex, France</dd><dl>
-
-<dt><a href="/news/job_postings/deal10252013.pdf" >Oct 25 2013, Tenure Track Molecular Cell Biologist</a></dt>
-<dd>Emory University, Atlanta, GA, USA</dd><dl>
-
-<dt><a href="/news/job_postings/alexandersson10252013.html" >Oct 25 2013, Postdoc or Research Engineer in Bioinformatics</a></dt>
-<dd>PlantLink, Swedish University of Agricultural Sciences and Lund Unversity, Lund, Sweden</dd><dl>
-
-<dt><a href="/news/job_postings/fletcher10242013.html" >Oct 24 2013, Postdoctoral Position in Plant Developmental Signaling</a></dt>
-<dd>Department of Plant and Microbial Biology, University of California, Berkeley, USA</dd><dl>
-
-<dt><a href="/news/job_postings/libault10232013.html" >Oct 23 2013, PhD Student Position</a></dt>
-<dd>Department of Microbiology and Plant Biology, University of Oklahoma, Norman, OK, USA</dd><dl>
-
-<dt><a href="/news/job_postings/town10232013.html" >Oct 23 2013, Arabidopsis Information Portal - Biocurator Position</a></dt>
-<dd>J. Craig Venter Institute, Rockville, MD, USA</dd><dl>
-
-<dt><a href="/news/job_postings/leaky10222013.html" >Oct 22 2013, 2 Assistant Professor Positions</a></dt>
-<dd>Department of Plant Biology, University of Illinois, Urbana, IL, USA</dd><dl>
-
-<dt><a href="/news/job_postings/herman10182013.html" >Oct 18 2013, Assistant Professor in Microbiology</a></dt>
-<dd>Division of Biology at Kansas State University, Manhattan, KS, USA</dd><dl>
-
-<dt><a href="/news/job_postings/li10172013.html" >Oct 17 2013, Postdoctoral Position</a></dt>
-<dd>Plants for Human Health Institute at North Carolina State University, Kannapolis, NC, USA</dd><dl>
-
-<dt><a href="/news/job_postings/wainwright10172013.html" >Oct 17 2013, New Biology Postdoctoral Fellowships</a></dt>
-<dd>College of Biological Science, UC Davis, Davis, CA, USA</dd><dl>
-
-<dt><a href="/news/job_postings/louis10112013.pdf" >Oct 11 2013, Graduate Research Assistantship, Molecular Plant Interactions</a></dt>
-<dd>Department of Entomology at the University of Nebraska, Lincoln, NE, USA</dd><dl>
-
-<dt><a href="/news/job_postings/friese10112013.pdf" >Oct 11 2013, Group Leader</a></dt>
+<dt><a href="/news/job_postings/friese04102013.pdf" >April 10 2013, Postdoctoral Position in Plant Shoot Development</a></dt>
 <dd>Gregor Mendel Institute, Vienna, Austria</dd><dl>
 
-<dt><a href="/news/job_postings/lee10062013.html" >Oct 6 2013, PhD Student Position</a></dt>
-<dd>Applied Plant Science, College of Agriculture and Life Science, Chonnam National University, Gwangju, Korea</dd><dl>
+<dt><a href="/news/job_postings/stergiopoulos04102013.pdf" >April 10 2013, Postdoctoral position in fungal proteomics</a></dt>
+<dd>University of California Davis, CA, USA</dd><dl>
 
-<dt><a href="/news/job_postings/mow10042013.pdf" >Oct 3 2013, Faculty Position in Root/Rhizosphere Biology</a></dt>
-<dd>Department of Botany and Plant Pathology, Purdue University, West Lafayette, IN, USA</dd><dl>
-
-<dt><a href="/news/job_postings/braam10032013.html" >Oct 3 2013, Postdoctoral Position in Plant Biology</a></dt>
-<dd>Dept. of Biochemistry and Cell Biology, Rice University, Houston, TX, USA</dd><dl>
-
-<dt><a href="/news/job_postings/blatt10022013.pdf" >Oct 2 2013, Postdoctoral Research Fellow, Guard Cells</a></dt>
-<dd>University of Glasgow, Glasgow, UK</dd><dl>
-
-<dt><a href="/news/job_postings/cousins10022013.pdf" >Oct 2 2013, Assistant Professor, Plant Physiology</a></dt>
-<dd>Washington State University, Pullman, WA, USA</dd><dl>
-
-<dt><a href="/news/job_postings/dangl10022013.html" >Oct 2 2013, Three Tenure Track Faculty Positions</a></dt>
-<dd>University of North Carolina, Chapel Hill, NC, USA</dd><dl>
-
-<dt><a href="/news/job_postings/jackson10012013.html" >Oct 1 2013, Postdoctoral Positions in Maize Developmental Biology and Genomics</a></dt>
-<dd>Cold Spring Harbor Laboratory, Cold Spring Harbor, NY, USA</dd><dl>
-
-<dt><a href="/news/job_postings/lindsey09172013.pdf" >Oct 1 2013, Assistant/Associate Professor Plant Evolutionary Developmental Biologist</a></dt>
-<dd>Department of Botany and Plant Sciences, University of California, Riverside, CA, USA</dd><dl>
-
-<dt><a href="/news/job_postings/kumar09272013.pdf" >Sep 27 2013, Full Postdoctoral Scientist: Molecular elucidation of gene regulatory mechanisms underlying environmental signal integration</a></dt>
-<dd>Cell and Developmental Biology Department at the John Innes Centre, Norwich BioScience Institutes Partnership, Norwich Bioscience Institutes, Norwich, UK</dd><dl>
-
-<dt><a href="/news/job_postings/blackford09262013.html" >Sep 26 2013, Full Professorship (W3) in "Ecosystem Physiology"</a></dt>
-<dd>Institute of Forest Sciences, Albert-Ludwigs-University Freiburg, Germany</dd><dl>
-
-<dt><a href="/news/job_postings/jaiswal09182013.html" >Sep 17 2013, Postdoctoral Scholar Position for Curation</a></dt>
-<dd>Department of Botany and Plant Pathology, Oregon State University, Corvallis, OR, USA</dd><dl>
-
-<dt><a href="/news/job_postings/barakat09132013.pdf" >Sep 13 2013, PhD Position in Molecular Plant Biology, Genomics, and Bioinformatics</a></dt>
-<dd>Department of Biology, University of South Dakota, Vermillion, SD, USA</dd><dl>
-
-<dt><a href="/news/job_postings/zhang09132013.pdf" >Sep 13 2013, Postdoc Positions on RNA Silencing</a></dt>
-<dd>Texas A&amp;M University, College Station, TX, USA</dd><dl>
-
-<dt><a href="/news/job_postings/barak09122013.pdf" >Sep 12 2013, PhD/Post-doc Position -- Effects of Climate Change on Tropical Seagrasses</a></dt>
-<dd>Ben-Gurion University of the Negev, Midreshet Ben-Gurion, Israel</dd><dl>
-
-<dt><a href="/news/job_postings/yin09102013.html" >Sep 9 2013, Assistant Professor Position in Bioinformatics &amp; Computational Biology</a></dt>
-<dd>Iowa State University, Ames, IA, USA</dd><dl>
-
-<dt><a href="/news/job_postings/buringrud09082013-2.html" >Sep 8 2013, Postdoctoral Research Fellow 2</a></dt>
-<dd>Department of Plant Sciences, North Dakota State University, Fargo, ND, USA</dd><dl>
-
-<dt><a href="/news/job_postings/buringrud09082013-1.html" >Sep 8 2013, Postdoctoral Research Fellow 1</a></dt>
-<dd>Department of Plant Sciences, North Dakota State University, Fargo, ND, USA</dd><dl>
-
-<dt><a href="/news/job_postings/jawurek09052013.pdf" >Sep 5 2013, CEPLAS PhD Position, Genetic dissection of natural variation in tiller development in cultivated and wild barley</a></dt>
-<dd>CEPLAS Graduate School, Cologne/Dusseldorf, Germany</dd><dl>
-
-<dt><a href="/news/job_postings/durfy09042013.pdf" >Sep 4 2013, Faculty Positions in Molecular, Cellular, and Developmental Biology</a></dt>
-<dd>University of Michigan, Ann Arbor, MI, USA</dd><dl>
-
-<dt><a href="/news/job_postings/torii09032013.pdf" >Sep 3 2013, Postdoctoral/Research Scientist Position: Investigating peptide ligand-receptor kinase dynamics during stomatal development</a></dt>
-<dd>Howard Hughes Medical Institute and University of Washington, Seattle, WA, USA</dd><dl>
-
-<dt><a href="/news/job_postings/johnson09032013.html" >Sep 3 2013, Faculty Position in Biological Sciences</a></dt>
-<dd>Vanderbilt University, Nashville, TN, USA</dd><dl>
-
-<dt><a href="/news/job_postings/jawurek09022013-03.pdf" >Sep 2 2013, CEPLAS PhD Position, Analysis of an evolutionary conserved module regulating root system development in monocot and dicot species</a></dt>
-<dd>CEPLAS Graduate School, Cologne/Dusseldorf, Germany</dd><dl>
-
-<dt><a href="/news/job_postings/jawurek09022013-02.pdf" >Sep 2 2013, CEPLAS PhD Position, Alterations to the regulation of C4 enzymes during evolution of C4 photosynthesis</a></dt>
-<dd>CEPLAS Graduate School, Cologne/Dusseldorf, Germany</dd><dl>
-
-<dt><a href="/news/job_postings/jawurek09022013-01.pdf" >Sep 2 2013, CEPLAS PhD Position, In silico exploration of evolutionary paths towards C4 metabolism</a></dt>
-<dd>CEPLAS Graduate School, Cologne/Dusseldorf, Germany</dd><dl>
-
-<dt><a href="/news/job_postings/zhong08302013.html" >Aug 30 2013, Postdoc Position in Plant Epigenetic Regulation</a></dt>
-<dd>University of Wisconsin Madison, Madison, WI, USA</dd><dl>
-
-<dt><a href="/news/job_postings/jawurek08292013.pdf" >Aug 29 2013, CEPLAS PhD Position, Shaping of the Arabis alpina microbiome by plant host interactions with environmental factors – phosphorus limitation</a></dt>
-<dd>CEPLAS Graduate School, Cologne/Dusseldorf, Germany</dd><dl>
-
-<dt><a href="/news/job_postings/cui08292013.pdf" >Aug 29 2013, Senior Scientific Editor, Molecular Plant</a></dt>
-<dd>Molecular Plant, SIBS, CAS, Shanghai, China</dd><dl>
-
-<dt><a href="/news/job_postings/pooggin08282013.html" >Aug 28 2013, PhD Position in Molecular Plant Virology and Bioinformatics</a></dt>
-<dd>University of Basel, Basel, Switzerland</dd><dl>
-
-<dt><a href="/news/job_postings/hennig08272013.html" >Aug 27 2013, Positions in Computational Biology</a></dt>
-<dd>Department of Plant Biology and Forest Genetics, Swedish Agricultural University, Uppsala, Sweden</dd><dl>
-
-<dt><a href="/news/job_postings/lenhard08272013.html" >Aug 27 2013, Post-Doctoral Researcher</a></dt>
-<dd>University of Potsdam, Potsdam, Germany</dd><dl>
-
-<dt><a href="/news/job_postings/purushothaman08232013.pdf" >Aug 23 2013, Junior Research Fellow</a></dt>
-<dd>SRM University, Kattankulathur (near Chennai), India</dd><dl>
-
-<dt><a href="/news/job_postings/schmuelling08232013-02.pdf" >Aug 23 2013, Postdoctoral Position on Priming and Memory in the Response to Stress</a></dt>
-<dd>Institute of Biology / Applied Genetics, Dahlem Centre of Plant Sciences, Freie Universität Berlin, Germany</dd><dl>
-
-<dt><a href="/news/job_postings/schmuelling08232013-01.pdf" >Aug 23 2013, Postdoctoral Position in Plant Development</a></dt>
-<dd>Institute of Biology / Applied Genetics, Dahlem Centre of Plant Sciences, Freie Universität Berlin, Germany</dd><dl>
-
-<dt><a href="/news/job_postings/qiao08212013.html" >Aug 21 2013, Postdoctoral Position in Plant Hormone, Molecular Biology, and Biochemistry</a></dt>
-<dd>University of Texas, Austin, TX, USA</dd><dl>
-
-<dt><a href="/news/job_postings/holt08212013.html" >Aug 21 2013, Post-doctoral Research Position</a></dt>
-<dd>Department of Microbiology and Plant Biology, University of Oklahoma, Norman, OK, USA</dd><dl>
-
-<dt><a href="/news/job_postings/michaels08212013.html" >Aug 21 2013, Multiple Faculty Positions in Genomics and Cell Biology</a></dt>
-<dd>The Genomics, Cell, and Developmental Biology Program, Indiana University, Bloomington, IN, USA</dd><dl>
-
-<dt><a href="/news/job_postings/bishopp08192013.pdf" >Aug 17 2013, PhD Studentship in Plant Biology</a></dt>
-<dd>Reproduction et Développement des Plantes, Ecole Normale Supérieure de Lyon, Lyon, France
-    <br />
-    School of Biosciences, Sutton Bonington Campus, University of Nottingham, UK</dd><dl>
-
-<dt><a href="/news/job_postings/jonikas08172013-02.pdf" >Aug 17 2013, Postdoctoral Position in Functional Fenomics of Photosynthesis</a></dt>
-<dd>Department of Plant Biology, Carnegie Institution for Science, Stanford, CA, USA</dd><dl>
-
-<dt><a href="/news/job_postings/jonikas08172013-01.pdf" >Aug 17 2013, Postdoctoral Position in Functional Genomics of Algal Lipid Accumulation</a></dt>
-<dd>Department of Plant Biology, Carnegie Institution for Science, Stanford, CA, USA</dd><dl>
-
-<dt><a href="/news/job_postings/blake08142013.pdf" >Aug 14 2013, Faculty Position in Plant Biology</a></dt>
-<dd>Department of Plant Biology, University of California, Davis, CA, USA</dd><dl>
-
-<dt><a href="/news/job_postings/tire08072013.pdf" >Aug 7 2013, Six PhD Positions and One Post-Doc Position</a></dt>
-<dd>EC Marie Curie Research Training Network CHIP-ET, European Community</dd><dl>
-
-<dt><a href="/news/job_postings/mercier08052013.html" >Aug 5 2013, Post-Doc Position on the ERC Project MeioSight</a></dt>
-<dd>INRA IPB, Versailles, France</dd><dl>
-
-<dt><a href="/news/job_postings/spillane08042013.html" >Aug 4 2013, Starting Investigator Research Grant (SIRG) in Plant Genetics &amp; Epigenetics</a></dt>
-<dd>Genetics &amp; Biotechnology Lab, PABC, National University of Ireland, Galway, Ireland</dd><dl>
-
-<dt><a href="/news/job_postings/torii08012013.html" >Aug 1 2013, Postdoctoral Positions on the Mechanism of Plant Development</a></dt>
-<dd>Institute of Transformative Biomolecules, Najoya University, Nagoya, Japan</dd><dl>
-
-<dt><a href="/news/job_postings/folter07302013.html" >Jul 30 2013, Postdoctoral Position</a></dt>
-<dd>LANGEBIO, CINVESTAV-IPN, Irapuato, Mexico</dd><dl>
-
-<dt><a href="/news/job_postings/eviatar07282013.pdf" >Jul 28 2013, Postdoc Positions in Plant Development</a></dt>
-<dd>Department of Biology at the Technion – Israel Institute of Technology, Haifa, Israel</dd><dl>
-
-<dt><a href="/news/job_postings/zimmerli07262013.html" >Jul 26 2013, Postdoctoral Position, Arabidopsis Innate Immunity, Epigenetics and Priming</a></dt>
-<dd>National Taiwan University, Taipei, Taiwan</dd><dl>
-
-<dt><a href="/news/job_postings/doohan07252013.pdf" >Jul 25 2013, Postdoctoral Scientist with Expertise in Plant Molecular Biology</a></dt>
-<dd>UCD Earth Institute and School of Biology and Environmental Science, UCD Dublin, Ireland</dd><dl>
-
-<dt><a href="/news/job_postings/friesner07232013.html" >Jul 23 2013, Lecturer in Biology/Plant Biology</a></dt>
-<dd>School of Biosciences, University of Birmingham, Birmingham, UK</dd><dl>
-
-<dt><a href="/news/job_postings/bevan07222013.html" >Jul 22 2013, Postdoctoral Scientist</a></dt>
-<dd>Norwich BioScience Institutes Partnership, Norwich Bioscience Institutes, Norwich, UK</dd><dl>
-
-<dt><a href="/news/job_postings/dunoyer07222013.pdf" >Jul 22 2013, Postdoctoral position</a></dt>
-<dd>Institut de Biologie Moléculaire des Plantes, Strasbourg, France</dd><dl>
-
-<dt><a href="/news/job_postings/baskin07192013.html" >Jul 22 2013, Postdoctoral Position on the Biophysics of Cellulose</a></dt>
-<dd>Biology Department, University of Massachusetts, Amherst, MA, USA</dd><dl>
-
-<dt><a href="/news/job_postings/verslues07162013.pdf" >Jul 16 2013, Postdoctoral position in drought-related signaling</a></dt>
-<dd>Institute of Plant and Microbial Biology, Academia Sinica, Taipei, Taiwan</dd><dl>
-
-<dt><a href="/news/job_postings/haswell07172013.html" >Jul 17 2013, Postdoctoral Position in Mechanotransduction and Electrophysiology</a></dt>
-<dd>Washington University, St. Louis, MO, USA</dd><dl>
-
-<dt><a href="/news/job_postings/meier07162013.html" >Jul 16 2013, Postdoctoral Research Position</a></dt>
-<dd>Department of Molecular Genetics, The Ohio State University, Columbus, OH, USA</dd><dl>
-
-<dt><a href="/news/job_postings/mendu07162013.pdf" >Jul 16 2013, Graduate Research Assistantship</a></dt>
+<dt><a href="/news/job_postings/mendu04102013.pdf" >April 10 2013, Postdoctoral position</a></dt>
 <dd>Texas Tech University, Lubbock, TX, USA</dd><dl>
 
-<dt><a href="/news/job_postings/reumann07152013.pdf" >Jul 15 2013, Research Fellow (PhD position) in Molecular Cell Biology of Microalgae</a></dt>
-<dd>The Centre for Organelle Research (CORE), University of Stavanger, Stavanger, Norway</dd><dl>
+<dt><a href="/news/job_postings/sena04102013.pdf" >April 10 2013, M.Res./Ph.D. Studentship for a Project on Plant Root Regeneration</a></dt>
+<dd>Imperial College London, UK</dd><dl>
 
-<dt><a href="/news/job_postings/whitaker07092013.pdf" >Jul 9 2013, Postdoctoral Position in Molecular Breeding</a></dt>
-<dd>Gulf Coast Research and Education Center, University of Florida, Tampa, FL, USA</dd><dl>
+<dt><a href="/news/job_postings/lee04022013.txt" >April 2 2013, Ph.D (combined Ph.D) student position</a></dt>
+<dd>ChonNam National University, Gwangju, Korea</dd><dl>
 
-<dt><a href="/news/job_postings/tsuda07062013.html" >Jul 6 2013, Two Postdoctoral positions in Plant Biology/Molecular Biology</a></dt>
-<dd>Max Planck Institute for Plant Breeding Research (MPIPZ), Cologne, Germany</dd><dl>
+<dt><a href="/news/job_postings/verslues03272013.pdf" >March 27 2013, Postdoctoral Position in drought-related metabolism and signaling</a></dt>
+<dd>Institute of Plant and Microbial Biology, Academia Sinica, Taipei, Taiwan</dd><dl>
+
+<dt><a href="/news/job_postings/honl03202013.txt" >March 20 2013, 13 PhD stipends at the Cluster of Excellence on Plant Sciences</a></dt>
+<dd>Universities of Duesseldorf and Cologne, Germany</dd><dl>
+
+<dt><a href="/news/job_postings/huq03202013.txt" >March 20 2013, Postdoctoral Position</a></dt>
+<dd>University of Texas, Austin, TX, USA</dd><dl>
+
+<dt><a href="/news/job_postings/colquhoun03202013.txt" >March 20 2013, Postdoctoral Position</a></dt>
+<dd>University of Florida, Gainsville, FL, USA</dd><dl>
+
+<dt><a href="/news/job_postings/stephane03142013.pdf" >March 14 2013, PhD Student Position: DNA methylation in poplar</a></dt>
+<dd>University of Orleans, Orleans, France</dd><dl>
+
+<dt><a href="/news/job_postings/reeves03142013.txt" >March 14 2013, Independent Research Fellowships</a></dt>
+<dd>University of Oxford, UK</dd><dl>
+
+<dt><a href="/news/job_postings/wagner03142013.txt" >March 14 2013, Postdoctoral Position</a></dt>
+<dd>University of Pennsylvania, Philadelphia, PA, USA</dd><dl>
+
+<dt><a href="/news/job_postings/spillane030613.pdf" >March 6 2013, Postdoctoral Position: Abiotic stress tolerance biotechnology</a></dt>
+<dd>Plant and AgriBiosciences Research Centre (PABC), Galway, Ireland</dd><dl>
+
+<dt><a href="/news/job_postings/wu022713.txt" >February 27 2013, Faculty positions</a></dt>
+<dd>Zhejiang Agriculture& Forestry University, Hangzhou, Zhejiang, China</dd><dl>
+
+<dt><a href="/news/job_postings/mukherjee022713.pdf" >February 27 2013, M.S. Graduate Assistantship position</a></dt>
+<dd>University of Central Arkansas, Conway, AR, USA</dd><dl>
+
+<dt><a href="/news/job_postings/walia022713.txt" >February 27 2013, Two postdoctoral positions</a></dt>
+<dd>University of Nebraska, Lincoln, NE, USA</dd><dl>
+
+<dt><a href="/news/job_postings/holt022713.txt" >February 27 2013, PhD Student Position</a></dt>
+<dd>University of Oklahoma, Norman, OK, USA</dd><dl>
+
+<dt><a href="/news/job_postings/ugtifton022013.txt" >February 20 2013, Postdoctoral Research Associate Position</a></dt>
+<dd>Department of Horticulture, University of Georgia, Tifton Campus</dd><dl>
+
+<dt><a href="/news/job_postings/wooddev022013.txt" >February 20 2013, PhD student and Post-Doc Positions</a></dt>
+<dd>Wood Development Group (PI: Ykä Helariutta [Academy Professor]), University of Helsinki</dd><dl>
+
+<dt><a href="/news/job_postings/hofius02132013.pdf" >February 13 2013, 3 Postdoctoral Positions</a></dt>
+<dd>Swedish University of Agricultural Sciences, Uppsala, Sweden</dd><dl>
+
+<dt><a href="/news/job_postings/maszle02132013.txt" >February 13 2013, Bioinformatics Scientist</a></dt>
+<dd>Mendel Biotechnology, Inc., Hayward, CA, USA</dd><dl>
+
+<dt><a href="/news/job_postings/guzman02062013.txt" >February 6 2013, RESEARCH FACULTY POSITION IN PLANT SCIENCES</a></dt>
+<dd>Cinvestav-Unidad, Irapuato, Mexico</dd><dl>
+
+<dt><a href="/news/job_postings/fedoroff02072013.txt" >February 6 2013, FACULTY POSITIONS: Plant Epigenetics and Signaling</a></dt>
+<dd>King Abdullah University of Science and Technology, Saudi Arabia</dd><dl>
+
+<dt><a href="/news/job_postings/fedoroff02062013.txt" >February 6 2013, FACULTY POSITIONS: Halophyte Physiology and Domestication</a></dt>
+<dd>King Abdullah University of Science and Technology, Saudi Arabia</dd><dl>
+
+<dt><a href="/news/job_postings/gaudin02062013.pdf" >February 6 2013, Postdoc position in Germany</a></dt>
+<dd>EpiTRAITS, Marie Curie International Training Network, EU</dd><dl>
+
+<dt><a href="/news/job_postings/lee02062013.txt" >February 6 2013, Postdoctoral Researcher</a></dt>
+<dd>Chonnam National University, Buk-gu, Gwangju, ROC</dd><dl>
+
+<dt><a href="/news/job_postings/baurle02062013.txt" >February 6 2013, Post-Doc and PhD student position in Plant Epigenetics</a></dt>
+<dd>University of Potsdam, Germany</dd><dl>
+
+<dt><a href="/news/job_postings/murrell02062013.txt" >February 6 2013, Group Leader Position</a></dt>
+<dd>John Innes Centre, Norwich, UK</dd><dl>
+
+<dt><a href="/news/job_postings/friese01312013.txt" >January 30 2013, Group Leader Positions</a></dt>
+<dd>Gregor Mendel Institute of Molecular Plant Biology, Vienna, Austria</dd><dl>
+
+<dt><a href="/news/job_postings/mathieu01312013.txt" >January 30 2013, Postdoctoral Position in Plant Epigenetics</a></dt>
+<dd>CNRS, GReD institute, Clermont-Ferrand, France</dd><dl>
+
+<dt><a href="/news/job_postings/chen01232013.txt" >January 23 2013, Postdoctoral Position in Epigenomics</a></dt>
+<dd>The University of Texas at Austin, TX, USA</dd><dl>
+
+<dt><a href="/news/job_postings/putterill01232013.txt" >January 23 2013, Lecturer in Genetics</a></dt>
+<dd>University of Auckland, New Zealand</dd><dl>
+
+<dt><a href="/news/job_postings/ezcurra01232013.pdf" >January 23 2013, Postdoctoral Scholarship in Plant Biotechnology</a></dt>
+<dd>KTH School of Biotechnology, Stockholm, Sweden</dd><dl>
+
+<dt><a href="/news/job_postings/bell01232013.pdf" >January 23 2013, Director of Institutional Research</a></dt>
+<dd>Blinn College, Brenham, TX</dd><dl>
+
+<dt><a href="/news/job_postings/yaakoup01232013.pdf" >January 23 2013, POSTDOCTORAL RESEARCH ASSOCIATE IN DEVELOPMENTAL BIOLOGY</a></dt>
+<dd>The University of Sydney, Australia</dd><dl>
+
+<dt><a href="/news/job_postings/bienert01242013.pdf" >January 23 2013, Post-Doc in Molecular Plant Nutrition</a></dt>
+<dd>Leibniz Institute of Plant Genetics and Crop Plant Research, Seeland, Germany</dd><dl>
+
+<dt><a href="/news/job_postings/bienert01232013.pdf" >January 23 2013, PhD student in Molecular Plant Nutrition</a></dt>
+<dd>Leibniz Institute of Plant Genetics and Crop Plant Research, Seeland, Germany</dd><dl>
+
+<dt><a href="/news/job_postings/liang01162013.pdf" >January 16 2013, Tenure Track Faculty Position in Plant Science/Plant Biotechnology</a></dt>
+<dd>Academia Sinica, Taiwan</dd><dl>
+
+<dt><a href="/news/job_postings/hoecker01162013.pdf" >January 16 2013, 9 faculty positions at the Cluster of Excellence on Plant Sciences</a></dt>
+<dd>  Universities of Deusseldorf and Cologne, Germany</dd><dl>
+
+<dt><a href="/news/job_postings/thomasina01162013.txt" >January 16 2013, Program Director position in the Division of Molecular and Cellular Biosciences</a></dt>
+<dd> National Science Foundation, Arlington, VA, USA</dd><dl>
+
+<dt><a href="/news/job_postings/kohler01162013.txt" >January 16 2013, Postdoc Position in Plant Epigenetics</a></dt>
+<dd> Swedish University of Agricultural Science, Uppsala, Sweden</dd><dl>
+
+<dt><a href="/news/job_postings/mahfouz01162013.txt" >January 16 2013, Postdoctoral position, Plant genome engineering using TAL Effectors</a></dt>
+<dd> King Abdullah University of Science and Technology, Saudi Arabia</dd><dl>
+
+<dt><a href="/news/job_postings/gallagher01162013.txt" >January 16 2013, Post-Doctoral position</a></dt>
+<dd> University of Pennsylvania, Philadelphia, PA, USA</dd><dl>
+
+<dt><a href="/news/job_postings/bouche01162013.pdf" >January 16 2013, Post-Doctoral position, Epigenetic Natural Variation in Arabidopsis</a></dt>
+<dd> INRA, Versailles, France</dd><dl>
+
+<dt><a href="/news/job_postings/giovanni01162013.txt" >January 16 2013, M.Res./Ph.D. scholarship research position</a></dt>
+<dd>Imperial College London, UK</dd><dl>
+
+<dt><a href="/news/job_postings/walia01162013.txt" >January 16 2013, Postdoctoral Position</a></dt>
+<dd>University of Nebraska, Lincoln, NE, USA</dd><dl>
+
+<dt><a href="/news/job_postings/lauder01162013.pdf" >January 16 2013, Postdoctoral Fellow - Plant Biologist (epigenetics &amp; reproduction)</a></dt>
+<dd>CSIRO, Adelaide, South Australia</dd><dl>
+
+<dt><a href="/news/job_postings/zhang01092013.pdf" >January 9 2013, Two to three postdoctoral positions</a></dt>
+<dd>Texas A & M University, College Station, TX, USA</dd><dl>
+
+<dt><a href="/news/job_postings/wenkel01092013.txt" >January 9 2013, PhD position</a></dt>
+<dd>University of Tuebingen, Germany</dd><dl>
+
+<dt><a href="/news/job_postings/kate01092013.pdf" >January 9 2013, Executive Director, Pacific Division, American Association for the Advancement of Science</a></dt>
+<dd>Southern Oregon University, Ashland, OR, USA</dd><dl>
+
+<dt><a href="/news/job_postings/jonak01092013.pdf" >January 9 2013, Postdoctoral Position in Signal Transduction</a></dt>
+<dd>Gregor Mendel Institute, Vienna, Austria</dd><dl>
+
+<dt><a href="/news/job_postings/stam01092013.pdf" >January 9 2013, POSTDOC, Applied epigenomics</a></dt>
+<dd>KeyGene, Wageningen, The Netherlands</dd><dl>
+
+<dt><a href="/news/job_postings/stacey01092013.txt" >January 9 2013, Assistant/Associate Professor: Biomass Feedstock Molecular Physiology and Breeding</a></dt>
+<dd>University of Missouri, Columbia, MO, USA</dd><dl>
+
+<dt><a href="/news/job_postings/hisashi01022013.txt" >January 2 2013, Research Technician, Plant Epigenetics</a></dt>
+<dd>Gregor Mendel Institute, Vienna, Austria</dd><dl>
+
+<dt><a href="/news/job_postings/wrzaczek01022013.pdf" >January 2 2013, Doctoral student in molecular plant biology/plant biochemistry</a></dt>
+<dd>University of Helsinki, Finland</dd><dl>
+
+<dt><a href="/news/job_postings/ahn01022013.txt" >January 2 2013, 3 Post-doctoral positions available in genetics of flowering</a></dt>
+<dd>Korea University, Seoul, Korea</dd><dl>
+
+<dt><a href="/news/job_postings/altpeter12202012.txt" >December 20 2012, Postdoc Position, TALEN Mediated Mutagenesis of Sugarcane</a></dt>
+<dd>University of Florida, Gainesville, FL, USA</dd><dl>
+
+<dt><a href="/news/job_postings/yambrovich12202012.txt" >December 20 2012, Plant Genome Research Program Summer Internships</a></dt>
+<dd>Boyce Thompson Institute for Plant Research, Ithaca, NY, USA</dd>
+
+<dt><a href="/news/job_postings/yang12202012.txt" >December 20 2012, Assistant Professor in Plant Cellular Biochemistry</a></dt>
+<dd>University of California at Riverside, CA, USA</dd>
+
+<dt><a href="/news/job_postings/xu12122012.txt" >December 12 2012, Postdoctoral position in plant genomics and bioinformatics</a></dt>
+<dd>Max Planck Institute for Chemical Ecology, Jena, Germany</dd>
+
+<dt><a href="/news/job_postings/nadella12122012.txt" >December 12 2012, Two to three positions available at the MS or PhD level</a></dt>
+<dd>Ohio University, Athens, OH, USA</dd>
+
+<dt><a href="/news/job_postings/maizel12132012.txt" >December 12 2012, 2 PhD opportunities to study small RNA regulated root growth</a></dt>
+<dd>University of Heidelberg, Germany</dd>
+
+<dt><a href="/news/job_postings/maizel12121012.txt" >December 12 2012, Post doctoral position - structural basis of RNA silencing</a></dt>
+<dd>University of Heidelberg, Germany</dd>
+
+<dt><a href="/news/job_postings/clarke12121012.pdf" >December 12 2012, POST-DOCTORAL POSITION IN BIOCHEMISTRY/MOLECULAR BIOLOGY</a></dt>
+<dd>Gothenburg University, Sweden</dd>
+
+<dt><a href="/news/job_postings/moller12062012.pdf" >December 5 2012, Engineer/Laboratory Manager in mass spectroscopy and chromatography</a></dt>
+<dd>University of Copenhagen, Denmark</dd>
+
+<dt><a href="/news/job_postings/friesner12062012.txt" >December 5 2012, Faculty Positions</a></dt>
+<dd>The Donald Danforth Plant Science Center, St. Louis, MO, USA</dd>
+
+<dt><a href="/news/job_postings/simon11282012.txt" >November 28 2012, Postdoctoral position</a></dt>
+<dd>Heinrich-Heine University, Dusseldorf, Germany</dd>
+
+<dt><a href="/news/job_postings/mylne11282012.txt" >November 28 2012, RESEARCH ASSOCIATE</a></dt>
+<dd>The University of Western Australia, Perth, Australia</dd>
+
+<dt><a href="/news/job_postings/folta11282012.txt" >November 28 2012, Postdoctoral Opportunity</a></dt>
+<dd>University of Florida, Gainesville, FL, USA</dd>
+
+<dt><a href="/news/job_postings/bassel11212012.txt" >November 21 2012, Research Fellow</a></dt>
+<dd>University of Birmingham, Birmingham, UK</dd>
+
+<dt><a href="/news/job_postings/dhonukshe11212012.pdf" >November 21 2012, 3 PhDs, 4 Postdocs and 1 Technician</a></dt>
+<dd>Flanders Institute for Biotechnology, Ghent, Belgium</dd>
+
+<dt><a href="/news/job_postings/oh11212012.pdf" >November 21 2012, Master/Diploma Students</a></dt>
+<dd>Max Planck Institute for Chemical Ecology, Jena, Germany</dd>
+
+<dt><a href="/news/job_postings/cadle11212012.txt" >November 21 2012, Postdoctoral Research Associate</a></dt>
+<dd>USDA, Grape Genetics Research Unit, Geneva, New York, USA</dd>
+
+<dt><a href="/news/job_postings/feakes11142012.pdf" >November 14 2012, Assistant Professor</a></dt>
+<dd>University of Manitoba, Winnipeg, Manitoba, Canada</dd>
+
+<dt><a href="/news/job_postings/raina11142012.txt" >November 14 2012, Assistant Professor - Biochemistry</a></dt>
+<dd>Syracuse University, Syracuse, NY, USA</dd>
+
+<dt><a href="/news/job_postings/monroe10312012.txt" >October 31 2012, Postdoctoral Research-Teaching Position</a></dt>
+<dd>James Madison University, Harrisonburg, VA, USA</dd>
+
+<dt><a href="/news/job_postings/medford10312012.txt" >October 31 2012, Three Positions Available in Plant Synthetic Biology</a></dt>
+<dd>Colorado State University, Fort Collins, CO, USA</dd>
+
+<dt><a href="/news/job_postings/thorsten10312012.txt" >October 31 2012, Post-doctoral Position</a></dt>
+<dd>Norwegian University of Science and Technology, Trondheim, Norway</dd>
+
+<dt><a href="/news/job_postings/harrison10252012.txt" >October 25 2012, Post-doctoral Position</a></dt>
+<dd>Cornell University, Ithaca, NY, USA</dd>
+
+<dt><a href="/news/job_postings/devilbiss10272012.txt" >October 25 2012, ASSISTANT PROFESSOR, Plant Evolutionary Biologist</a></dt>
+<dd>Colorado State University, Fort Collins, CO, USA</dd>
+
+<dt><a href="/news/job_postings/devilbiss10262012.txt" >October 25 2012, ASSISTANT PROFESSOR, BIOINFORMATICS/COMPUTATIONAL BIOLOGY</a></dt>
+<dd>Colorado State University, Fort Collins, CO, USA</dd>
+
+<dt><a href="/news/job_postings/devilbiss10252012.txt" >October 25 2012, Chair of the Department of Biology</a></dt>
+<dd>Colorado State University, Fort Collins, CO, USA</dd>
+
+<dt><a href="/news/job_postings/torii10252012.txt" >October 25 2012, Postdoctoral/Research Scientist Position</a></dt>
+<dd>University of Washington, Seattle, WA, USA</dd>
+
+<dt><a href="/news/job_postings/bhattacharyya 10252012.txt" >October 25 2012, Three Postdoctoral Positions</a></dt>
+<dd>Iowa State University, Ames, IA, USA</dd>
+
+<dt><a href="/news/job_postings/buerstenbinder10252012.pdf" >October 25 2012, Two four-year-PhD positions</a></dt>
+<dd>Leibniz Institute of Plant Biochemistry, Halle, Germany</dd>
+
+<dt><a href="/news/job_postings/kaufmann10182012.pdf" >October 18 2012, Postdoc and PhD positions</a></dt>
+<dd>The University of Potsdam, Germany</dd>
+
+<dt><a href="/news/job_postings/lyer10182012.pdf" >October 18 2012, Laboratory Technician Position</a></dt>
+<dd>Purdue University, West Lafayette, IN, USA</dd>
+
+<dt><a href="/news/job_postings/Ahn10182012.txt" >October 18 2012, Tenure-Track Position for a Plant Biologist</a></dt>
+<dd>Korea University, Seoul, Korea</dd>
+
+<dt><a href="/news/job_postings/mukherjee10182012.pdf" >October 18 2012, M.S. Graduate Assistantship position</a></dt>
+<dd>University of Central Arkansas, Conway, AR, USA</dd>
+
+<dt><a href="/news/job_postings/whitlow10182012.txt" >October 18 2012, Two Assistant Professor Positions-Physiology, Plant Biology</a></dt>
+<dd>Seattle University, Seattle, WA, USA</dd>
+
+<dt><a href="/news/job_postings/matzke10102012.pdf" >October 10, 2012, Two postdoctoral positions</a></dt>
+<dd>Institute of Plant and Microbial Biology, Academia Sinica, Taipei, Taiwan</dd>
+
+<dt><a href="/news/job_postings/blancaflor10102012.txt" >October 10, 2012, Postdoctoral Fellow</a></dt>
+<dd>The Samuel Roberts Noble Foundation, Inc., Ardmore, OK, USA</dd>
+
+<dt><a href="/news/job_postings/bendickson10102012.pdf" >October 10, 2012, Canada Research Chair in Cellular Dynamics</a></dt>
+<dd>University of British Columbia, Vancouver, BC, Canada</dd>
+
+<dt><a href="/news/job_postings/foster10032012.txt" >October 3, 2012, Head of Proteomics</a></dt>
+<dd>The Sainsbury Laboratory, Norwich, UK</dd>
+
+<dt><a href="/news/job_postings/estelle10032012.pdf" >October 3, 2012, Assistant Professor, Plant Biology</a></dt>
+<dd>University of California, San Diego, La Jolla CA, USA</dd>
+
+<dt><a href="/news/job_postings/keiber10032012.txt" >October 3, 2012, Post-doctoral position in two-component signaling in rice</a></dt>
+<dd>University of North Carolina, Chapel Hill, NC, USA</dd>
+
+<dt><a href="/news/job_postings/johnson10032012.txt" >October 3, 2012, Structural Biology Faculty Position</a></dt>
+<dd>Brown University, Providence, RI, USA</dd>
+
+<dt><a href="/news/job_postings/krizek10032012.txt" >October 3, 2012, Two Faculty Positions</a></dt>
+<dd>University of South Carolina, Columbia, SC, USA</dd>
+
+<dt><a href="/news/job_postings/yu09262012.pdf" >September 26, 2012, Postdoctoral Position in Systemic RNA signal</a></dt>
+<dd>Academia Sinica, Taipei, Taiwan</dd>
+
+<dt><a href="/news/job_postings/huang09262012.pdf" >September 26, 2012, M.S. Graduate Assistantship and Post-doc Position</a></dt>
+<dd>University of Arkansas, Pine Bluff, AR, USA</dd>
+
+<dt><a href="/news/job_postings/casas09262012.txt" >September 26, 2012, Postdoctoral position in epigenetic gene silencing</a></dt>
+<dd>Universidade de Sao Paulo, Sao Paulo, Brasil</dd>
+
+<dt><a href="/news/job_postings/henning09262012.txt" >September 26, 2012, 2 Postdoc Positions</a></dt>
+<dd>Swedish University of Agricultural Sciences, Uppsala, Sweden</dd>
+
+<dt><a href="/news/job_postings/chen09262012.txt" >September 26, 2012, Plant Molecular Biology and Cell Biology faculty positions</a></dt>
+<dd>University of Texas, Austin, TX, USA</dd>
+
+<dt><a href="/news/job_postings/chapple09262012.txt" >September 26, 2012, Tenure Track Faculty Position</a></dt>
+<dd>Purdue University, West Lafayette, IN, USA</dd>
+
+<dt><a href="/news/job_postings/brooks09262012.txt" >September 26, 2012, Tenure Track Assistant Professor of Biology</a></dt>
+<dd>Doane College, Crete, NE, USA</dd>
+
+<dt><a href="/news/job_postings/elomaa09262012.pdf" >September 26, 2012, Tenure Track Assistant Professor, Molecular and Translational Plant Science</a></dt>
+<dd>University of Helsinki, Finland</dd>
+
+<dt><a href="/news/job_postings/gaudin09262012.pdf" >September 26, 2012, 11 PhD & 3 Postdoc positions in plant epigenetics</a></dt>
+<dd>EpiTRAITS, The Netherlands, Germany, England, Belgium, Poland, France and Spain</dd>
+
+<dt><a href="/news/job_postings/yang09172012.pdf" >September 17, 2012, Postdoctoral and Post-Masters Research Associates in Plant Synthetic Biology</a></dt>
+<dd>Oak Ridge National Laboratory Oak Ridge, TN, USA</dd>
+
+<dt><a href="/news/job_postings/sharma09172012.pdf" >September 17, 2012, Tenure positions for Research Associate, Scientific Officer, Sr. Scientific Officer and Group Leader</a></dt>
+<dd>DBT-IOC centre for Advanced Bioenergy Research, Faridabad, India</dd>
+
+<dt><a href="/news/job_postings/walker09172012.txt" >September 17, 2012, Assistant Professor Position in Computational Genomics</a></dt>
+<dd>University of Massachusetts, Amherst, MA, USA</dd>
+
+<dt><a href="/news/job_postings/liang09172012.pdf" >September 17, 2012, Tenure Track Faculty Position in Plant Science/Plant Biotechnology</a></dt>
+<dd>Academia Sinica, Taipei City, Taiwan</dd>
+
+<dt><a href="/news/job_postings/becraft09172012.txt" >September 17, 2012, Assistant Professor in Cellular network biology</a></dt>
+<dd>Iowa State University, Ames, IA, USA</dd>
+
+<dt><a href="/news/job_postings/manoharan09172012.pdf" >September 17, 2012, M.S. Graduate Research Assistantships</a></dt>
+<dd>University of Arkansas, Pine Bluff, AR, USA</dd>
+
+<dt><a href="/news/job_postings/showk09172012.txt" >September 17, 2012, PhD student and Post-doc positions</a></dt>
+<dd>University of Helsinki, Finland</dd>
+
+<dt><a href="/news/job_postings/friesner09172012.txt" >September 17, 2012, Assistant Professor Position</a></dt>
+<dd>University of Massachusetts, Amherst, MA, USA</dd>
+
+<dt><a href="/news/job_postings/jones09122012.txt" >September 12, 2012, TWO Postdoctoral Positions, Novel Regulation of Heterotrimeric G protein Activation</a></dt>
+<dd>University of North Carolina, Chapel Hill, NC, USA</dd>
+
+<dt><a href="/news/job_postings/schiefelbein09122012.pdf" >September 12, 2012, Faculty Positions in Molecular, Cellular, and Developmental Biology</a></dt>
+<dd>University of Michigan, MI, USA</dd>
+
+<dt><a href="/news/job_postings/ulm09122012.txt" >September 12, 2012, Postdoctoral position, UV-B Perception and Signalling</a></dt>
+<dd>University of Geneva, Switzerland</dd>
+
+<dt><a href="/news/job_postings/ahn09052012.txt" >September 5, 2012, Three Post-doctoral positions available in genetics of flowering</a></dt>
+<dd>Creative Research Initiative, Korea University, Seoul, Korea</dd>
+
+<dt><a href="/news/job_postings/verslues09052012.pdf" >September 5, 2012, Postdoctoral Position in drought-related signaling and metabolism</a></dt>
+<dd>Institute of Plant and Microbial Biology, Academia Sinica, Taipei, Taiwan</dd>
+
+<dt><a href="/news/job_postings/schueller09052012.pdf" >September 5, 2012, Lab Manager</a></dt>
+<dd>Max Planck Institute for Plant Breeding Research, Cologne, Germany</dd>
+
+<dt><a href="/news/job_postings/quint09052012.txt" >September 5, 2012, Postdoc and a Ph.D. student in abiotic stress signaling</a></dt>
+<dd>Leibniz Institute of Plant Biochemistry, Halle, Germany</dd>
+
+<dt><a href="/news/job_postings/jenkins08292012.txt" >August 29, 2012, Postdoctoral position</a></dt>
+<dd>University of Glasgow, Glasgow, Scotland, UK</dd>
+
+<dt><a href="https://www.jobsatosu.com/postings/43717" >August 29, 2012, Curator</a></dt>
+<dd>Ohio State University, Columbus, OH, USA</dd>
+
+<dt><a href="/news/job_postings/dissmeyer08292012.pdf" >August 29, 2012, Two Ph.D. positions in Biochemistry or Genetics</a></dt>
+<dd>Leibniz Institute of Plant Biochemistry, Halle, Germany</dd>
+
+<dt><a href="/news/job_postings/budar08292012.pdf" >August 29, 2012, Post-doctoral position</a></dt>
+<dd>INRA, Versailles, France</dd>
+
+<dt><a href="/news/job_postings/tarter08232012.pdf" >August 23, 2012, Multiple Faculty Positions</a></dt>
+<dd>Indiana University, Bloomington, IN, USA</dd>
+
+<dt><a href="http://www.cbs.umn.edu/facres/cluster-hiring-cbs" >August 22, 2012, 16 Faculty positions to form 6 interdisciplinary clusters</a></dt>
+<dd>University of Minnesota, Saint Paul MN, USA</dd>
+
+<dt><a href="http://sitemason.vanderbilt.edu/biosci" >August 22, 2012, Assistant Professor Faculty Positions</a></dt>
+<dd>Vanderbilt University, Nashville, TN, USA</dd>
+
+<dt><a href="/news/job_postings/thines08222012.pdf" >August 22, 2012, Assistant Professor</a></dt>
+<dd>Pomona College, Claremont, CA, USA</dd>
+
+<dt><a href="/news/job_postings/kocabek08162012.pdf" >August 16, 2012, Postdoctoral position available within MODBIOLIN project</a></dt>
+<dd>Biology Centre Academy of Sciences of the Czech Rep., Ceske Budejovice, Czech Republic</dd>
+
+<dt><a href="/news/job_postings/carlsbecker08162012.txt" >August 16, 2012, Postdoc position in plant developmental biology</a></dt>
+<dd>Uppsala University, Uppsala, Sweden</dd>
+
+<dt><a href="/news/job_postings/foster08162012.txt" >August 16, 2012, Two postdoctoral positions</a></dt>
+<dd>Sainsbury Laboratory, Norwich, UK</dd>
+
+<dt><a href="/news/job_postings/schmidt08162012.pdf" >August 16, 2012, Postdoc position</a></dt>
+<dd>Institute of Plant and Microbial Biology, Taipei, Taiwan</dd>
+
+<dt><a href="/news/job_postings/folta08082012.txt" >August 8, 2012, Postdoctoral Scientist</a></dt>
+<dd>University of Florida, Gainesville, FL, USA</dd>
+
+<dt><a href="/news/job_postings/brooks08012012.txt" >August 1, 2012, Tenure-track position in sensor technology for plant phenotype characterization</a></dt>
+<dd>Washington State University, Pullman, WA, USA</dd>
+
+<dt><a href="/news/job_postings/patheiger07252012.pdf" >July 25, 2012, International PhD Program in the BIOLOGICAL SCIENCES</a></dt>
+<dd>Max-Planck-Institute, Tuebingen, Germany</dd>
+
+<dt><a href="/news/job_postings/evans07252012.txt" >July 25, 2012, Postdoctoral position</a></dt>
+<dd>Oxford Brookes University, Oxford, UK</dd>
+
+<dt><a href="/news/job_postings/dinneny07182012.txt" >July 18, 2012, Postdoctoral position</a></dt>
+<dd>Carnegie Institution for Science, Stanford, CA, USA</dd>
+
+<dt><a href="/news/job_postings/gardener07182012.pdf" >July 18, 2012, Postdoctoral positions</a></dt>
+<dd>Center For Applied Plant Sciences, Columbus, OH, USA</dd>
+
+<dt><a href="/news/job_postings/spillane07182012.pdf" >July 18, 2012, Senior Lecturer in Biochemistry (Chromatin & Epigenetics)</a></dt>
+<dd>National University of Ireland, Galway, Ireland</dd>
+
+<dt><a href="/news/job_postings/faurby07182012.pdf" >July 18, 2012, PhD Fellows in Dynamic Molecular Interactions</a></dt>
+<dd>University of Copenhagen, Denmark</dd>
+
+<dt><a href="/news/job_postings/christie07182012.txt" >July 18, 2012, Postdoctoral positions</a></dt>
+<dd>University of Glasgow, Scotland UK</dd>
+
+<dt><a href="/news/job_postings/nodine07182012.txt" >July 18, 2012, Postdoctoral Position in Plant Developmental Genomics</a></dt>
+<dd>Gregor Mendel Institute, Vienna, Austria</dd>
+
+<dt><a href="/news/job_postings/busov07122012.pdf" >July 11, 2012, PhD position in biochemistry and molecular biology</a></dt>
+<dd>Michigan Technological University, Houghton, MI, USA</dd>
+
+<dt><a href="/news/job_postings/cheong07112012.txt" >July 11, 2012, Postdoctoral research position</a></dt>
+<dd>Seoul National University, Seoul, Korea</dd>
+
+<dt><a href="/news/job_postings/marion07112012.txt" >July 11, 2012, Plant Biologist</a></dt>
+<dd>BASF, The Chemical Company, Research Triangle Park, NC, USA</dd>
+
+<dt><a href="/news/job_postings/bellini07112012.pdf" >July 11, 2012, UPSC Recruitment of Eight PhD Students</a></dt>
+<dd>Umea University, Umea, Sweden</dd>
+
+<dt><a href="/news/job_postings/busov07112012.pdf" >July 11, 2012, Postdoctoral position in regulation of plants' growth and development</a></dt>
+<dd>Michigan Technological University, Houghton, MI, USA</dd>
+
+<dt><a href="/news/job_postings/aarts06272012.pdf" >June 27, 2012, Post-doctoral fellow Micronutrient stress response</a></dt>
+<dd>Wageningen University, Wageningen, The Netherlands</dd>
+
+<dt><a href="/news/job_postings/traini06202012.txt" >June 20, 2012, PhD Research Project</a></dt>
+<dd>University of Naples Federico II, Portici, Italy</dd>
+
+<dt><a href="/news/job_postings/mckim06202012.pdf" >June 20, 2012, PhD studentship</a></dt>
+<dd>University of Dundee, Scotland, UK</dd>
+
+<dt><a href="/news/job_postings/welch06202012.pdf" >June 20, 2012, Research Associate/Postdoctoral Fellow</a></dt>
+<dd>University of Arkansas at Little Rock, AR, USA</dd>
+
+<dt><a href="/news/job_postings/courbot06202012.pdf" >June 20, 2012, Technical Specialist Biological Sciences</a></dt>
+<dd>Syngenta, Stein, SWITZERLAND</dd>
+
+<dt><a href="/news/job_postings/schueller06222012.pdf" >June 20, 2012, Postdoctoral research fellowships</a></dt>
+<dd>Max Planck Institute for Plant Breeding Research, Cologne, Germany</dd>
+
+<dt><a href="/news/job_postings/schueller06212012.pdf" >June 20, 2012, Group leader - Computational Modelling of Morphogenesis</a></dt>
+<dd>Max Planck Institute for Plant Breeding Research, Cologne, Germany</dd>
+
+<dt><a href="/news/job_postings/schueller06202012.pdf" >June 20, 2012, Group leader - Bioinformatics</a></dt>
+<dd>Max Planck Institute for Plant Breeding Research, Cologne, Germany</dd>
+
+<dt><a href="/news/job_postings/santrucek06202012.pdf" >June 20, 2012, Postdoctoral position</a></dt>
+<dd>University of South Bohemia, Czech Republic</dd>
+
+<dt><a href="/news/job_postings/bartsch06202012.pdf" >June 20, 2012, Technical Specialist / Technician in Plant Phenotyping</a></dt>
+<dd>Syngenta Crop Protection, Stein, SWITZERLAND</dd>
+
+<dt><a href="/news/job_postings/krysan06132012.txt" >June 13, 2012, Postdoctoral Position: Building FRET-based biosensors to study MAP kinase signaling in Arabidopsis </a></dt>
+<dd>University of Wisconsin, Madison, WI, USA</dd>
+
+<dt><a href="/news/job_postings/curie06132012.pdf" >June 13, 2012, Two postdocs positions in Montpellier</a></dt>
+<dd>B&amp;PMP, Montpellier, France</dd>
+
+<dt><a href="/news/job_postings/neff06062012.pdf" >June 6, 2012, Assistant Professor or Associate Professor</a></dt>
+<dd>Washington State University, Pullman, WA, USA</dd>
+
+<dt><a href="/news/job_postings/caldana06062012.txt" >June 6, 2012, Research Scientist (PI) in Bioinformatics</a></dt>
+<dd>Brazilian Bioethanol Science and Technology Laboratory, Sao Paulo, Brazil</dd>
+
+<dt><a href="/news/job_postings/rawsthorne06062012.txt" >June 6, 2012, Royal Society Research Professorship</a></dt>
+<dd>The Royal Society, London, UK</dd>
+
+<dt><a href="/news/job_postings/coruzzi05302012.pdf" >May 30, 2012, Postdoctoral Position -Systems biology of nutrient signaling in Arabidopsis</a></dt>
+<dd>New York University. New York, NY, USA</dd>
+
+<dt><a href="/news/job_postings/hazen05302012.txt" >May 30, 2012, Postdoctoral Research Associate - Plant growth and biofuel attributes</a></dt>
+<dd>University of Massachusetts, Amherst, MA, USA</dd>
+
+<dt><a href="/news/job_postings/ongena05302012.pdf" >May 30, 2012, 14 Postdoctoral Positions</a></dt>
+<dd>VIB, Zwijnaarde, Belgium</dd>
+
+<dt><a href="/news/job_postings/buell05232012.pdf" >May 23, 2012, Postdoctoral Position in Plant Genomics & Bioinformatics</a></dt>
+<dd>Michigan State University, East Lansing, MI, USA</dd>
+
+<dt><a href="/news/job_postings/fukaki05232012.txt" >May 23, 2012, Senior Assistant Professor or Associate Professor</a></dt>
+<dd>Kobe University, Kobe, Japan</dd>
+
+<dt><a href="/news/job_postings/jones05172012.txt" >May 17, 2012, 3 Post Doctoral Positions in Cell Biology</a></dt>
+<dd>University of North Carolina, Chapel Hill, NC, USA</dd>
+
+<dt><a href="/news/job_postings/chiham05172012.txt" >May 17, 2012, Research Assistant</a></dt>
+<dd>University of California, Davis, CA, USA</dd>
+
+<dt><a href="/news/job_postings/sparkes05172012.pdf" >May 17, 2012, Associate Research Fellow</a></dt>
+<dd>University of Exeter, Devon, UK</dd>
+
+<dt><a href="https://jobs.carleton.edu/postings/1100" >May 9, 2012, Biology Laboratory Manager</a></dt>
+<dd>Carleton College, Northfield, MN, USA</dd>
+
+<dt><a href="/news/job_postings/britt05092012.txt" >May 9, 2012, 3 year Postdoctoral Research Position</a></dt>
+<dd>University of California Davis, Davis, CA, USA</dd>
+
+</dl>
 
 </div>
 <jsp:include page="/jsp/includes/gen_footer.jsp" flush ="true">
